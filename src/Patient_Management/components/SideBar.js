@@ -12,11 +12,12 @@ const Sidebar = () => {
             <Link to="/Dashboard">Dashboard</Link>
           </li>
           <li>
-            <Link to="/AddPatient">Add patient</Link>
+            <Link to="/AddPatient">Add Patient</Link>
           </li>
           <li>
             <Link to="/SearchPage">Search</Link>
           </li>
+          
         </ul>
       </nav>
     </div>
