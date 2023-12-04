@@ -9,15 +9,17 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/Dashboard">Dashboard</Link>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/searchpage">Search</Link>
           </li>
           <li>
             <Link to="/AddPatient">Add Patient</Link>
           </li>
           <li>
-            <Link to="/SearchPage">Search</Link>
+            <Link to="/scheduleappointments">Schedule Appointments</Link>
           </li>
-          
         </ul>
       </nav>
     </div>
