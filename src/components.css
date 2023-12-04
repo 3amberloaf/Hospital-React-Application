@@ -1,0 +1,67 @@
+/* CSS */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing between form groups */
+}
+
+.form-group label {
+  min-width: 120px; /* Adjust the width as needed */
+  font-weight: bold;
+  margin-right: 10px; /* Adjust spacing between label and input */
+}
+
+/* Add the rest of your CSS styles for buttons and other elements */
+
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    background-color: #eceff1; /* Light grey background, you can change it */
+    height: 100vh; /* Full height of the viewport */
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+/* Style for stacking input fields */
+.add-patient-form input {
+  display: flex; /* Display each input on a new line */
+  margin-bottom: 10px; /* Add spacing between input fields */
+}
+
+
+/* CSS */
+.button-label {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between buttons */
+}
+
+.button {
+  display: block;
+  padding: 10px 10px; /* Adjust padding for button size */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ccc; /* Light gray color */
+  color: #000; /* Black text color */
+}
+
+/* Style radio buttons (hidden) */
+input[type="radio"] {
+  display: none;
+}
