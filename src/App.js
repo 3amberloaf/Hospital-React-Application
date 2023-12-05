@@ -12,8 +12,15 @@ import AddPatient from './PatientManagement/AddPatient';
 import ViewPatient from './PatientManagement/ViewPatient';
 import DoctorsSchedule from './PatientManagement/DoctorsSchedule';
 import PatientDashboard from './PatientManagement/PatientDashboard'; // Import the new component
-
+import CheckAvailableRoom from './InPatientManagement/AvailableRooms';
+import AssignRemoveDoctor from './InPatientManagement/AssignDoctor';
+import AssignRemoveNurse from './InPatientManagement/AssignNurse';
+import BookSurgery from './InPatientManagement/BookSurgery';
+import ViewSurgerySchedulePatient from './InPatientManagement/ViewSurgerySchedulePatient';
+import ViewSurgeryScheduleRoom from './InPatientManagement/ScheduleSurgeryRoom'; 
+import InPatientDashboard from './InPatientManagement/InPatientDashboard';
 import './App.css';
+
 
 function App() {
   const [patients, setPatients] = useState([]);
@@ -47,6 +54,14 @@ function App() {
             <Route path="/scheduleappointments" element={<ScheduleAppointments />} />
             <Route path="/patientdashboard" element={<PatientDashboard />} />
             <Route path="/doctorschedule" element={<DoctorsSchedule />} />
+            <Route path="/inpatientdashboard" element={<InPatientDashboard />} />
+            <Route path="/check-available-room" element={<CheckAvailableRoom />} />
+            <Route path="/assign-room" element={<CheckAvailableRoom />} />
+            <Route path="/assign-nurse" element={<AssignRemoveNurse />} />
+            <Route path="/book-surgery" element={<BookSurgery />} />
+            <Route path="/assign-doctor" element={<AssignRemoveDoctor />} />
+            <Route path="/view-surgery-schedule-room" element={<ViewSurgeryScheduleRoom />} />
+            <Route path="/view-surgery-schedule-patient" element={<ViewSurgerySchedulePatient />} />
             <Route exact path="/" element={
               <>
                 <NavBar />

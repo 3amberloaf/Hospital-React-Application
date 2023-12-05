@@ -22,7 +22,7 @@ function Dashboard() {
           <img src={patientImage} alt="Patient Management" />
           <p>Patient Management</p>
         </div>
-        <div className="dashboard-item" onClick={() => navigateTo('/inpatient-management')}>
+        <div className="dashboard-item" onClick={() => navigateTo('/inpatientdashboard')}>
           <img src={inpatientImage} alt="In-patient Management" />
           <p>Inpatient Management</p>
         </div>
