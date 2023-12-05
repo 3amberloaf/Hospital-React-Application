@@ -11,7 +11,7 @@ function InPatientDashboard() {
 
   return (
     <div>
-      <h2> In-Patient Management Dashboard</h2>
+      <h2> In-Patient Management</h2>
       <div className="dashboard-links">
         <div className="dashboard-item" onClick={() => navigateTo('/checkroom')}>
           <FaBed />
