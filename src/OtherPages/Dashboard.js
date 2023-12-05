@@ -17,6 +17,9 @@ function Dashboard() {
       <div className="welcome">
         <p>Welcome to Newark Medical Associates</p>
       </div>
+      <div className="selection">
+        <p>Please choose from the following selection</p>
+      </div>
       <div className="dashboard">
       <div className="dashboard-item" onClick={() => navigateTo('/patientdashboard')}>
           <img src={patientImage} alt="Patient Management" />
@@ -24,7 +27,7 @@ function Dashboard() {
         </div>
         <div className="dashboard-item" onClick={() => navigateTo('/inpatientdashboard')}>
           <img src={inpatientImage} alt="In-patient Management" />
-          <p>Inpatient Management</p>
+          <p>In-Patient Management</p>
         </div>
         <div className="dashboard-item" onClick={() => navigateTo('/staff-management')}>
           <img src={staffImage} alt="Medical Staff Management" />

@@ -11,7 +11,9 @@ function PatientDashboard() {
 
   return (
     <div>
+      <div className="dashboard" >
       <h2>Patient Management</h2>
+      </div>
       <div className="dashboard-links">
         <div className="dashboard-item" onClick={() => navigateTo('/addpatient')}>
           <FaUserPlus />

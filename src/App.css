@@ -66,6 +66,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff; /* Use a white background color */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -77,4 +83,11 @@ body {
 
 .dashboard-item p {
   margin-top: 10px;
+}
+
+.selection {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  font-size: large;
+  font-weight: bolder;
 }

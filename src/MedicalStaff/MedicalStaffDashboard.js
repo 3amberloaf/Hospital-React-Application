@@ -12,7 +12,9 @@ function MedicalStaffDashboard() {
 
   return (
     <div>
+    <div className="dashboard" >
       <h2>Medical Staff Management</h2>
+      </div>
       <div className="dashboard-links">
         <div className="dashboard-item" onClick={() => navigateTo('/addremovestaff')}>
           <FaUserPlus />
