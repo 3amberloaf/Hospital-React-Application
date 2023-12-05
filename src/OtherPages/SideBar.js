@@ -5,7 +5,7 @@ import '../patient.css';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo">Hospital Database</div>
+      <div className="logo">Newark Medical Associates</div>
       <nav>
         <ul>
           <li>
@@ -18,7 +18,7 @@ const Sidebar = () => {
             <Link to="/inpatientdashboard">In-Patient Management</Link>
           </li>
           <li>
-            <Link to="/medicaldashboard">Medical Staff Management</Link>
+            <Link to="/medicalstaffdashboard">Medical Staff Management</Link>
           </li>
         </ul>
       </nav>

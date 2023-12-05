@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './PatientManagement/NavBar';
 import PatientList from './PatientManagement/PatientList';
 import AppointmentList from './PatientManagement/AppointmentList';
 import PatientInfo from './PatientManagement/PatientInfo';
@@ -22,6 +21,13 @@ import ViewSurgeriesBySurgeon from './InPatientManagement/ScheduleSurgeon';
 import InPatientDashboard from './InPatientManagement/InPatientDashboard';
 import './App.css';
 import AssignRemovePatientRoom from './InPatientManagement/AssignRoom';
+
+// import all Medical Staff Routes
+import MedicalStaffDashboard from './MedicalStaff/MedicalStaffDashboard';
+import ScheduleJobShifts from './MedicalStaff/ScheduleJobShift';
+import ViewStaffByJobType from './MedicalStaff/ViewStaffMember';
+import AddRemoveStaffMember from './MedicalStaff/AddRemoveMember';
+
 
 
 function App() {
@@ -65,9 +71,13 @@ function App() {
             <Route path="/viewsurgerybypatient" element={<ViewSurgerySchedulePatient />} />
             <Route path="/addpatient" element={<AddPatientForm addPatient={addPatient} />} />
             <Route path="/viewsurgerybysurgeon" element={<ViewSurgeriesBySurgeon />} />
+            <Route path="/medicalstaffdashboard" element={<MedicalStaffDashboard />} />
+            <Route path="/schedulejobshift" element={<ScheduleJobShifts />} />
+            <Route path="/viewstaff" element={<ViewStaffByJobType />} />
+            <Route path="/addremovestaff" element={<AddRemoveStaffMember />} />
             <Route exact path="/" element={
               <>
-                <NavBar />
+                <SideBar />
                 <ScheduleAppointments addAppointment={addAppointment} />
                 <PatientList patients={patients} onSelectPatient={selectPatient} />
                 {selectedPatient && <PatientInfo patient={selectedPatient} />}

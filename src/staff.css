@@ -1,0 +1,218 @@
+/* staff.css - Medical Staff Dashboard Styles */
+
+.medical-staff-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .medical-staff-dashboard h2 {
+    color: #0056b3;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .dashboard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e8f0fe;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dashboard-item:hover {
+    background-color: #d0e1fd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dashboard-item svg {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .dashboard-item p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0 
+  }
+
+  /* schedule.css - Schedule Job Shifts Styles */
+
+.schedule-job-shifts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .schedule-job-shifts-container h2 {
+    color: #004085;
+    margin-bottom: 30px;
+  }
+  
+  .job-shifts-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .job-shift-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #cce5ff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .job-shift-item:hover {
+    background-color: #b8daff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-shift-item svg {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .job-shift-item p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* viewstaff.css - View Staff by Job Type Styles */
+
+.view-staff-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .view-staff-container h2 {
+    color: #004085;
+    margin-bottom: 20px;
+  }
+  
+  .staff-type {
+    margin-bottom: 20px;
+  }
+  
+  .staff-type h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .staff-type h3 svg {
+    margin-right: 8px;
+  }
+  
+  .staff-type ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .staff-type ul li {
+    background-color: #e9e9e9;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+
+/* addremove.css - Add/Remove Staff Member Styles */
+
+.add-remove-staff-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .add-remove-staff-container h2 {
+    color: #004085;
+    margin-bottom: 20px;
+  }
+  
+  .add-staff-form {
+    margin-bottom: 20px;
+  }
+  
+  .add-staff-form input {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-staff-form button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-staff-form button:hover {
+    background-color: #218838;
+  }
+  
+  .staff-list {
+    text-align: left;
+  }
+  
+  .staff-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .staff-member button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .staff-member button:hover {
+    background-color: #c82333;
+  }
+  
