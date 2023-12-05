@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/ambersautner/patient-management/src/Patient_Management/components",
-      "program": "/Users/ambersautner/patient-management/src/Patient_Management/components/build/Debug/outDebug"
+      "cwd": "/Users/ambersautner/patient-management/src/Patient_Management/",
+      "program": "/Users/ambersautner/patient-management/src/Patient_Management//build/Debug/outDebug"
     }
   ]
 }

@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './Patient_Management/components/NavBar';
-import PatientList from './Patient_Management/components/PatientList';
-import AppointmentList from './Patient_Management/components/AppointmentList';
-import PatientInfo from './Patient_Management/components/PatientInfo';
-import PatientHistory from './Patient_Management/components/PatientHistory';
-import ScheduleAppointments from './OtherPages/ScheduleAppointments';
-import SideBar from './Patient_Management/components/SideBar';
+import NavBar from './PatientManagement/NavBar';
+import PatientList from './PatientManagement/PatientList';
+import AppointmentList from './PatientManagement/AppointmentList';
+import PatientInfo from './PatientManagement/PatientInfo';
+import PatientHistory from './PatientManagement/PatientHistory';
+import ScheduleAppointments from './PatientManagement/ScheduleAppointments';
+import SideBar from './OtherPages/SideBar';
 import Dashboard from './OtherPages/Dashboard';
-import AddPatient from './OtherPages/AddPatient';
-import SearchPage from './OtherPages/SearchPage';
-import DoctorsSchedule from './OtherPages/Schedule';
+import AddPatient from './PatientManagement/AddPatient';
+import ViewPatient from './PatientManagement/ViewPatient';
+import DoctorsSchedule from './PatientManagement/DoctorsSchedule';
+import PatientDashboard from './PatientManagement/PatientDashboard'; // Import the new component
+
 import './App.css';
 
 function App() {
@@ -41,9 +43,10 @@ function App() {
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/addpatient" element={<AddPatient />} />
-            <Route path="/searchpage" element={<SearchPage />} />
+            <Route path="/viewpatient" element={<ViewPatient />} />
             <Route path="/scheduleappointments" element={<ScheduleAppointments />} />
-            <Route path="/schedule" element={<DoctorsSchedule />} />
+            <Route path="/patientdashboard" element={<PatientDashboard />} />
+            <Route path="/doctorschedule" element={<DoctorsSchedule />} />
             <Route exact path="/" element={
               <>
                 <NavBar />

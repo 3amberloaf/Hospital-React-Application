@@ -11,7 +11,7 @@ npm start
 
 3. Add js to the files
 
-4. Integrate components through `app.js` and style with css
+4. Integrate  through `app.js` and style with css
 
 5. Start the app 
 

@@ -18,7 +18,7 @@ function Dashboard() {
         <p>Welcome to Newark Medical Associates</p>
       </div>
       <div className="dashboard">
-        <div className="dashboard-item" onClick={() => navigateTo('/patient-management')}>
+      <div className="dashboard-item" onClick={() => navigateTo('/patientdashboard')}>
           <img src={patientImage} alt="Patient Management" />
           <p>Patient Management</p>
         </div>
@@ -32,7 +32,7 @@ function Dashboard() {
         </div>
       </div>
     </div>
-  );
+  ); 
 }
 
 export default Dashboard;

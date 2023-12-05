@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../components.css'; 
-import DiseaseList from './DiseaseList';
+import DiseaseList from '../OtherPages/DiseaseList';
 
 const AddPatientForm = () => {
   const [patientData, setPatientData] = useState({

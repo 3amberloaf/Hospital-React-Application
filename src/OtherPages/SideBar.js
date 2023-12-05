@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/Users/ambersautner/patient-management/src/components.css'; // Your CSS file for styling
+import '../components.css'; 
 
 const Sidebar = () => {
   return (
@@ -12,16 +12,13 @@ const Sidebar = () => {
             <Link to="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <Link to="/searchpage">Search</Link>
+            <Link to="/patientdashboard">Patient Management</Link>
           </li>
           <li>
-            <Link to="/AddPatient">Add Patient</Link>
+            <Link to="/inpatientdashboard">In-Patient Management</Link>
           </li>
           <li>
-            <Link to="/scheduleappointments">Schedule Appointments</Link>
-          </li>
-          <li>
-            <Link to="/schedule">Doctor Schedule</Link>
+            <Link to="/medicaldashboard">Medical Staff Management</Link>
           </li>
         </ul>
       </nav>
