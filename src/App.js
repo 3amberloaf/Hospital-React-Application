@@ -10,6 +10,7 @@ import SideBar from './Patient_Management/components/SideBar';
 import Dashboard from './OtherPages/Dashboard';
 import AddPatient from './OtherPages/AddPatient';
 import SearchPage from './OtherPages/SearchPage';
+import DoctorsSchedule from './OtherPages/Schedule';
 import './App.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="/addpatient" element={<AddPatient />} />
             <Route path="/searchpage" element={<SearchPage />} />
             <Route path="/scheduleappointments" element={<ScheduleAppointments />} />
+            <Route path="/schedule" element={<DoctorsSchedule />} />
             <Route exact path="/" element={
               <>
                 <NavBar />

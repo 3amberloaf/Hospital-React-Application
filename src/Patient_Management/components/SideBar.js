@@ -20,6 +20,9 @@ const Sidebar = () => {
           <li>
             <Link to="/scheduleappointments">Schedule Appointments</Link>
           </li>
+          <li>
+            <Link to="/schedule">Doctor Schedule</Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -83,7 +83,7 @@ function ScheduleAppointment({ addAppointment }) {
           />
         </div>
 
-        <button type="submit">Schedule</button>
+        <button type="submit">Check Availability</button>
       </form>
     </div>
   );

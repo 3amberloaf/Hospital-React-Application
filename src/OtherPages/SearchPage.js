@@ -22,7 +22,7 @@ const Search = () => {
 
   return (
     <div className="add-patient-form">
-      <h1>Search for Patient</h1>
+      <h1>Patient Information</h1>
       <form onSubmit={handleSearch}>
         <div className="form-group">
           <label>

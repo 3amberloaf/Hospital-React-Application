@@ -1,8 +1,15 @@
-
-  
-
-
-
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically in column direction */
+  justify-content: center; /* Center content horizontally */
+  max-width: 800px; /* Fixed width */
+  margin: 30px auto; /* Center container on the page */
+  padding: 20px;
+  background: #edeedab7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .add-patient-form {
   
@@ -75,7 +82,6 @@
 .add-patient-form button[type="submit"]:hover {
   background: #0056b3; /* A darker blue on hover */
 }
-
 
 .sidebar nav ul li:hover {
   background-color: #dde; /* A light hover effect on sidebar items */
