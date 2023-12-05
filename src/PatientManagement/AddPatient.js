@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import '../components.css'; 
 import DiseaseList from '../OtherPages/DiseaseList';
 
-const AddPatientForm = () => {
+const AddPatientForm = ({ addPatient }) => { // Accept addPatient as a prop
   const [patientData, setPatientData] = useState({
     firstName: '',
     lastName: '',
     birthday: '',
     sex: '',
-    // disease selections can be integrated as needed
+    // add diseases
   });
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,9 +22,16 @@ const AddPatientForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the submission of form data
-    // Including sending data to a backend or state management store
-    console.log(patientData);
+    // Call the addPatient function with the new patient data
+    addPatient(patientData.firstName + ' ' + patientData.lastName);
+    // Optionally, reset the form fields after submission
+    setPatientData({
+      firstName: '',
+      lastName: '',
+      birthday: '',
+      sex: '',
+      // Reset additional fields as needed
+    });
   };
 
   return (

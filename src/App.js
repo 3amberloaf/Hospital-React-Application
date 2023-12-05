@@ -8,7 +8,7 @@ import PatientHistory from './PatientManagement/PatientHistory';
 import ScheduleAppointments from './PatientManagement/ScheduleAppointments';
 import SideBar from './OtherPages/SideBar';
 import Dashboard from './OtherPages/Dashboard';
-import AddPatient from './PatientManagement/AddPatient';
+import AddPatientForm from './PatientManagement/AddPatient';
 import ViewPatient from './PatientManagement/ViewPatient';
 import DoctorsSchedule from './PatientManagement/DoctorsSchedule';
 import PatientDashboard from './PatientManagement/PatientDashboard'; // Import the new component
@@ -28,7 +28,7 @@ function App() {
   const [selectedPatient, setSelectedPatient] = useState(null);
   const [patientHistory, setPatientHistory] = useState([]);
 
-  const handleAddPatient = (name) => {
+  const addPatient = (name) => {
     const newPatient = { name, id: patients.length + 1 };
     setPatients([...patients, newPatient]);
   };
@@ -49,19 +49,19 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/addpatient" element={<AddPatient />} />
             <Route path="/viewpatient" element={<ViewPatient />} />
             <Route path="/scheduleappointments" element={<ScheduleAppointments />} />
             <Route path="/patientdashboard" element={<PatientDashboard />} />
             <Route path="/doctorschedule" element={<DoctorsSchedule />} />
             <Route path="/inpatientdashboard" element={<InPatientDashboard />} />
-            <Route path="/check-available-room" element={<CheckAvailableRoom />} />
-            <Route path="/assign-room" element={<CheckAvailableRoom />} />
-            <Route path="/assign-nurse" element={<AssignRemoveNurse />} />
-            <Route path="/book-surgery" element={<BookSurgery />} />
-            <Route path="/assign-doctor" element={<AssignRemoveDoctor />} />
-            <Route path="/view-surgery-schedule-room" element={<ViewSurgeryScheduleRoom />} />
-            <Route path="/view-surgery-schedule-patient" element={<ViewSurgerySchedulePatient />} />
+            <Route path="/checkroom" element={<CheckAvailableRoom />} />
+            <Route path="/assignroom" element={<CheckAvailableRoom />} />
+            <Route path="/assignnurse" element={<AssignRemoveNurse />} />
+            <Route path="/booksurgery" element={<BookSurgery />} />
+            <Route path="/assigndoctor" element={<AssignRemoveDoctor />} />
+            <Route path="/viewsurgeryscheduleroom" element={<ViewSurgeryScheduleRoom />} />
+            <Route path="/viewsurgerybypatient" element={<ViewSurgerySchedulePatient />} />
+            <Route path="/addpatient" element={<AddPatientForm addPatient={addPatient} />} />
             <Route exact path="/" element={
               <>
                 <NavBar />
@@ -70,6 +70,7 @@ function App() {
                 {selectedPatient && <PatientInfo patient={selectedPatient} />}
                 {selectedPatient && <PatientHistory history={patientHistory} />}
                 <AppointmentList appointments={appointments} />
+                <AddPatientForm addPatient={addPatient} />
               </>
             } />
           </Routes>

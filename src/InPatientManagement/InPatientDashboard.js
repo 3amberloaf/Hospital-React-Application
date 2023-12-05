@@ -29,7 +29,7 @@ function InPatientDashboard() {
           <FaUserNurse />
           <p>Assign/Remove a Nurse to a Patient</p>
         </div>
-        <div className="dashboard-item" onClick={() => navigateTo('/viewsurgeryschedule')}>
+        <div className="dashboard-item" onClick={() => navigateTo('/viewsurgeryscheduleroom')}>
           <FaCalendarCheck />
           <p>View Scheduled Surgery per Room and per Day</p>
         </div>
