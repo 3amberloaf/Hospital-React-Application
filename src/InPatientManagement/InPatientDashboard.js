@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBed, FaUserMd, FaUserNurse, FaCalendarCheck, FaBookMedical } from 'react-icons/fa'; // Example new icons
-
+import '../inpatient.css'
 function InPatientDashboard() {
   const navigate = useNavigate();
 

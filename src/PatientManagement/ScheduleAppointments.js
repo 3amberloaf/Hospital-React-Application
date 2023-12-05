@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components.css'; // Assuming this path is correct
+import '../patient.css'; // Assuming this path is correct
 
 function ScheduleAppointment({ addAppointment }) {
   const [appointmentDetails, setAppointmentDetails] = useState({

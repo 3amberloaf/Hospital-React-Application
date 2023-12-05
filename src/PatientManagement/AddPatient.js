@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components.css'; 
+import '../patient.css'; 
 import DiseaseList from '../OtherPages/DiseaseList';
 
 const AddPatientForm = ({ addPatient }) => { // Accept addPatient as a prop

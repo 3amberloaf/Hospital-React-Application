@@ -18,8 +18,10 @@ import AssignRemoveNurse from './InPatientManagement/AssignNurse';
 import BookSurgery from './InPatientManagement/BookSurgery';
 import ViewSurgerySchedulePatient from './InPatientManagement/ViewSurgerySchedulePatient';
 import ViewSurgeryScheduleRoom from './InPatientManagement/ScheduleSurgeryRoom'; 
+import ViewSurgeriesBySurgeon from './InPatientManagement/ScheduleSurgeon';
 import InPatientDashboard from './InPatientManagement/InPatientDashboard';
 import './App.css';
+import AssignRemovePatientRoom from './InPatientManagement/AssignRoom';
 
 
 function App() {
@@ -55,13 +57,14 @@ function App() {
             <Route path="/doctorschedule" element={<DoctorsSchedule />} />
             <Route path="/inpatientdashboard" element={<InPatientDashboard />} />
             <Route path="/checkroom" element={<CheckAvailableRoom />} />
-            <Route path="/assignroom" element={<CheckAvailableRoom />} />
+            <Route path="/assignroom" element={<AssignRemovePatientRoom />} />
             <Route path="/assignnurse" element={<AssignRemoveNurse />} />
             <Route path="/booksurgery" element={<BookSurgery />} />
             <Route path="/assigndoctor" element={<AssignRemoveDoctor />} />
             <Route path="/viewsurgeryscheduleroom" element={<ViewSurgeryScheduleRoom />} />
             <Route path="/viewsurgerybypatient" element={<ViewSurgerySchedulePatient />} />
             <Route path="/addpatient" element={<AddPatientForm addPatient={addPatient} />} />
+            <Route path="/viewsurgerybysurgeon" element={<ViewSurgeriesBySurgeon />} />
             <Route exact path="/" element={
               <>
                 <NavBar />
