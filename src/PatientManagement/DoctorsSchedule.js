@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css'; // Default style for the calendar
+import 'react-calendar/dist/Calendar.css'; 
 
 // Mock data for doctors' schedules
 const doctorsSchedule = {
   '2023-12-05': ['Dr. Smith', 'Dr. Johnson'],
   '2023-12-06': ['Dr. Williams', 'Dr. Brown'],
-  // Add more dates and doctors as needed
 };
 
 function DoctorsSchedule() {

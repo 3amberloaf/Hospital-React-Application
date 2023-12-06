@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FaStethoscope, FaUserNurse, FaClipboardList } from 'react-icons/fa'; // Icons for different job types
-import '../staff.css'; // Ensure you have this CSS file for styling
+import '../staff.css'; 
 
 function ViewStaffByJobType() {
   const [staff, setStaff] = useState([
     { jobType: 'Doctors', members: ['Dr. Smith', 'Dr. Johnson'] },
     { jobType: 'Nurses', members: ['Nurse Kate', 'Nurse Bob'] },
     { jobType: 'Administrative', members: ['Admin Steve', 'Admin Linda'] },
-    // ... other job types and members ...
+
   ]);
 
   useEffect(() => {

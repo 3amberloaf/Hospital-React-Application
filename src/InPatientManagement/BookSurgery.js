@@ -1,58 +1,95 @@
 import React, { useState } from 'react';
-import '../inpatient.css'; // Ensure this path is correct
+import '../inpatient.css';
 
+// Declare function 
 function BookSurgery() {
-  const [patients, setPatients] = useState([{ id: 1, name: 'John Doe' }, /* ... other patients ... */]);
-  const [surgeons, setSurgeons] = useState([{ id: 1, name: 'Dr. Smith' }, /* ... other surgeons ... */]);
-  const [surgeryTypes, setSurgeryTypes] = useState(['Type 1', 'Type 2', /* ... other types ... */]);
+
+  // use useState for managing the state of the patients, surgeons, dates, and surgery types
+  const [patients, setPatients] = useState([{ id: 1, name: 'John Doe' }]);
+  const [surgeons, setSurgeons] = useState([{ id: 1, name: 'Dr. Smith' }]);
+  const [surgeryTypes, setSurgeryTypes] = useState(['Type 1', 'Type 2']);
+
   const [selectedPatient, setSelectedPatient] = useState('');
   const [selectedSurgeon, setSelectedSurgeon] = useState('');
   const [selectedSurgeryType, setSelectedSurgeryType] = useState('');
   const [surgeryDate, setSurgeryDate] = useState('');
 
+  // Handler function for when data changes
+  const handlePatientChange = (e) => {
+    setSelectedPatient(e.target.value);
+  };
+
+  const handleSurgeonChange = (e) => {
+    setSelectedSurgeon(e.target.value);
+  };
+
+  const handleSurgeryTypeChange = (e) => {
+    setSelectedSurgeryType(e.target.value);
+  };
+
+  const handleSurgeryDateChange = (e) => {
+    setSurgeryDate(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Surgery booked for Patient ${selectedPatient} with Surgeon ${selectedSurgeon} on ${surgeryDate} for ${selectedSurgeryType}`);
-    // Here, you would typically send this data to a server or process it further
+    // SEND DATA TO SERVER
   };
 
+  // create the components
   return (
     <div className="book-surgery-form">
       <h2>Book a Surgery</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Select Patient:</label>
-          <select value={selectedPatient} onChange={(e) => setSelectedPatient(e.target.value)}>
-            {patients.map(patient => (
-              <option key={patient.id} value={patient.id}>{patient.name}</option>
+          <label htmlFor="patientSelect">Select Patient:</label>
+          <select id="patientSelect" name="patient" onChange={handlePatientChange} required>
+            {patients.map((patient) => (
+              <option key={patient.id} value={patient.id}>
+                {patient.name}
+              </option>
             ))}
           </select>
         </div>
-
+        
         <div className="form-group">
-          <label>Select Surgeon:</label>
-          <select value={selectedSurgeon} onChange={(e) => setSelectedSurgeon(e.target.value)}>
-            {surgeons.map(surgeon => (
-              <option key={surgeon.id} value={surgeon.id}>{surgeon.name}</option>
+          <label htmlFor="surgeonSelect">Select Surgeon:</label>
+          <select id="surgeonSelect" name="surgeon" onChange={handleSurgeonChange} required>
+            {surgeons.map((surgeon) => (
+              <option key={surgeon.id} value={surgeon.id}>
+                {surgeon.name}
+              </option>
             ))}
           </select>
         </div>
-
+        
         <div className="form-group">
-          <label>Select Surgery Type:</label>
-          <select value={selectedSurgeryType} onChange={(e) => setSelectedSurgeryType(e.target.value)}>
-            {surgeryTypes.map(type => (
-              <option key={type} value={type}>{type}</option>
+          <label htmlFor="surgeryTypeSelect">Select Surgery Type:</label>
+          <select id="surgeryTypeSelect" name="surgeryType" onChange={handleSurgeryTypeChange} required>
+            {surgeryTypes.map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
             ))}
           </select>
         </div>
-
+        
         <div className="form-group">
-          <label>Surgery Date:</label>
-          <input type="date" value={surgeryDate} onChange={(e) => setSurgeryDate(e.target.value)} />
+          <label htmlFor="surgeryDate">Select Surgery Date:</label>
+          <input
+            type="date"
+            id="surgeryDate"
+            name="surgeryDate"
+            value={surgeryDate}
+            onChange={handleSurgeryDateChange}
+            required
+          />
         </div>
-
-        <button type="submit">Book Surgery</button>
+        
+        <div className="form-group">
+          <button type="submit">Book Surgery</button>
+        </div>
       </form>
     </div>
   );

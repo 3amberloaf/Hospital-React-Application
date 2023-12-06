@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import '../inpatient.css'; // Ensure this path is correct
+import '../inpatient.css';
 
+// Declare function
 function CheckAvailableRooms() {
+  // useState for managing the state of rooms
   const [rooms, setRooms] = useState([
     { id: 1, name: 'Room 101', isAvailable: true },
     { id: 2, name: 'Room 102', isAvailable: false },
-    // ... other rooms ...
   ]);
 
+  // useEffect hook to fetch room availability
   useEffect(() => {
-    // Fetch the latest rooms' availability information
+    // Logic to fetch the latest rooms' availability information
+    // The fetched data would then be used to update the rooms' state using setRooms
     // setRooms(fetchedRoomsData);
-  }, []);
+  }, []); // The empty dependency array means this effect runs once after the initial render
 
+  // create components
   return (
     <div className="check-rooms-container">
       <h2>Check Available Rooms</h2>

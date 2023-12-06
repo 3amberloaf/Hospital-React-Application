@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlusCircle, FaTrashAlt } from 'react-icons/fa'; // Icons for add and remove actions
-import '../staff.css'; // Ensure you have this CSS file for styling
+import '../staff.css'; 
 
 function AddRemoveStaffMember() {
   const [staffMembers, setStaffMembers] = useState(['Dr. Smith', 'Nurse Kate']); // Example initial data

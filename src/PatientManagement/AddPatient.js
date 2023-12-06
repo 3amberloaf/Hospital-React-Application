@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import '../patient.css'; 
 import DiseaseList from '../PatientManagement/DiseaseList';
 
-const AddPatientForm = ({ addPatient }) => { // Accept addPatient as a prop
+const AddPatientForm = ({ addPatient }) => { 
   const [patientData, setPatientData] = useState({
     firstName: '',
     lastName: '',
     birthday: '',
     sex: '',
-    // add diseases
   });
 
 
@@ -22,15 +21,12 @@ const AddPatientForm = ({ addPatient }) => { // Accept addPatient as a prop
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Call the addPatient function with the new patient data
     addPatient(patientData.firstName + ' ' + patientData.lastName);
-    // Optionally, reset the form fields after submission
     setPatientData({
       firstName: '',
       lastName: '',
       birthday: '',
       sex: '',
-      // Reset additional fields as needed
     });
   };
 
@@ -102,11 +98,9 @@ const AddPatientForm = ({ addPatient }) => { // Accept addPatient as a prop
 
 
 
-        {/* More fields can be added here */}
 
         {/* Disease checklist */}
         <div className="disease-checklist">
-          {/* The DiseaseList component itself should handle the search functionality */}
           <DiseaseList />
         </div>
         <button type="submit">Add Patient</button>

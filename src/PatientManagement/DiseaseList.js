@@ -30,7 +30,6 @@ const DiseaseList = () => {
         <thead>
           <tr>
             <th>Disease</th>
-            <th>Score</th>
             <th>Diagnosis</th>
           </tr>
         </thead>
@@ -38,7 +37,6 @@ const DiseaseList = () => {
           {filteredDiseases.map((disease) => (
             <tr key={disease.id}>
               <td>{disease.name}</td>
-              <td>{disease.score}</td>
               <td>
                 <input
                   type="checkbox"

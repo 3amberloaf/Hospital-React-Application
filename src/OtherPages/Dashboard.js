@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import patientImage from '../assets/images/patient.jpg';
 import inpatientImage from '../assets/images/inpatient.jpg';
 import staffImage from '../assets/images/medical.jpg';
-import { FaUser, FaProcedures, FaUserMd } from 'react-icons/fa'; // Example icon imports
+import { FaUser, FaProcedures, FaUserMd } from 'react-icons/fa'; 
 import '../dashboard.css'
 import InfoContainer from './InfoContainer';
 

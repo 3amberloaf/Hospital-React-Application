@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCalendarAlt, FaUserNurse, FaUserMd, FaClock } from 'react-icons/fa'; // Icons for scheduling
-import '../staff.css'; // Ensure you have this CSS file for styling
+import '../staff.css';
 
 function ScheduleJobShifts() {
   return (

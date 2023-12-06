@@ -86,7 +86,6 @@ body {
   }
 }
 
-
 /* CSS Variables */
 :root {
   --light-background: #f9f9f9;
@@ -96,9 +95,4 @@ body {
   --btn-hover-color: #0056b3;
   --border-color: #ddd;
   --light-gray: #e9e9e9;
-}
-
-.assign-remove-container, .check-rooms-container, .book-surgery-form,
-.scheduled-surgeries-container, .surgeries-by-surgeon-container {
-  composes: common-container;
 }

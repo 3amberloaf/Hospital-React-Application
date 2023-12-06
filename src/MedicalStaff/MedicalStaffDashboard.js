@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaUserPlus, FaUserFriends, FaCalendarAlt } from 'react-icons/fa';
-import addRemoveStaffImg from '../assets/images/change.jpg'; // Placeholder image path
-import viewStaffImg from '../assets/images/viewstaff.jpg'; // Placeholder image path
-import scheduleJobShiftImg from '../assets/images/shift.jpg'; // Placeholder image path
+import addRemoveStaffImg from '../assets/images/change.jpg'; 
+import viewStaffImg from '../assets/images/viewstaff.jpg'; 
+import scheduleJobShiftImg from '../assets/images/shift.jpg'; 
 import '../staff.css';
 import InfoContainer from '../OtherPages/InfoContainer';
 

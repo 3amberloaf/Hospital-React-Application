@@ -25,6 +25,7 @@ function InPatientDashboard() {
     </div>
   );
 
+  // create the dashboard
   return (
     <div>
       <div className="dashboard">

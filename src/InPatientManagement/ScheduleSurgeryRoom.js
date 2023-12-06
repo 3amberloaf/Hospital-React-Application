@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../inpatient.css'; // Ensure this path is correct
+import '../inpatient.css'; 
 
 function ViewSurgeryScheduleRoom() {
   const [rooms, setRooms] = useState([

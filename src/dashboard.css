@@ -32,6 +32,7 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     width: 300px; /* Set a specific width for uniformity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   /* Styles for Images in Dashboard Items */
@@ -40,6 +41,7 @@
     height: 150px; /* Adjust height as per the aspect ratio */
     object-fit: cover;
     margin-bottom: 10px;
+    max-width: fit-content;
   }
   
   /* Styles for Icons in Dashboard Items */

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import '../inpatient.css'; // Ensure this path is correct
+import '../inpatient.css';
 
 function ViewSurgeriesBySurgeon() {
   const [surgeons, setSurgeons] = useState([
     { id: 1, name: 'Dr. Smith', surgeries: [{ id: 101, patientName: 'John Doe', date: '2023-12-10', surgeryType: 'Type A' }] },
     { id: 2, name: 'Dr. Jones', surgeries: [{ id: 102, patientName: 'Jane Doe', date: '2023-12-10', surgeryType: 'Type B' }] },
-    // ... other surgeons and their surgeries ...
   ]);
 
   useEffect(() => {

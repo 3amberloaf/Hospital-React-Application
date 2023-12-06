@@ -62,6 +62,8 @@ const Search = () => {
           </label>
         </div>
 
+        
+
         <button type="submit">Search</button>
       </form>
     </div>
