@@ -4,6 +4,8 @@ import patientImage from '../assets/images/patient.jpg'; // path to the patient 
 import inpatientImage from '../assets/images/inpatient.jpg'; // path to the inpatient photo
 import staffImage from '../assets/images/medical.jpg'; // path to the medical staff photo
 import '../App.css'; // importing CSS to style  dashboard
+import InfoContainer from './InfoContainer';
+
 
 function Dashboard() {
   const navigate = useNavigate(); // Hook for navigation
@@ -39,24 +41,8 @@ function Dashboard() {
           <p>Medical Staff Management</p>
         </div>
         
-        {/* Container for additional information */}
-        <div className="info-container">
-          {/* Contact information section */}
-          <div className="contact-info">
-            <p className="section-title">Contact Us</p> {/* Title for the contact section */}
-            <p>Address: 323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102</p>
-            <p>Phone: (908) 123-4567</p>
-            <p>Email: info@newarkmedicalassociates.com</p>
-          </div>
-
-          {/* Visiting information section */}
-          <div className="visiting-info">
-            <p className="section-title">Visiting Hours</p> {/* Title for the visiting hours section */}
-            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-            <p>Saturday - Sunday: Closed</p>
-          </div>
-        </div>
       </div>
+      <InfoContainer /> {/* Contact and visiting info */}
     </div>
   ); 
 }
