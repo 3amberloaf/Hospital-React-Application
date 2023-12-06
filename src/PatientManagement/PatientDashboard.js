@@ -6,7 +6,6 @@ import scheduleAppointments from '../assets/images/schedule.jpg';
 import doctorSchedule from '../assets/images/calendar.jpg';
 import { FaUserPlus, FaInfoCircle, FaCalendarAlt, FaStethoscope } from 'react-icons/fa';
 import InfoContainer from '../OtherPages/InfoContainer';
-import '../App.css';
 import '../patient.css'
 
 function PatientDashboard() {

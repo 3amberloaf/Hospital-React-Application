@@ -4,7 +4,6 @@ import patientImage from '../assets/images/patient.jpg';
 import inpatientImage from '../assets/images/inpatient.jpg';
 import staffImage from '../assets/images/medical.jpg';
 import { FaUser, FaProcedures, FaUserMd } from 'react-icons/fa'; // Example icon imports
-import '../App.css';
 import '../dashboard.css'
 import InfoContainer from './InfoContainer';
 
