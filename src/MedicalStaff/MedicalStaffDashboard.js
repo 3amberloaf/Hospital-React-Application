@@ -1,7 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaUserPlus, FaUserFriends, FaCalendarAlt } from 'react-icons/fa'; // Icons for staff management
-import '../staff.css'; // Ensure you have this CSS file for styling
+import { FaUserPlus, FaUserFriends, FaCalendarAlt } from 'react-icons/fa';
+import addRemoveStaffImg from '../assets/images/change.jpg'; // Placeholder image path
+import viewStaffImg from '../assets/images/viewstaff.jpg'; // Placeholder image path
+import scheduleJobShiftImg from '../assets/images/shift.jpg'; // Placeholder image path
+import '../staff.css';
+import InfoContainer from '../OtherPages/InfoContainer';
 
 function MedicalStaffDashboard() {
   const navigate = useNavigate();
@@ -10,25 +14,26 @@ function MedicalStaffDashboard() {
     navigate(path);
   };
 
+  const DashboardItem = ({ navigateTo, path, imgSrc, altText, Icon, text }) => (
+    <div className="dashboard-item" onClick={() => navigateTo(path)}>
+      <img src={imgSrc} alt={altText} />
+      {Icon && <Icon className="icon" />}
+      <p>{text}</p>
+    </div>
+  );
+
   return (
     <div>
-    <div className="dashboard" >
-      <h2>Medical Staff Management</h2>
-      </div>
-      <div className="dashboard-links">
-        <div className="dashboard-item" onClick={() => navigateTo('/addremovestaff')}>
-          <FaUserPlus />
-          <p>Add/Remove a Staff Member</p>
-        </div>
-        <div className="dashboard-item" onClick={() => navigateTo('/viewstaff')}>
-          <FaUserFriends />
-          <p>View Staff Member per Job Type</p>
-        </div>
-        <div className="dashboard-item" onClick={() => navigateTo('/schedulejobshift')}>
-          <FaCalendarAlt />
-          <p>Schedule Job Shift</p>
+      <div className="dashboard">
+        <h2>Medical Staff Management Portal</h2>
+
+        <div className="dashboard-links">
+          <DashboardItem navigateTo={navigateTo} path='/addremovestaff' imgSrc={addRemoveStaffImg} altText="Add/Remove Staff" Icon={FaUserPlus} text="Add/Remove a Staff Member" />
+          <DashboardItem navigateTo={navigateTo} path='/viewstaff' imgSrc={viewStaffImg} altText="View Staff" Icon={FaUserFriends} text="View Staff Member per Job Type" />
+          <DashboardItem navigateTo={navigateTo} path='/schedulejobshift' imgSrc={scheduleJobShiftImg} altText="Schedule Job Shift" Icon={FaCalendarAlt} text="Schedule Job Shift" />
         </div>
       </div>
+      <InfoContainer />
     </div>
   );
 }

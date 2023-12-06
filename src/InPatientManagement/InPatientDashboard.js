@@ -1,83 +1,47 @@
 import React from 'react'; 
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom for navigation
-import checkRoom from '../assets/images/room.jpg'; // Import image for checking room availability
-import assignRoom from '../assets/images/bed.jpg'; // Import image for assigning a room
-import assignDoctor from '../assets/images/doctor.jpg'; // Import image for assigning a doctor
-import assignNurse from '../assets/images/nurse.jpg'; // Import image for assigning a nurse
-import surgerySchedule from '../assets/images/surgeryschedule.jpg'; // Import image for viewing surgery schedule
-import bookSurgery from '../assets/images/book.jpg'; // Import image for booking a surgery
-import { FaBed, FaUserMd, FaUserNurse, FaCalendarCheck, FaBookMedical } from 'react-icons/fa'; // Import specific icons from react-icons
-import InfoContainer from '../OtherPages/InfoContainer'; // Import contact info container 
-import '../inpatient.css' // Import inpatient CSS to style
-
+import { useNavigate } from 'react-router-dom';
+import checkRoom from '../assets/images/room.jpg';
+import assignRoom from '../assets/images/bed.jpg';
+import assignDoctor from '../assets/images/doctor.jpg';
+import assignNurse from '../assets/images/nurse.jpg';
+import surgerySchedule from '../assets/images/surgeryschedule.jpg';
+import bookSurgery from '../assets/images/book.jpg';
+import { FaBed, FaUserMd, FaUserNurse, FaCalendarCheck, FaBookMedical } from 'react-icons/fa';
+import InfoContainer from '../OtherPages/InfoContainer';
+import '../inpatient.css';
 
 function InPatientDashboard() {
-  const navigate = useNavigate(); // Hook to enable navigation programmatically
+  const navigate = useNavigate();
 
-  // Function to navigate to a different route
   const navigateTo = (path) => {
     navigate(path);
   };
 
-  // Render method for the component
+  const DashboardItem = ({ navigateTo, path, imgSrc, altText, Icon, text }) => (
+    <div className="dashboard-item" onClick={() => navigateTo(path)}>
+      <img src={imgSrc} alt={altText} />
+      {Icon && <Icon className="icon" />}
+      <p>{text}</p>
+    </div>
+  );
+
   return (
     <div>
       <div className="dashboard">
-      <h2>In-Patient Management Portal</h2> 
-      </div>
+        <h2>In-Patient Management Portal</h2> 
 
-      <div className="dashboard-links">
-        {/* Checking room/bed availability */}
-        <div className="dashboard-item" onClick={() => navigateTo('/checkroom')}>
-          <img src={checkRoom} alt="Check Room Availability" />
-          <FaBed className="icon" />
-          <p>Check for Available Room/Bed</p>
-        </div>
-
-        {/* Assigning/removing a patient to/from a room/bed */}
-        <div className="dashboard-item" onClick={() => navigateTo('/assignroom')}>
-          <img src={assignRoom} alt="Assign Room" />
-          <FaBed className="icon" />
-          <p>Assign/Remove a Patient to a Room/Bed</p>
-        </div>
-
-        {/* Assigning/removing a doctor to/from a patient */}
-        <div className="dashboard-item" onClick={() => navigateTo('/assigndoctor')}>
-          <img src={assignDoctor} alt="Assign Doctor" />
-          <FaUserMd className="icon" />
-          <p>Assign/Remove a Doctor to a Patient</p>
-        </div>
-
-        {/* Assigning/removing a nurse to/from a patient */}
-        <div className="dashboard-item" onClick={() => navigateTo('/assignnurse')}>
-          <img src={assignNurse} alt="Assign Nurse" />
-          <FaUserNurse className="icon" />
-          <p>Assign/Remove a Nurse to a Patient</p>
-        </div>
-
-        {/*Viewing scheduled surgery per room and per day */}
-        <div className="dashboard-item" onClick={() => navigateTo('/viewsurgeryscheduleroom')}>
-          <img src={surgerySchedule} alt="View Surgery Schedule" />
-          <FaCalendarCheck className="icon" />
-          <p>View Scheduled Surgery per Room and per Day</p>
-        </div>
-
-        {/* Booking a surgery */}
-        <div className="dashboard-item" onClick={() => navigateTo('/booksurgery')}>
-          <img src={bookSurgery} alt="Book Surgery" />
-          <FaBookMedical className="icon" />
-          <p>Book a Surgery</p>
-        </div>
-
-        {/* Viewing scheduled surgery per patient */}
-        <div className="dashboard-item" onClick={() => navigateTo('/viewsurgerybypatient')}>
-          <img src={surgerySchedule} alt="View Patient Surgery Schedule" />
-          <FaCalendarCheck className="icon" />
-          <p>View Scheduled Surgery per Patient</p>
+        <div className="dashboard-links">
+          <DashboardItem navigateTo={navigateTo} path='/checkroom' imgSrc={checkRoom} altText="Check Room Availability" Icon={FaBed} text="Check for Available Room/Bed" />
+          <DashboardItem navigateTo={navigateTo} path='/assignroom' imgSrc={assignRoom} altText="Assign Room" Icon={FaBed} text="Assign/Remove a Patient to a Room/Bed" />
+          <DashboardItem navigateTo={navigateTo} path='/assigndoctor' imgSrc={assignDoctor} altText="Assign Doctor" Icon={FaUserMd} text="Assign/Remove a Doctor to a Patient" />
+          <DashboardItem navigateTo={navigateTo} path='/assignnurse' imgSrc={assignNurse} altText="Assign Nurse" Icon={FaUserNurse} text="Assign/Remove a Nurse to a Patient" />
+          <DashboardItem navigateTo={navigateTo} path='/viewsurgeryscheduleroom' imgSrc={surgerySchedule} altText="View Surgery Schedule" Icon={FaCalendarCheck} text="View Scheduled Surgery per Room and per Day" />
+          <DashboardItem navigateTo={navigateTo} path='/booksurgery' imgSrc={bookSurgery} altText="Book Surgery" Icon={FaBookMedical} text="Book a Surgery" />
+          <DashboardItem navigateTo={navigateTo} path='/viewsurgerybypatient' imgSrc={surgerySchedule} altText="View Patient Surgery Schedule" Icon={FaCalendarCheck} text="View Scheduled Surgery per Patient" />
         </div>
       </div>
 
-      <InfoContainer /> {/* Contact and visiting info */}
+      <InfoContainer />
     </div>
   );
 }
