@@ -17,7 +17,7 @@ function Dashboard() {
   const DashboardItem = ({ navigateTo, path, imgSrc, altText, Icon, text }) => (
     <div className="dashboard-item" onClick={() => navigateTo(path)}>
       <img src={imgSrc} alt={altText} />
-      {Icon && <Icon className="icon" />} {/* Conditionally render icon if provided */}
+      {Icon && <Icon className="icon" />}
       <p>{text}</p>
     </div>
   );

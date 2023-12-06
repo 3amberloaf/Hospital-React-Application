@@ -6,7 +6,7 @@ import scheduleAppointments from '../assets/images/schedule.jpg';
 import doctorSchedule from '../assets/images/calendar.jpg';
 import { FaUserPlus, FaInfoCircle, FaCalendarAlt, FaStethoscope } from 'react-icons/fa';
 import InfoContainer from '../OtherPages/InfoContainer';
-import '../patient.css'
+import '../dashboard.css'
 
 function PatientDashboard() {
   const navigate = useNavigate();
@@ -25,10 +25,10 @@ function PatientDashboard() {
 
   return (
     <div>
-      <div className="dashboard">
+      <div className="welcome">
         <h2>Patient Management Portal</h2>
 
-        <div className="dashboard-links">
+        <div className="dashboard">
           <DashboardItem navigateTo={navigateTo} path='/addpatient' imgSrc={newPatient} altText="Patient Management" Icon={FaUserPlus} text="Insert New Patient" />
           <DashboardItem navigateTo={navigateTo} path='/viewpatient' imgSrc={viewPatient} altText="View Patient Information" Icon={FaInfoCircle} text="View Patient Information" />
           <DashboardItem navigateTo={navigateTo} path='/scheduleappointments' imgSrc={scheduleAppointments} altText="Schedule Appointments" Icon={FaCalendarAlt} text="Schedule Appointments" />

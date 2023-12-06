@@ -8,20 +8,22 @@
     font-size: large;
     flex-direction: row;
   }
-
-/* General Styles for Dashboard Links Container */
-.dashboard-links {
+  
+  .dashboard-links {
     display: flex;
     flex-wrap: wrap;
+
     gap: 20px; /* Space between items */
     justify-content: center; /* Center items horizontally */
     padding: 20px; /* Padding around the container */
   }
   
+  
   /* General Styles for Each Dashboard Item */
   .dashboard-item {
     display: flex;
     flex-direction: column;
+    height: 300px;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -46,7 +48,7 @@
   
   /* Styles for Icons in Dashboard Items */
   .dashboard-item .icon {
-    font-size: 2rem; /* Icon size */
+    font-size: 1.5rem; /* Icon size */
     color: #007bff; /* Icon color */
     margin-bottom: 10px; /* Space between icon and text */
   }
