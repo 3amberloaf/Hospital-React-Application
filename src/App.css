@@ -45,7 +45,7 @@ body {
   cursor: pointer;
 }
 
-/* Main Dashbord CSS */
+/* Main Dashboard CSS */
 .welcome {
   text-align: center;
   font-size: x-large;
@@ -53,46 +53,12 @@ body {
   margin-bottom: 10px;
 }
 
-.dashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: large;
-  flex-direction: row;
-}
-
-.dashboard-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.dashboard-item img {
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.dashboard-item p {
-  margin-top: 10px;
-}
-
 .info-container {
   display: flex;
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  margin-top: 10px; /* or margin-top: 0; based on your preference */
+  margin-top: 10px;
 }
 
 .contact-info, .visiting-info {
@@ -106,6 +72,7 @@ body {
   font-weight: bold;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -117,4 +84,21 @@ body {
   .info-container {
     flex-direction: column;
   }
+}
+
+
+/* CSS Variables */
+:root {
+  --light-background: #f9f9f9;
+  --main-text-color: #333;
+  --secondary-text-color: #555;
+  --main-btn-color: #007bff;
+  --btn-hover-color: #0056b3;
+  --border-color: #ddd;
+  --light-gray: #e9e9e9;
+}
+
+.assign-remove-container, .check-rooms-container, .book-surgery-form,
+.scheduled-surgeries-container, .surgeries-by-surgeon-container {
+  composes: common-container;
 }

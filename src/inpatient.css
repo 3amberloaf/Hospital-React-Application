@@ -219,21 +219,6 @@
 /* InPatientDashboard Styles */
 
 
-.in-patient-dashboard {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.in-patient-dashboard h2 {
-  color: #0056b3;
-  margin-bottom: 30px;
-}
-
 .dashboard-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -242,7 +227,7 @@
 
 .dashboard-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -267,4 +252,12 @@
   color: #333;
   font-size: 1rem;
   margin: 0;
+}
+
+.dashboard-item img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  object-fit: cover;
+  max-width: fit-content;
+  margin-bottom: 10px; /* Space between the image and the text */
 }
