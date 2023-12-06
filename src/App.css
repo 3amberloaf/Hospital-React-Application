@@ -1,3 +1,4 @@
+/* General App CSS */
 * {
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
@@ -20,7 +21,7 @@ body {
   padding: 20px;
 }
 
-
+/* Sidebar CSS */
 .sidebar {
   width: 200px;
   background-color: #eceff1;
@@ -44,6 +45,7 @@ body {
   cursor: pointer;
 }
 
+/* Main Dashbord CSS */
 .welcome {
   text-align: center;
   font-size: x-large;

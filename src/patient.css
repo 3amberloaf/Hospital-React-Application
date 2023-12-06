@@ -39,6 +39,12 @@
   border-radius: 4px;
 }
 
+.dashboard-item .icon {
+  /* Styling for icons */
+  font-size: 24px; /* Example size */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
 
 /* Style input fields */
 .add-patient-form input[type="text"],
@@ -138,6 +144,31 @@
   left: -9999px; /* Move off-screen */
 }
 
+.dashboard-links {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between items */
+}
+
+.dashboard-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text for each item */
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-item img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  object-fit: cover;
+  max-width: fit-content;
+  margin-bottom: 10px; /* Space between the image and the text */
+}
 
 
 
