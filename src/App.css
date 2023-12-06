@@ -1,5 +1,5 @@
-/* add-patient-form styles */
 * {
+  font-family: 'Arial', sans-serif;
   box-sizing: border-box;
 }
 
@@ -7,27 +7,26 @@
   display: flex;
 }
 
-.content {
-  flex-grow: 1;
-  padding: 20px; /* Add padding if needed */
-}
-
-
 body {
-  font-family: 'Serif', Georgia;
   line-height: 1.6;
   color: #333;
   padding: 0;
   margin: 0;
-  background-color: #84b5a53b; /* Light background color */
+  background-color: #84b5a53b;
 }
 
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+
 .sidebar {
-  width: 200px; /* Adjust width as needed */
-  background-color: #eceff1; /* Light grey background, you can change it */
-  height: 100vh; /* Full height of the viewport */
+  width: 200px;
+  background-color: #eceff1;
+  height: 100vh;
   padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
@@ -35,7 +34,7 @@ body {
 }
 
 .sidebar nav ul {
-  list-style-type: none; /* Remove bullet points */
+  list-style-type: none;
   padding: 0;
 }
 
@@ -44,22 +43,22 @@ body {
   margin: 5px 0;
   cursor: pointer;
 }
+
 .welcome {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
+  text-align: center;
   font-size: x-large;
   font-weight: bolder;
-  
+  margin-bottom: 10px;
 }
 
 .dashboard {
   display: flex;
-  justify-content: center; /* Center items horizontally */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   font-size: large;
-  font-weight: bold;
-  align-items: center; /* Align items vertically */
-  flex-wrap: wrap; /* Wrap items to next line if they don't fit */
-  gap: 20px; /* Spacing between items */
+  flex-direction: row;
 }
 
 .dashboard-item {
@@ -68,26 +67,52 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #ffffff; /* Use a white background color */
-  border: 1px solid #ddd; /* Add a subtle border */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  font-weight: bold;
   border-radius: 8px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .dashboard-item img {
-  width: 300px; /* Fixed width */
-  height: 250px; /* Fixed height */
-  object-fit: cover; /* Keep aspect ratio of images */
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .dashboard-item p {
   margin-top: 10px;
 }
 
-.selection {
+.info-container {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  font-size: large;
-  font-weight: bolder;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 10px; /* or margin-top: 0; based on your preference */
+}
+
+.contact-info, .visiting-info {
+  flex: 1;
+  padding: 20px;
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .dashboard-item {
+    width: 100%;
+  }
+  .info-container {
+    flex-direction: column;
+  }
 }
