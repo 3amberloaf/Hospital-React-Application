@@ -1,0 +1,69 @@
+/* Dashboard.css - Shared styles for all dashboards */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: large;
+    flex-direction: row;
+  }
+
+/* General Styles for Dashboard Links Container */
+.dashboard-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* General Styles for Each Dashboard Item */
+  .dashboard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 300px; /* Set a specific width for uniformity */
+  }
+  
+  /* Styles for Images in Dashboard Items */
+  .dashboard-item img {
+    width: 100%;
+    height: 150px; /* Adjust height as per the aspect ratio */
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for Icons in Dashboard Items */
+  .dashboard-item .icon {
+    font-size: 2rem; /* Icon size */
+    color: #007bff; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+  
+  /* Styles for Text in Dashboard Items */
+  .dashboard-item p {
+    text-align: center;
+    margin-top: 10;
+    color: #333;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-links {
+      justify-content: space-around; /* Adjust alignment for smaller screens */
+    }
+  
+    .dashboard-item {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  
