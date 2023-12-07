@@ -77,13 +77,6 @@ function App() {
             <Route path="/addremovestaff" element={<AddRemoveStaffMember />} />
             <Route exact path="/" element={
               <>
-                <SideBar />
-                <ScheduleAppointments addAppointment={addAppointment} />
-                <PatientList patients={patients} onSelectPatient={selectPatient} />
-                {selectedPatient && <PatientInfo patient={selectedPatient} />}
-                {selectedPatient && <PatientHistory history={patientHistory} />}
-                <AppointmentList appointments={appointments} />
-                <AddPatientForm addPatient={addPatient} />
               </>
             } />
           </Routes>
