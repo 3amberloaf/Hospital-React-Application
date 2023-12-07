@@ -1,16 +1,17 @@
+// basic imports
+import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PatientList from './PatientManagement/PatientList';
-import AppointmentList from './PatientManagement/AppointmentList';
-import PatientInfo from './PatientManagement/PatientInfo';
-import PatientHistory from './PatientManagement/PatientHistory';
-import ScheduleAppointments from './PatientManagement/ScheduleAppointments';
+//main dashboard imports
 import SideBar from './OtherPages/SideBar';
 import Dashboard from './OtherPages/Dashboard';
+// patient management dashboard
+import ScheduleAppointments from './PatientManagement/ScheduleAppointments';
 import AddPatientForm from './PatientManagement/AddPatient';
 import ViewPatient from './PatientManagement/ViewPatient';
 import DoctorsSchedule from './PatientManagement/DoctorsSchedule';
-import PatientDashboard from './PatientManagement/PatientDashboard'; // Import the new component
+import PatientDashboard from './PatientManagement/PatientDashboard';
+// in-patient management dashboard
 import CheckAvailableRoom from './InPatientManagement/AvailableRooms';
 import AssignRemoveDoctor from './InPatientManagement/AssignDoctor';
 import AssignRemoveNurse from './InPatientManagement/AssignNurse';
@@ -19,35 +20,19 @@ import ViewSurgerySchedulePatient from './InPatientManagement/ViewSurgerySchedul
 import ViewSurgeryScheduleRoom from './InPatientManagement/ScheduleSurgeryRoom'; 
 import ViewSurgeriesBySurgeon from './InPatientManagement/ScheduleSurgeon';
 import InPatientDashboard from './InPatientManagement/InPatientDashboard';
-import './App.css';
 import AssignRemovePatientRoom from './InPatientManagement/AssignRoom';
-
 // import all Medical Staff Routes
 import MedicalStaffDashboard from './MedicalStaff/MedicalStaffDashboard';
 import ScheduleJobShifts from './MedicalStaff/ScheduleJobShift';
 import ViewStaffByJobType from './MedicalStaff/ViewStaffMember';
 import AddRemoveStaffMember from './MedicalStaff/AddRemoveMember';
 
-
-
 function App() {
   const [patients, setPatients] = useState([]);
-  const [appointments, setAppointments] = useState([]);
-  const [selectedPatient, setSelectedPatient] = useState(null);
-  const [patientHistory, setPatientHistory] = useState([]);
 
   const addPatient = (name) => {
     const newPatient = { name, id: patients.length + 1 };
     setPatients([...patients, newPatient]);
-  };
-
-  const addAppointment = (appointment) => {
-    setAppointments([...appointments, appointment]);
-  };
-
-  const selectPatient = (patient) => {
-    setSelectedPatient(patient);
-    setPatientHistory([{ date: '2021-01-01', diagnosis: 'Example Diagnosis', treatment: 'Example Treatment' }]);
   };
 
   return (

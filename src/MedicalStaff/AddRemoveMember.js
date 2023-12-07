@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { FaPlusCircle, FaTrashAlt } from 'react-icons/fa'; // Icons for add and remove actions
+import { FaPlusCircle, FaTrashAlt } from 'react-icons/fa'; 
 import '../staff.css'; 
 
 function AddRemoveStaffMember() {
-  const [staffMembers, setStaffMembers] = useState(['Dr. Smith', 'Nurse Kate']); // Example initial data
+  const [staffMembers, setStaffMembers] = useState(['Dr. Smith', 'Nurse Kate']); 
   const [newMember, setNewMember] = useState('');
 
   const handleAddMember = () => {
@@ -25,7 +25,7 @@ function AddRemoveStaffMember() {
           type="text"
           value={newMember}
           onChange={(e) => setNewMember(e.target.value)}
-          placeholder="Enter Staff Member's Name"
+          placeholder="Enter Name"
         />
         <button onClick={handleAddMember}><FaPlusCircle /> Add</button>
       </div>
