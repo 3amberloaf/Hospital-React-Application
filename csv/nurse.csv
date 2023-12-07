@@ -1,0 +1,101 @@
+nurse_id,emp_id,shift,shiftDate,surgerySkill,name,years,surgeryType
+87,46,Night,2023-12-20,Orthopedics,Anthony Pineda,20,Brain Surgery
+64,85,Night,2023-12-25,Cardiology,Dr. Anthony Bates,24,Heart Surgery
+31,65,Morning,2023-12-21,Orthopedics,Jessica Fritz,7,Appendectomy
+27,83,Afternoon,2023-12-18,Orthopedics,Jerome Rasmussen,30,Brain Surgery
+6,27,Morning,2023-12-15,Orthopedics,Ashley Shaw,19,Heart Surgery
+2,91,Night,2023-12-25,General Surgery,Robert Gomez,2,Knee Replacement
+57,71,Afternoon,2023-12-21,General Surgery,Tracy Gonzalez,24,Appendectomy
+32,16,Afternoon,2024-01-03,General Surgery,Kevin Sanchez,7,Heart Surgery
+3,55,Morning,2023-12-24,Orthopedics,Makayla Russell,8,Appendectomy
+88,2,Afternoon,2023-12-09,Neurology,Ashley Graves,5,Heart Surgery
+6,39,Morning,2023-12-12,Cardiology,Stephanie Soto,25,Brain Surgery
+97,88,Morning,2023-12-29,Neurology,Kristen Munoz,26,Brain Surgery
+80,80,Night,2023-12-11,Cardiology,Brian Banks,5,Heart Surgery
+3,38,Afternoon,2024-01-04,Orthopedics,Susan Brown,16,Appendectomy
+74,81,Night,2024-01-02,General Surgery,Wanda Ross,19,Knee Replacement
+33,51,Morning,2023-12-09,Neurology,Walter Le,8,Heart Surgery
+62,97,Afternoon,2023-12-31,Neurology,Victor Daniels,16,Heart Surgery
+61,13,Night,2023-12-09,Orthopedics,Marcia Scott,21,Heart Surgery
+78,97,Afternoon,2024-01-06,General Surgery,Patty Bailey,3,Heart Surgery
+28,76,Morning,2023-12-14,Neurology,Katrina Downs,26,Appendectomy
+58,18,Afternoon,2023-12-15,Cardiology,Larry Fletcher,29,Brain Surgery
+69,60,Afternoon,2023-12-08,Neurology,Molly Hoover,21,Appendectomy
+12,14,Night,2024-01-05,Neurology,Isaac Mercer,6,Brain Surgery
+55,64,Afternoon,2023-12-24,General Surgery,Lisa Turner,12,Knee Replacement
+33,10,Afternoon,2023-12-14,Neurology,Vincent Brown,18,Knee Replacement
+5,44,Afternoon,2023-12-13,Cardiology,Sandra Lewis,7,Heart Surgery
+42,83,Night,2023-12-18,Orthopedics,Garrett Perez,3,Knee Replacement
+46,25,Afternoon,2023-12-30,Neurology,Deborah Alvarez,12,Heart Surgery
+27,27,Morning,2023-12-25,Orthopedics,Tracy Craig,26,Appendectomy
+2,36,Morning,2023-12-20,General Surgery,Aaron Wheeler,16,Heart Surgery
+53,88,Morning,2023-12-23,Cardiology,Melanie Williams,24,Heart Surgery
+53,95,Night,2023-12-12,Cardiology,Stacy Cooper,16,Heart Surgery
+85,42,Morning,2023-12-28,Orthopedics,Douglas Wagner,16,Brain Surgery
+47,66,Afternoon,2023-12-09,General Surgery,Jeremy Benitez,16,Heart Surgery
+48,98,Night,2023-12-27,Cardiology,Joshua Jones,28,Appendectomy
+58,97,Afternoon,2024-01-03,General Surgery,Russell Kim,18,Appendectomy
+64,71,Afternoon,2023-12-20,General Surgery,Janice Johnson,7,Knee Replacement
+17,60,Night,2023-12-14,Orthopedics,Christopher Scott,27,Brain Surgery
+80,44,Afternoon,2023-12-25,Orthopedics,Chelsea Davis,30,Heart Surgery
+81,8,Morning,2024-01-05,General Surgery,Mrs. Jill Nguyen,15,Knee Replacement
+85,11,Morning,2023-12-21,Orthopedics,Jeffrey Paul,8,Heart Surgery
+78,35,Afternoon,2023-12-08,Cardiology,Kara Garcia,9,Knee Replacement
+51,78,Afternoon,2023-12-20,Orthopedics,Laura Jackson,22,Brain Surgery
+12,28,Night,2023-12-12,Cardiology,Nicole Williams,4,Knee Replacement
+72,87,Afternoon,2024-01-05,Cardiology,Steven Peterson,27,Brain Surgery
+65,75,Morning,2024-01-04,General Surgery,Charles Matthews,9,Knee Replacement
+8,76,Morning,2024-01-05,Orthopedics,Cameron Chen,7,Appendectomy
+50,27,Night,2024-01-06,General Surgery,Anthony Vaughan,30,Knee Replacement
+26,70,Night,2023-12-31,General Surgery,Kristin Wallace,1,Heart Surgery
+99,91,Morning,2023-12-15,Cardiology,Randall Vance,23,Heart Surgery
+57,99,Afternoon,2024-01-06,General Surgery,Jason Dennis,9,Appendectomy
+61,94,Afternoon,2024-01-05,General Surgery,Melissa Miller,12,Knee Replacement
+91,20,Afternoon,2023-12-14,Orthopedics,Justin Caldwell,8,Appendectomy
+80,92,Afternoon,2023-12-17,Cardiology,Brenda Klein,6,Heart Surgery
+7,79,Night,2023-12-30,Neurology,Cesar Hull,20,Brain Surgery
+87,33,Afternoon,2023-12-31,General Surgery,Donald White,29,Knee Replacement
+60,7,Afternoon,2023-12-14,Orthopedics,Martin Clark,14,Heart Surgery
+46,88,Morning,2023-12-25,Cardiology,Jacob Moore,21,Brain Surgery
+49,38,Morning,2024-01-02,Orthopedics,Scott Miles,26,Appendectomy
+20,5,Afternoon,2023-12-22,Cardiology,Collin Parker,3,Knee Replacement
+60,44,Afternoon,2023-12-13,Cardiology,Elizabeth Matthews,5,Knee Replacement
+36,89,Night,2023-12-08,Cardiology,Valerie Ramirez,1,Appendectomy
+86,50,Night,2024-01-02,General Surgery,Brandy Calderon,17,Appendectomy
+81,93,Morning,2023-12-10,Orthopedics,Terri Stein,4,Brain Surgery
+45,84,Morning,2023-12-23,Orthopedics,Stephanie Blackwell,27,Heart Surgery
+50,14,Afternoon,2024-01-02,Cardiology,Logan Baker,24,Brain Surgery
+52,77,Afternoon,2023-12-17,Orthopedics,Janice Reyes,22,Brain Surgery
+6,85,Night,2024-01-06,Neurology,Jessica Edwards,6,Brain Surgery
+77,20,Morning,2023-12-24,Cardiology,Julie Murphy,14,Heart Surgery
+36,9,Morning,2023-12-30,Orthopedics,Kara Nguyen,15,Appendectomy
+63,86,Morning,2023-12-20,General Surgery,Brianna Carter,27,Brain Surgery
+58,82,Morning,2023-12-21,Neurology,Courtney Hernandez,1,Knee Replacement
+22,82,Morning,2023-12-23,Orthopedics,Tonya Wu,20,Brain Surgery
+60,4,Afternoon,2023-12-16,General Surgery,Angela Thomas,4,Heart Surgery
+94,10,Night,2023-12-31,Orthopedics,Brittany Livingston,25,Knee Replacement
+100,55,Night,2023-12-22,Neurology,James Jones,11,Brain Surgery
+96,64,Afternoon,2023-12-20,General Surgery,Adriana Edwards,6,Heart Surgery
+59,82,Night,2024-01-02,Cardiology,Destiny Melendez,28,Brain Surgery
+34,53,Afternoon,2023-12-26,Neurology,Sharon Murphy,4,Knee Replacement
+90,45,Night,2023-12-26,General Surgery,Christopher Watson,8,Appendectomy
+98,56,Morning,2023-12-25,General Surgery,Megan Lyons,17,Appendectomy
+43,6,Morning,2024-01-04,Neurology,William Hicks,1,Heart Surgery
+64,46,Night,2023-12-25,General Surgery,Alexis Price,26,Heart Surgery
+95,37,Night,2023-12-08,Orthopedics,Michael Liu,9,Heart Surgery
+99,51,Afternoon,2023-12-19,Neurology,Kevin Soto,24,Knee Replacement
+46,90,Morning,2023-12-25,General Surgery,Derek Preston,30,Appendectomy
+24,53,Morning,2023-12-31,Orthopedics,Mrs. Erica Oconnor,11,Brain Surgery
+81,36,Night,2023-12-19,Orthopedics,Joel Horton,5,Brain Surgery
+91,35,Morning,2023-12-25,Orthopedics,Jose Hansen,4,Brain Surgery
+90,65,Afternoon,2023-12-08,Neurology,David Roberts,1,Knee Replacement
+71,62,Morning,2023-12-28,Orthopedics,William Morris,10,Appendectomy
+98,28,Morning,2024-01-03,Neurology,Lisa Bean,24,Heart Surgery
+43,27,Afternoon,2024-01-05,Orthopedics,Heather Sharp,22,Heart Surgery
+8,96,Night,2023-12-26,Neurology,Alexis Richards,29,Appendectomy
+88,3,Morning,2023-12-29,Neurology,Jill Bush,10,Knee Replacement
+52,3,Afternoon,2023-12-13,General Surgery,Catherine Robinson,25,Appendectomy
+4,57,Night,2024-01-03,Cardiology,Kathy Ruiz,16,Heart Surgery
+82,87,Afternoon,2023-12-25,Neurology,Robert Davis,26,Appendectomy
+44,92,Afternoon,2023-12-12,Orthopedics,Carmen Jones,17,Brain Surgery
+63,63,Night,2023-12-13,Cardiology,Rhonda Alvarado,29,Knee Replacement

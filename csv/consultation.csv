@@ -1,0 +1,101 @@
+date,consultation_id,notes,patient_id,physician_id,type
+2021-03-13,87,Physical therapy recommended,9,13,Prescription
+2021-11-22,64,Physical therapy recommended,16,26,Emergency
+2021-04-10,56,Physical therapy recommended,6,26,Prescription
+2021-07-26,41,Follow-up in 3 months,7,10,Follow-up
+2021-07-17,39,Prescription refill,86,92,Emergency
+2021-05-16,39,Prescription refill,90,61,Checkup
+2021-12-24,71,Physical therapy recommended,62,92,Follow-up
+2021-04-12,49,Refer to specialist,61,25,Prescription
+2021-11-24,25,Follow-up in 3 months,4,8,Emergency
+2021-10-06,75,Follow-up in 3 months,79,50,Checkup
+2021-04-13,44,Schedule surgery,100,33,Follow-up
+2021-08-07,43,Prescription refill,97,41,Prescription
+2021-09-10,4,Schedule surgery,30,70,Prescription
+2021-01-03,82,Physical therapy recommended,53,91,Emergency
+2021-05-09,50,Refer to specialist,77,7,Prescription
+2021-01-24,10,Prescription refill,66,72,Follow-up
+2021-02-20,100,Follow-up in 3 months,54,54,Surgery
+2021-03-09,66,Schedule surgery,38,94,Prescription
+2021-12-04,11,Refer to specialist,92,21,Surgery
+2021-01-01,36,Follow-up in 3 months,79,17,Checkup
+2021-12-11,9,Refer to specialist,61,14,Prescription
+2021-04-23,41,Follow-up in 3 months,30,14,Surgery
+2021-11-26,60,Follow-up in 3 months,29,7,Surgery
+2021-03-10,95,Refer to specialist,43,67,Emergency
+2021-10-21,55,Schedule surgery,19,62,Follow-up
+2021-01-03,11,Prescription refill,99,47,Follow-up
+2021-05-22,8,Follow-up in 3 months,84,74,Checkup
+2021-06-04,35,Schedule surgery,62,50,Checkup
+2021-06-04,21,Refer to specialist,12,43,Surgery
+2021-10-22,79,Schedule surgery,77,26,Checkup
+2021-02-07,23,Refer to specialist,67,38,Surgery
+2021-01-29,89,Refer to specialist,81,63,Surgery
+2021-11-22,95,Follow-up in 3 months,43,92,Prescription
+2021-09-09,89,Prescription refill,68,48,Surgery
+2021-07-22,38,Prescription refill,73,78,Checkup
+2021-11-01,60,Follow-up in 3 months,42,38,Checkup
+2021-11-10,64,Refer to specialist,17,53,Emergency
+2021-03-25,39,Refer to specialist,78,96,Follow-up
+2021-02-25,25,Follow-up in 3 months,38,72,Follow-up
+2021-11-01,60,Refer to specialist,69,43,Checkup
+2021-09-13,91,Schedule surgery,53,43,Follow-up
+2021-12-29,72,Physical therapy recommended,98,56,Follow-up
+2021-05-04,53,Follow-up in 3 months,44,91,Surgery
+2021-08-16,12,Prescription refill,23,98,Checkup
+2021-07-18,50,Physical therapy recommended,8,86,Emergency
+2021-01-29,53,Schedule surgery,77,36,Emergency
+2021-06-14,20,Schedule surgery,44,29,Surgery
+2021-12-23,15,Physical therapy recommended,78,10,Surgery
+2021-12-12,34,Physical therapy recommended,37,45,Follow-up
+2021-04-16,19,Follow-up in 3 months,31,24,Prescription
+2021-03-26,41,Schedule surgery,39,21,Prescription
+2021-08-05,15,Prescription refill,84,25,Surgery
+2021-05-17,45,Refer to specialist,50,35,Surgery
+2021-11-05,51,Prescription refill,16,92,Surgery
+2021-02-05,26,Refer to specialist,79,35,Surgery
+2021-02-17,90,Prescription refill,44,95,Surgery
+2021-08-13,64,Prescription refill,84,95,Checkup
+2021-03-29,16,Follow-up in 3 months,52,62,Surgery
+2021-07-11,20,Schedule surgery,52,60,Prescription
+2021-08-14,92,Physical therapy recommended,78,23,Follow-up
+2021-11-14,97,Prescription refill,2,35,Emergency
+2021-08-29,46,Prescription refill,90,52,Prescription
+2021-09-13,49,Schedule surgery,36,3,Surgery
+2021-11-06,93,Follow-up in 3 months,66,29,Surgery
+2021-10-23,53,Physical therapy recommended,77,62,Prescription
+2021-04-27,52,Prescription refill,13,5,Checkup
+2021-01-17,36,Schedule surgery,86,95,Emergency
+2021-01-18,93,Physical therapy recommended,8,64,Checkup
+2021-05-07,14,Physical therapy recommended,81,61,Emergency
+2021-12-07,13,Refer to specialist,50,88,Follow-up
+2021-04-12,12,Schedule surgery,12,83,Prescription
+2021-08-20,48,Schedule surgery,95,75,Follow-up
+2021-01-08,51,Physical therapy recommended,78,24,Prescription
+2021-03-26,69,Prescription refill,53,30,Surgery
+2021-08-10,62,Physical therapy recommended,14,62,Checkup
+2021-02-05,72,Follow-up in 3 months,88,78,Emergency
+2021-12-30,18,Prescription refill,68,10,Prescription
+2021-12-21,55,Refer to specialist,3,38,Emergency
+2021-11-15,77,Prescription refill,93,74,Follow-up
+2021-02-07,33,Prescription refill,77,25,Follow-up
+2021-06-27,25,Refer to specialist,64,33,Follow-up
+2021-12-21,5,Follow-up in 3 months,98,23,Surgery
+2021-09-11,42,Physical therapy recommended,98,31,Follow-up
+2021-10-16,88,Schedule surgery,44,30,Follow-up
+2021-07-13,93,Schedule surgery,3,4,Follow-up
+2021-09-16,44,Schedule surgery,59,46,Checkup
+2021-07-20,49,Physical therapy recommended,49,26,Prescription
+2021-05-27,15,Physical therapy recommended,65,88,Emergency
+2021-09-08,5,Refer to specialist,92,48,Checkup
+2021-05-17,73,Physical therapy recommended,34,76,Follow-up
+2021-06-05,47,Prescription refill,97,78,Surgery
+2021-07-14,1,Physical therapy recommended,5,27,Surgery
+2021-12-07,8,Follow-up in 3 months,96,97,Prescription
+2021-12-29,30,Prescription refill,18,94,Emergency
+2021-10-08,60,Schedule surgery,33,6,Checkup
+2021-10-02,93,Prescription refill,17,83,Surgery
+2021-06-14,52,Physical therapy recommended,97,92,Follow-up
+2021-05-31,27,Follow-up in 3 months,31,30,Prescription
+2021-05-28,4,Schedule surgery,38,46,Follow-up
+2021-01-31,80,Follow-up in 3 months,2,79,Surgery
