@@ -1,33 +1,26 @@
-/* AssignRemoveDoctor Styles */
+/* common container Styles */
 
-.assign-remove-container {
-  max-width: 400px;
-  margin: 0 auto;
+.common-container {
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
+  
   background-color: #f9f9f9;
   border-radius: 8px;
-  margin-bottom: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.assign-remove-container h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-
-.assign-remove-container select {
+.common-container select {
   width: 100%;
   padding: 8px;
-  margin-bottom: 20px;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
   border-radius: 4px;
   background-color: white;
   box-sizing: border-box;
 }
 
-.assign-remove-container button {
+.common-container button {
   width: calc(50% - 10px);
   padding: 10px;
   margin-right: 10px;
@@ -36,33 +29,14 @@
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
-.assign-remove-container button:last-child {
-  margin-right: 0;
-}
-
-.assign-remove-container button:hover {
+.common-container button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 /* CheckAvailableRooms Styles */
-
-.check-rooms-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.check-rooms-container h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
 
 .rooms-list {
   list-style-type: none;
@@ -86,72 +60,9 @@
 .room.occupied {
   background-color: #ffe0e0;
 }
-/* BookSurgery Styles */
-
-.book-surgery-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.book-surgery-form h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.book-surgery-form .form-group {
-  margin-bottom: 15px;
-}
-
-.book-surgery-form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.book-surgery-form .form-group select,
-.book-surgery-form .form-group input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: white;
-}
-
-.book-surgery-form button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.book-surgery-form button:hover {
-  background-color: #0056b3;
-}
 
 /* ViewScheduledSurgeries Styles */
 
-.scheduled-surgeries-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.scheduled-surgeries-container h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
 
 .scheduled-surgeries-table {
   width: 100%;
@@ -172,43 +83,5 @@
 
 .scheduled-surgeries-table tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-/* ViewSurgeriesBySurgeon Styles */
-
-.surgeries-by-surgeon-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.surgeries-by-surgeon-container h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.surgeon-schedule {
-  margin-bottom: 20px;
-}
-
-.surgeon-schedule h3 {
-  margin-top: 0;
-  color: #007bff;
-}
-
-.surgeon-schedule ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.surgeon-schedule ul li {
-  background-color: #e9e9e9;
-  padding: 8px;
-  margin-bottom: 5px;
-  border-radius: 4px;
 }
 

@@ -55,7 +55,7 @@ function App() {
             <Route path="/viewsurgeryscheduleroom" element={<ViewSurgeryScheduleRoom />} />
             <Route path="/viewsurgerybypatient" element={<ViewSurgerySchedulePatient />} />
             <Route path="/addpatient" element={<AddPatientForm addPatient={addPatient} />} />
-            <Route path="/viewsurgerybysurgeon" element={<ViewSurgeriesBySurgeon />} />
+            <Route path="/viewsurgeriesbysurgeon" element={<ViewSurgeriesBySurgeon />} />
             <Route path="/medicalstaffdashboard" element={<MedicalStaffDashboard />} />
             <Route path="/schedulejobshift" element={<ScheduleJobShifts />} />
             <Route path="/viewstaff" element={<ViewStaffByJobType />} />

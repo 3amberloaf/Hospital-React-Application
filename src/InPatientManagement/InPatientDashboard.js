@@ -39,6 +39,7 @@ function InPatientDashboard() {
           <DashboardItem navigateTo={navigateTo} path='/viewsurgeryscheduleroom' imgSrc={surgerySchedule} altText="View Surgery Schedule" Icon={FaCalendarCheck} text="View Scheduled Surgery per Room and per Day" />
           <DashboardItem navigateTo={navigateTo} path='/booksurgery' imgSrc={bookSurgery} altText="Book Surgery" Icon={FaBookMedical} text="Book a Surgery" />
           <DashboardItem navigateTo={navigateTo} path='/viewsurgerybypatient' imgSrc={surgerySchedule} altText="View Patient Surgery Schedule" Icon={FaCalendarCheck} text="View Scheduled Surgery per Patient" />
+          <DashboardItem navigateTo={navigateTo} path='/viewsurgeriesbysurgeon' imgSrc={surgerySchedule} altText="View " Icon={FaCalendarCheck} text="View scheduled surgery per surgeon and per day" />
         </div>
     
 

@@ -35,7 +35,7 @@ function AssignRemoveNurse() {
 
   // create the components
   return (
-    <div className="assign-remove-container">
+    <div className="common-container">
       <h2>Assign/Remove Nurse to Patient</h2>
       <div>
         {/* Patient selection dropdown */}

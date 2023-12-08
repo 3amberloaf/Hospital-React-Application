@@ -15,7 +15,7 @@ function ViewSurgerySchedulePatient() {
   }, []);
 
   return (
-    <div className="scheduled-surgeries-container">
+    <div className="common-container">
       <h2>Scheduled Surgeries per Patient</h2>
       <table className="scheduled-surgeries-table">
         <thead>

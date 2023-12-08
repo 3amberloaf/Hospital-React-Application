@@ -39,7 +39,7 @@ function BookSurgery() {
 
   // create the components
   return (
-    <div className="book-surgery-form">
+    <div className="common-container">
       <h2>Book a Surgery</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

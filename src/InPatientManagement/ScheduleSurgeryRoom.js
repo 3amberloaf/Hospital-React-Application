@@ -14,10 +14,10 @@ function ViewSurgeryScheduleRoom() {
   }, []);
 
   return (
-    <div className="surgeries-by-room-container">
+    <div className="common-container">
       <h2>Scheduled Surgeries per Room</h2>
       {rooms.map(room => (
-        <div key={room.id} className="room-schedule">
+        <div key={room.id}>
           <h3>{room.name}</h3>
           <ul>
             {room.surgeries.map(surgery => (

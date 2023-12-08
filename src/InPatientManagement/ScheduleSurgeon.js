@@ -13,10 +13,10 @@ function ViewSurgeriesBySurgeon() {
   }, []);
 
   return (
-    <div className="surgeries-by-surgeon-container">
+    <div className="common-container">
       <h2>Scheduled Surgeries per Surgeon</h2>
       {surgeons.map(surgeon => (
-        <div key={surgeon.id} className="surgeon-schedule">
+        <div key={surgeon.id} >
           <h3>{surgeon.name}</h3>
           <ul>
             {surgeon.surgeries.map(surgery => (

@@ -34,7 +34,7 @@ function AssignRemovePatientRoom() {
 
   // create the components
   return (
-    <div className="assign-remove-container">
+    <div className="common-container">
       <h2>Assign/Remove Patient to Room</h2>
       <div>
         {/* Patient selection dropdown */}
@@ -55,8 +55,8 @@ function AssignRemovePatientRoom() {
         </select>
       </div>
       {/* Buttons to assign or remove a patient from a room */}
-      <button onClick={handleAssignRoom}>Assign to Room</button>
-      <button onClick={handleRemoveRoom}>Remove from Room</button>
+      <button onClick={handleAssignRoom}>Assign</button>
+      <button onClick={handleRemoveRoom}>Remove</button>
     </div>
   );
 }

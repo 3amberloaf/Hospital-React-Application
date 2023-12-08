@@ -18,7 +18,7 @@ function CheckAvailableRooms() {
 
   // create components
   return (
-    <div className="check-rooms-container">
+    <div className="common-container">
       <h2>Check Available Rooms</h2>
       <div className="rooms-list">
         {rooms.map(room => (
