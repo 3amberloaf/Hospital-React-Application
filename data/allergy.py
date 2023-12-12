@@ -1,5 +1,6 @@
 import csv
 import random
+from uniqueID import generate_unique_id
 
 columns = ['allergyID', 'allergy_description']
 
@@ -10,7 +11,7 @@ allergy_symptoms = [
     'Sneezing',
     'Runny nose',
     'Rashes',
-    'Hives (a rash with raised red patches)',
+    'Hives',
     'Stomach cramps',
     'Vomiting',
     'Diarrhea',
@@ -21,22 +22,21 @@ allergy_symptoms = [
     'Tongue swelling',
     'Cough',
     'Throat closing',
-    'Wheezing (a whistling sound when you breathe)',
+    'Wheezing',
     'Chest tightness and losing your breath',
-    'Feeling faint, light-headed or “blacking out”',
-    'A sense of “impending doom”'
+    'Feeling faint, light-headed or blacking out',
 ]
 
 data = []
 
-for idx in range(0, 100): 
-    allergy_description = random.choice(allergy_symptoms)
-    data.append([idx, allergy_description])
+allergy_id_set = set()
 
+for idx in range(100):
+    allergy_id = generate_unique_id(allergy_id_set, 100)  # Generate a unique allergyID
+    allergy_description = random.choice(allergy_symptoms)
+    data.append([allergy_id, allergy_description])
 
 with open('csv/Allergy.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(columns)
     writer.writerows(data)
-
-

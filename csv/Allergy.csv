@@ -1,101 +1,101 @@
 allergyID,allergy_description
-0,Tongue swelling
-1,Redness
-2,Sneezing
-3,Itchy nose
-4,Stomach cramps
-5,Hives (a rash with raised red patches)
-6,Pain
-7,A sense of “impending doom”
-8,Hives (a rash with raised red patches)
-9,Pain
-10,Rashes
-11,Throat closing
-12,"Itchy, watery eyes"
-13,Hives (a rash with raised red patches)
-14,"Feeling faint, light-headed or “blacking out”"
-15,"Feeling faint, light-headed or “blacking out”"
-16,Bloating
-17,Hives (a rash with raised red patches)
-18,"Itchy, watery eyes"
-19,Itchy nose
-20,Sneezing
-21,Itchy nose
-22,Pain
-23,"Feeling faint, light-headed or “blacking out”"
-24,Pain
-25,Throat closing
-26,Diarrhea
-27,Runny nose
-28,Runny nose
-29,Diarrhea
-30,Cough
-31,Tongue swelling
-32,Swelling
-33,Swelling
-34,Bloating
-35,A sense of “impending doom”
-36,Bloating
-37,Cough
-38,Tongue swelling
-39,Tongue swelling
-40,Pain
-41,Swelling
-42,Runny nose
-43,Diarrhea
-44,A sense of “impending doom”
-45,Tongue swelling
-46,Vomiting
-47,"Feeling faint, light-headed or “blacking out”"
-48,Stomach cramps
-49,Hives (a rash with raised red patches)
-50,Pain
-51,Diarrhea
-52,Sneezing
-53,Cough
-54,Hives (a rash with raised red patches)
-55,"Feeling faint, light-headed or “blacking out”"
-56,Stomach cramps
-57,Cough
-58,Diarrhea
-59,Swelling
-60,Runny nose
-61,Hives (a rash with raised red patches)
-62,Chest tightness and losing your breath
-63,Diarrhea
-64,Stomach cramps
-65,Chest tightness and losing your breath
-66,Vomiting
-67,Vomiting
 68,Throat closing
-69,Wheezing (a whistling sound when you breathe)
-70,Vomiting
-71,Stomach cramps
-72,Cough
-73,"Feeling faint, light-headed or “blacking out”"
-74,"Feeling faint, light-headed or “blacking out”"
-75,Redness
-76,A sense of “impending doom”
-77,Hives (a rash with raised red patches)
-78,Redness
-79,"Feeling faint, light-headed or “blacking out”"
-80,Bloating
-81,A sense of “impending doom”
-82,Hives (a rash with raised red patches)
-83,Hives (a rash with raised red patches)
-84,Chest tightness and losing your breath
-85,Swelling
-86,Redness
-87,Tongue swelling
-88,Rashes
-89,Vomiting
-90,Runny nose
-91,Rashes
-92,Itchy nose
-93,Cough
-94,Tongue swelling
-95,Runny nose
-96,"Feeling faint, light-headed or “blacking out”"
+20,Chest tightness and losing your breath
+74,"Feeling faint, light-headed or blacking out"
+64,Swelling
+7,Runny nose
+16,Redness
+51,Swelling
+81,Cough
+22,Sneezing
+92,Diarrhea
+43,Tongue swelling
+69,Runny nose
+12,Tongue swelling
+31,Hives
+26,Diarrhea
+83,Itchy nose
+87,Vomiting
+55,Tongue swelling
+93,"Feeling faint, light-headed or blacking out"
+79,Bloating
+73,Hives
+27,Pain
+41,Stomach cramps
+29,Diarrhea
+56,"Itchy, watery eyes"
+52,Stomach cramps
+4,Tongue swelling
+65,Rashes
+75,Tongue swelling
+28,Stomach cramps
+96,Stomach cramps
+25,Tongue swelling
+36,"Itchy, watery eyes"
+85,Hives
+77,Cough
+49,Rashes
+8,Itchy nose
+33,Pain
+84,Throat closing
+37,Stomach cramps
+44,Itchy nose
+1,Tongue swelling
+11,"Feeling faint, light-headed or blacking out"
+47,Itchy nose
+99,Swelling
+54,Bloating
+35,Runny nose
+61,Itchy nose
+66,Swelling
+57,Swelling
+3,Tongue swelling
+95,Tongue swelling
+6,Sneezing
+50,Throat closing
+9,Hives
+76,Rashes
+32,Rashes
+14,Hives
+21,Vomiting
+46,Redness
+48,Rashes
+23,"Itchy, watery eyes"
+5,Vomiting
+88,Chest tightness and losing your breath
+24,Chest tightness and losing your breath
+34,Wheezing
+45,"Itchy, watery eyes"
+71,Chest tightness and losing your breath
+90,Diarrhea
+70,Swelling
+17,Runny nose
+100,Redness
+40,Pain
+58,Sneezing
+10,Diarrhea
+98,Wheezing
+15,Hives
+91,Bloating
+94,Wheezing
+67,Chest tightness and losing your breath
+42,Tongue swelling
+38,Swelling
+60,Sneezing
+18,Rashes
+13,Pain
+86,Diarrhea
+62,Cough
+39,Throat closing
+59,Hives
+53,Runny nose
 97,Bloating
-98,Swelling
-99,Throat closing
+78,"Itchy, watery eyes"
+72,Sneezing
+80,"Itchy, watery eyes"
+63,Throat closing
+30,Redness
+89,Swelling
+2,Wheezing
+19,"Itchy, watery eyes"
+82,Throat closing
