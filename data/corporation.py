@@ -1,6 +1,8 @@
 import csv
 import random
 
+from uniqueID import generate_unique_id
+
 corporation_names_samples = ['Healthy People', 'We love Health', 'Hospitals Unite']
 id_range = 100
 headquarters_samples = [
@@ -8,20 +10,19 @@ headquarters_samples = [
     'Chicago, IL', 'Denver, CO', 'Phoenix, AZ', 'Los Angeles, CA', 'Boston, MA'
 ]
 
-# Define the range for percentOwnership (from 0 to 100)
 percent_ownership_range = (0, 100)
 
-# Write to the CSV file again with the updated headquarters values
+corporation_id_set = set()
+
 with open('csv/corporation.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
-    # Write the header
     writer.writerow(['corporation_id', 'name', 'headquarters', 'percentOwnership'])
 
-    # Write 100 rows with random values for each column
     for _ in range(100):
+        corporation_id = generate_unique_id(corporation_id_set, id_range)
         writer.writerow([
-            random.randint(1, id_range),                  # Random corporation_id
-            random.choice(corporation_names_samples),     # Random name
-            random.choice(headquarters_samples),          # Random headquarters from the updated list
-            f"{random.uniform(*percent_ownership_range):.2f}%"  # Random percentOwnership formatted as a percentage string
+            corporation_id,
+            random.choice(corporation_names_samples),
+            random.choice(headquarters_samples),
+            f"{random.uniform(*percent_ownership_range):.2f}%"
         ])
