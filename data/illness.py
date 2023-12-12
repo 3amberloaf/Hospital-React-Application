@@ -16,7 +16,6 @@ description_samples = [
     'Peptic ulcer disease, resulting in sores in the lining of the stomach or small intestine.'
 ]
 
-id_range = 100
 
 illness_id_set = set()
 
@@ -26,7 +25,7 @@ with open('csv/illness.csv', mode='w', newline='') as file:
     writer.writerow(['illness_id', 'description'])
 
     for _ in range(100):
-        illness_id = generate_unique_id(illness_id_set, id_range)
+        illness_id = generate_unique_id(illness_id_set, 100)
         
         writer.writerow([
             illness_id,

@@ -1,7 +1,7 @@
 import csv
 import random
 from faker import Faker
-
+from uniqueID import generate_unique_id
 fake = Faker()
 
 columns = ['prescription_id', 'consultation_id', 'dosage', 'duration', 'frequency', 'patient_id']
@@ -10,13 +10,6 @@ prescription_id_set = set()
 consultation_id_set = set()
 patient_id_set = set()
 
-# Function to generate a unique ID
-def generate_unique_id(existing_ids, id_range):
-    while True:
-        new_id = random.randint(1, id_range)
-        if new_id not in existing_ids:
-            existing_ids.add(new_id)
-            return new_id
 
 data = []
 for _ in range(100):

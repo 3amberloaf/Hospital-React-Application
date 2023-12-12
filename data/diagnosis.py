@@ -5,8 +5,6 @@ from uniqueID import generate_unique_id
 # Define the columns explicitly
 columns = ['diagnosisId', 'consultation_id', 'illness_id', 'comment']
 
-# Placeholder data ranges
-id_range = 100
 
 # Placeholder comments for 'comment', for demonstration purposes
 comments_samples = [
@@ -33,9 +31,9 @@ with open('csv/diagnosis.csv', mode='w', newline='') as file:
 
     for _ in range(100):
         # Generate and store unique IDs
-        consultation_id = generate_unique_id(consultation_id_set, id_range)
-        illness_id = generate_unique_id(illness_id_set, id_range)
-        diagnosis_id = generate_unique_id(diagnosis_id_set, id_range)
+        consultation_id = generate_unique_id(consultation_id_set, 100)
+        illness_id = generate_unique_id(illness_id_set, 100)
+        diagnosis_id = generate_unique_id(diagnosis_id_set, 100)
 
         # Write a row with the generated IDs and a random comment
         writer.writerow({

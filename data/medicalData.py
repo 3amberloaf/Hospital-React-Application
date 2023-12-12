@@ -4,7 +4,6 @@ import pandas as pd
 from uniqueID import generate_unique_id
 
 # Placeholder data ranges
-patient_id_range = data_id_range = 100
 blood_sugar_range = (70, 150)
 cholesterol_range = (125, 240)
 hdl_range = (30, 70)
@@ -21,8 +20,8 @@ with open('csv/medicalData.csv', mode='w', newline='') as file:
     writer.writerow(['patient_id', 'data_id', 'bloodSugar', 'cholesterol', 'date', 'hdl', 'ldl', 'triglycerides'])
 
     for _ in range(100):
-        patient_id = generate_unique_id(patient_ids, patient_id_range)
-        data_id = generate_unique_id(data_ids, data_id_range)
+        patient_id = generate_unique_id(patient_ids, 100)
+        data_id = generate_unique_id(data_ids, 100)
 
         writer.writerow([
             patient_id,
