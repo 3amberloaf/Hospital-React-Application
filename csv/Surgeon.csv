@@ -1,0 +1,101 @@
+surgeon_id,contract_id,specialty
+69,5,Orthopedics
+9,51,Cardiology
+83,87,Orthopedics
+96,43,Cardiology
+70,65,Cardiology
+8,21,Orthopedics
+33,49,Orthopedics
+67,23,General Surgery
+58,59,Orthopedics
+7,28,Neurology
+95,16,Neurology
+39,47,Neurology
+89,11,Neurology
+56,42,Cardiology
+30,63,General Surgery
+86,33,Neurology
+81,54,General Surgery
+45,2,Neurology
+35,34,Cardiology
+52,36,Neurology
+22,24,General Surgery
+66,35,General Surgery
+16,68,Cardiology
+88,18,General Surgery
+21,79,Orthopedics
+37,83,Cardiology
+85,62,Cardiology
+92,94,General Surgery
+17,15,General Surgery
+94,73,Cardiology
+14,31,General Surgery
+61,9,Orthopedics
+28,97,Cardiology
+11,95,Orthopedics
+13,78,Orthopedics
+60,26,General Surgery
+57,20,Orthopedics
+90,52,Cardiology
+77,7,Cardiology
+25,74,Orthopedics
+3,66,General Surgery
+26,14,Cardiology
+80,46,Cardiology
+99,82,Cardiology
+44,60,General Surgery
+55,50,Orthopedics
+36,86,General Surgery
+100,58,Cardiology
+5,32,Neurology
+31,41,Orthopedics
+75,53,Neurology
+65,44,Orthopedics
+23,4,Orthopedics
+41,93,Orthopedics
+73,71,Cardiology
+87,77,Neurology
+10,92,General Surgery
+68,10,General Surgery
+48,80,Cardiology
+6,55,Neurology
+34,19,General Surgery
+27,48,Cardiology
+71,75,General Surgery
+91,22,General Surgery
+78,1,General Surgery
+72,25,Orthopedics
+24,70,Cardiology
+51,39,Orthopedics
+74,72,Neurology
+20,38,Cardiology
+12,56,Cardiology
+63,29,Orthopedics
+79,40,Neurology
+19,69,Orthopedics
+49,91,Cardiology
+40,96,Cardiology
+18,37,Orthopedics
+82,99,Neurology
+42,57,Cardiology
+64,98,Cardiology
+32,17,Neurology
+84,27,Orthopedics
+93,6,Cardiology
+4,13,Cardiology
+2,12,Orthopedics
+46,61,Cardiology
+59,8,Cardiology
+15,100,Neurology
+53,45,Orthopedics
+47,90,General Surgery
+38,76,General Surgery
+62,67,General Surgery
+50,84,General Surgery
+29,85,Cardiology
+54,88,Orthopedics
+98,30,Neurology
+43,64,Orthopedics
+97,3,Cardiology
+1,89,Neurology
+76,81,Neurology
