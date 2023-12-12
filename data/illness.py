@@ -1,6 +1,6 @@
 import csv
 import random
-
+from uniqueID import generate_unique_id
 
 # Placeholder data for 'description', for demonstration purposes
 description_samples = [
@@ -16,17 +16,20 @@ description_samples = [
     'Peptic ulcer disease, resulting in sores in the lining of the stomach or small intestine.'
 ]
 
-id_range = 100  
+id_range = 100
+
+illness_id_set = set()
 
 with open('csv/illness.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     # Write the header
     writer.writerow(['illness_id', 'description'])
 
-    # Write 100 rows with random values for each column
     for _ in range(100):
+        illness_id = generate_unique_id(illness_id_set, id_range)
+        
         writer.writerow([
-            random.randint(1, id_range),         # Random illness_id
+            illness_id,
             random.choice(description_samples)           # Random description of an illness
         ])
 

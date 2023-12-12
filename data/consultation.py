@@ -1,7 +1,7 @@
 import csv
 import random
 import pandas as pd
-from data.uniqueID import generate_unique_id;
+from uniqueID import generate_unique_id;
 
 columns = ['date', 'consultation_id', 'notes', 'patient_id', 'physician_id', 'type']
 
