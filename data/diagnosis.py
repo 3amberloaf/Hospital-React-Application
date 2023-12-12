@@ -1,5 +1,6 @@
 import csv
 import random
+from uniqueID import generate_unique_id
 
 # Define the columns explicitly
 columns = ['diagnosisId', 'consultation_id', 'illness_id', 'comment']
@@ -21,18 +22,25 @@ comments_samples = [
     'Discharge summary after hospitalization.'
 ]
 
-# Write to a new CSV file with the specified columns
+consultation_id_set = set()
+illness_id_set = set()
+diagnosis_id_set = set()
+
+# Write to a new CSV file
 with open('csv/diagnosis.csv', mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=columns)
-    # Write the header
     writer.writeheader()
 
-    # Write 100 rows with random values for each column
     for _ in range(100):
-        writer.writerow({
-            'diagnosisId': random.randint(1, id_range),      # Random diagnosisId
-            'consultation_id': random.randint(1, id_range),  # Random consultation_id
-            'illness_id': random.randint(1, id_range),       # Random illness_id
-            'comment': random.choice(comments_samples)            # Random comment
-        })
+        # Generate and store unique IDs
+        consultation_id = generate_unique_id(consultation_id_set, id_range)
+        illness_id = generate_unique_id(illness_id_set, id_range)
+        diagnosis_id = generate_unique_id(diagnosis_id_set, id_range)
 
+        # Write a row with the generated IDs and a random comment
+        writer.writerow({
+            'diagnosisId': diagnosis_id,
+            'consultation_id': consultation_id,
+            'illness_id': illness_id,
+            'comment': random.choice(comments_samples)
+        })

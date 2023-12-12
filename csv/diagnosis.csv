@@ -1,101 +1,101 @@
 diagnosisId,consultation_id,illness_id,comment
-84,29,16,Diagnostic tests ordered for suspected condition.
-3,19,59,Review of treatment plan for chronic illness.
-96,29,69,Regular therapy session for ongoing treatment.
-43,54,67,Discharge summary after hospitalization.
-74,86,11,Emergency admission due to severe allergic reaction.
-95,71,95,Discharge summary after hospitalization.
-48,22,71,Initial assessment for reported pain.
-70,27,34,Consultation for flu-like symptoms.
-63,61,61,Diagnostic tests ordered for suspected condition.
-96,20,55,Physical examination for sports clearance.
-50,80,9,Regular therapy session for ongoing treatment.
-56,25,17,Diagnostic tests ordered for suspected condition.
-3,93,2,Patient admitted for routine check-up.
-3,53,69,Diagnostic tests ordered for suspected condition.
-14,37,82,Discharge summary after hospitalization.
-3,83,86,Diagnostic tests ordered for suspected condition.
-100,64,32,Emergency admission due to severe allergic reaction.
-97,91,40,Discharge summary after hospitalization.
-54,41,65,Patient admitted for routine check-up.
-58,80,18,Physical examination for sports clearance.
-26,59,12,Follow-up visit after surgery.
-18,77,100,Follow-up visit after surgery.
-10,17,55,Follow-up visit after surgery.
-10,15,100,Consultation for flu-like symptoms.
-59,4,47,Physical examination for sports clearance.
-72,43,58,Physical examination for sports clearance.
-66,4,57,Emergency admission due to severe allergic reaction.
-22,1,59,Consultation for flu-like symptoms.
-43,92,80,Patient admitted for routine check-up.
-36,54,57,Consultation for flu-like symptoms.
-3,82,24,Physical examination for sports clearance.
-30,47,59,Regular therapy session for ongoing treatment.
-34,76,47,Diagnostic tests ordered for suspected condition.
-91,83,56,Review of treatment plan for chronic illness.
-64,67,17,Physical examination for sports clearance.
-34,81,65,Discharge summary after hospitalization.
-50,36,20,Patient admitted for routine check-up.
-66,2,54,Diagnostic tests ordered for suspected condition.
-72,81,34,Review of treatment plan for chronic illness.
-14,33,92,Review of treatment plan for chronic illness.
-52,24,36,Regular therapy session for ongoing treatment.
-29,25,50,Patient admitted for routine check-up.
-7,50,54,Physical examination for sports clearance.
-88,82,81,Review of treatment plan for chronic illness.
-7,71,35,Discharge summary after hospitalization.
-42,98,61,Discharge summary after hospitalization.
-23,91,43,Physical examination for sports clearance.
-28,93,42,Emergency admission due to severe allergic reaction.
-6,34,12,Initial assessment for reported pain.
-56,4,63,Emergency admission due to severe allergic reaction.
-38,17,48,Patient admitted for routine check-up.
-12,60,73,Consultation for flu-like symptoms.
-31,33,90,Consultation for flu-like symptoms.
-37,55,10,Physical examination for sports clearance.
-54,37,32,Discharge summary after hospitalization.
-72,50,55,Review of treatment plan for chronic illness.
-22,27,34,Initial assessment for reported pain.
-48,14,58,Patient admitted for routine check-up.
-3,31,50,Review of treatment plan for chronic illness.
-73,93,40,Regular therapy session for ongoing treatment.
-73,44,68,Regular therapy session for ongoing treatment.
-20,22,15,Diagnostic tests ordered for suspected condition.
-73,1,75,Physical examination for sports clearance.
-40,77,2,Physical examination for sports clearance.
-93,1,15,Initial assessment for reported pain.
-30,32,93,Discharge summary after hospitalization.
-80,12,51,Diagnostic tests ordered for suspected condition.
-87,40,22,Emergency admission due to severe allergic reaction.
-34,82,22,Patient admitted for routine check-up.
-80,52,42,Discharge summary after hospitalization.
-50,80,58,Patient admitted for routine check-up.
-50,58,33,Initial assessment for reported pain.
-68,42,9,Diagnostic tests ordered for suspected condition.
-97,98,17,Follow-up visit after surgery.
-13,34,16,Diagnostic tests ordered for suspected condition.
-2,65,68,Discharge summary after hospitalization.
-71,17,50,Emergency admission due to severe allergic reaction.
-27,18,53,Consultation for flu-like symptoms.
-33,53,52,Diagnostic tests ordered for suspected condition.
-4,48,93,Review of treatment plan for chronic illness.
-27,82,41,Follow-up visit after surgery.
-38,28,69,Emergency admission due to severe allergic reaction.
-60,86,25,Review of treatment plan for chronic illness.
-85,81,49,Follow-up visit after surgery.
-7,55,96,Physical examination for sports clearance.
-60,49,99,Diagnostic tests ordered for suspected condition.
-75,79,99,Consultation for flu-like symptoms.
-66,88,65,Physical examination for sports clearance.
-61,32,76,Emergency admission due to severe allergic reaction.
-23,56,6,Review of treatment plan for chronic illness.
-49,64,71,Physical examination for sports clearance.
-19,59,3,Initial assessment for reported pain.
-29,33,62,Initial assessment for reported pain.
-99,52,20,Discharge summary after hospitalization.
-92,29,71,Follow-up visit after surgery.
-40,66,84,Diagnostic tests ordered for suspected condition.
-25,78,76,Patient admitted for routine check-up.
-96,2,13,Consultation for flu-like symptoms.
-40,1,73,Initial assessment for reported pain.
-43,62,54,Initial assessment for reported pain.
+28,2,60,Consultation for flu-like symptoms.
+97,99,37,Physical examination for sports clearance.
+59,52,39,Review of treatment plan for chronic illness.
+22,32,34,Review of treatment plan for chronic illness.
+67,81,61,Initial assessment for reported pain.
+8,50,31,Regular therapy session for ongoing treatment.
+5,20,98,Review of treatment plan for chronic illness.
+46,55,78,Initial assessment for reported pain.
+79,86,58,Discharge summary after hospitalization.
+7,6,15,Emergency admission due to severe allergic reaction.
+51,5,35,Emergency admission due to severe allergic reaction.
+54,33,16,Consultation for flu-like symptoms.
+88,25,36,Emergency admission due to severe allergic reaction.
+62,24,4,Initial assessment for reported pain.
+78,60,50,Consultation for flu-like symptoms.
+35,94,57,Diagnostic tests ordered for suspected condition.
+58,15,32,Patient admitted for routine check-up.
+63,18,18,Emergency admission due to severe allergic reaction.
+80,30,24,Diagnostic tests ordered for suspected condition.
+6,71,94,Follow-up visit after surgery.
+83,36,74,Diagnostic tests ordered for suspected condition.
+19,29,93,Diagnostic tests ordered for suspected condition.
+60,69,38,Patient admitted for routine check-up.
+37,22,71,Discharge summary after hospitalization.
+29,92,65,Regular therapy session for ongoing treatment.
+64,96,25,Physical examination for sports clearance.
+99,74,7,Regular therapy session for ongoing treatment.
+55,63,97,Review of treatment plan for chronic illness.
+10,4,90,Diagnostic tests ordered for suspected condition.
+32,83,30,Review of treatment plan for chronic illness.
+25,37,20,Review of treatment plan for chronic illness.
+77,73,77,Diagnostic tests ordered for suspected condition.
+66,75,33,Review of treatment plan for chronic illness.
+11,72,5,Patient admitted for routine check-up.
+20,28,14,Consultation for flu-like symptoms.
+9,31,92,Follow-up visit after surgery.
+15,93,69,Diagnostic tests ordered for suspected condition.
+50,70,9,Patient admitted for routine check-up.
+84,67,3,Patient admitted for routine check-up.
+30,53,84,Review of treatment plan for chronic illness.
+24,87,80,Physical examination for sports clearance.
+44,77,54,Physical examination for sports clearance.
+18,76,86,Physical examination for sports clearance.
+17,85,85,Patient admitted for routine check-up.
+91,95,73,Physical examination for sports clearance.
+23,61,17,Consultation for flu-like symptoms.
+4,14,29,Review of treatment plan for chronic illness.
+21,38,26,Emergency admission due to severe allergic reaction.
+26,39,96,Diagnostic tests ordered for suspected condition.
+13,26,43,Initial assessment for reported pain.
+33,47,49,Review of treatment plan for chronic illness.
+2,12,8,Diagnostic tests ordered for suspected condition.
+65,40,99,Emergency admission due to severe allergic reaction.
+34,59,67,Patient admitted for routine check-up.
+48,62,41,Follow-up visit after surgery.
+41,10,75,Emergency admission due to severe allergic reaction.
+86,13,63,Follow-up visit after surgery.
+76,48,72,Discharge summary after hospitalization.
+47,90,1,Initial assessment for reported pain.
+69,8,52,Consultation for flu-like symptoms.
+75,27,95,Regular therapy session for ongoing treatment.
+92,43,10,Diagnostic tests ordered for suspected condition.
+73,57,89,Regular therapy session for ongoing treatment.
+71,78,83,Initial assessment for reported pain.
+100,54,12,Emergency admission due to severe allergic reaction.
+74,79,51,Emergency admission due to severe allergic reaction.
+68,3,21,Initial assessment for reported pain.
+89,9,70,Review of treatment plan for chronic illness.
+61,88,66,Diagnostic tests ordered for suspected condition.
+95,19,22,Discharge summary after hospitalization.
+72,23,46,Physical examination for sports clearance.
+96,80,82,Physical examination for sports clearance.
+39,1,48,Emergency admission due to severe allergic reaction.
+38,68,42,Consultation for flu-like symptoms.
+1,64,44,Regular therapy session for ongoing treatment.
+94,100,28,Follow-up visit after surgery.
+82,46,59,Review of treatment plan for chronic illness.
+56,65,19,Follow-up visit after surgery.
+3,91,56,Review of treatment plan for chronic illness.
+49,35,79,Consultation for flu-like symptoms.
+12,44,23,Regular therapy session for ongoing treatment.
+52,34,45,Follow-up visit after surgery.
+14,84,100,Discharge summary after hospitalization.
+27,82,81,Physical examination for sports clearance.
+53,66,55,Physical examination for sports clearance.
+16,42,68,Regular therapy session for ongoing treatment.
+43,21,6,Follow-up visit after surgery.
+42,45,53,Physical examination for sports clearance.
+90,97,27,Regular therapy session for ongoing treatment.
+57,41,11,Review of treatment plan for chronic illness.
+87,11,62,Follow-up visit after surgery.
+31,56,88,Patient admitted for routine check-up.
+93,16,87,Consultation for flu-like symptoms.
+45,51,76,Review of treatment plan for chronic illness.
+36,7,40,Diagnostic tests ordered for suspected condition.
+70,49,64,Diagnostic tests ordered for suspected condition.
+98,98,91,Diagnostic tests ordered for suspected condition.
+81,17,2,Follow-up visit after surgery.
+40,58,13,Regular therapy session for ongoing treatment.
+85,89,47,Physical examination for sports clearance.
