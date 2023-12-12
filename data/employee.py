@@ -5,11 +5,11 @@ import random
 columns = ['emp_id', 'name', 'phonenumber', 'salary', 'ssn', 'gender', 'address', 'type']
 
 # Placeholder data ranges
-emp_id_range = 100
-name_samples = ['John Doe', 'Jane Smith', 'Alex Johnson', 'Maria Garcia', 'Chris Martin']
-phone_number_samples = ['555-0100', '555-0101', '555-0102', '555-0103', '555-0104']
+first_names = ['John', 'Jane', 'Alex', 'Maria', 'Chris', 'Emily', 'Daniel', 'Laura', 'David', 'Sara']
+last_names = ['Doe', 'Smith', 'Johnson', 'Garcia', 'Martin', 'Brown', 'Davis', 'Miller', 'Wilson', 'Taylor']
+
+phone_number_samples = ['908-555-0100', '732-555-0101', '732-555-0102', '908-555-0103', '732-555-0104']
 salary_range = [40000, 150000]
-ssn_samples = ['123-45-6789', '987-65-4321', '111-22-3333', '222-33-4444', '333-44-5555']
 gender_samples = ['Male', 'Female', 'Non-Binary']
 address_samples = [
     '123 Elm St, Springfield, IL',
@@ -25,22 +25,33 @@ address_samples = [
 ]
 type_samples = ['full-time', 'part-time']
 
+def generate_random_name():
+    # Randomly select a first name and a last name
+    first_name = random.choice(first_names)
+    last_name = random.choice(last_names)
+
+    # Combine them to form a full name
+    full_name = f"{first_name} {last_name}"
+    return full_name
+
+def generate_ssn(emp_id):
+    return f"{emp_id:03d}-00-{1000 + emp_id}"
+
 # Write to a new CSV file with the specified columns
 with open('csv/employee.csv', mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=columns)
     # Write the header
     writer.writeheader()
 
-    # Write 100 rows with random values for each column
-    for _ in range(100):
+    # Write 100 rows with sequential emp_id, unique SSN, and random values for other columns
+    for emp_id in range(1, 101):
         writer.writerow({
-            'emp_id': random.randint(1, emp_id_range),                  # Random emp_id
-            'name': random.choice(name_samples),                        # Random name
-            'phonenumber': random.choice(phone_number_samples),         # Random phonenumber
-            'salary': random.randint(salary_range[0], salary_range[1]),  # Random salary
-            'ssn': random.choice(ssn_samples),                         # Random ssn
-            'gender': random.choice(gender_samples),                   # Random gender
-            'address': random.choice(address_samples),                 # Random address from the US
-            'type': random.choice(type_samples)                        # Random type 'full-time' or 'part-time'
+            'emp_id': emp_id,                                             # Sequential emp_id
+            'name': generate_random_name(),                          # Random name
+            'phonenumber': random.choice(phone_number_samples),           # Random phonenumber
+            'salary': random.randint(salary_range[0], salary_range[1]),   # Random salary
+            'ssn': generate_ssn(emp_id),                                  # Unique SSN
+            'gender': random.choice(gender_samples),                      # Random gender
+            'address': random.choice(address_samples),                    # Random address
+            'type': random.choice(type_samples)                           # Random type 'full-time' or 'part-time'
         })
-

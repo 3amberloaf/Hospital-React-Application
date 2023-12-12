@@ -1,101 +1,101 @@
 emp_id,name,phonenumber,salary,ssn,gender,address,type
-13,Jane Smith,555-0103,63196,987-65-4321,Male,"505 Walnut St, Star City, TX",full-time
-30,Jane Smith,555-0102,75534,123-45-6789,Male,"123 Elm St, Springfield, IL",part-time
-99,Maria Garcia,555-0104,99057,222-33-4444,Male,"101 Pine Rd, Metropolis, NY",full-time
-50,Maria Garcia,555-0102,47540,123-45-6789,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
-94,Jane Smith,555-0103,145758,123-45-6789,Male,"456 Maple Ave, Anytown, OH",part-time
-74,Alex Johnson,555-0102,53163,987-65-4321,Female,"101 Pine Rd, Metropolis, NY",part-time
-28,Maria Garcia,555-0101,82488,333-44-5555,Male,"101 Pine Rd, Metropolis, NY",part-time
-1,Chris Martin,555-0103,135074,111-22-3333,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
-17,Chris Martin,555-0104,94426,111-22-3333,Male,"707 Ash Rd, Twin Peaks, WA",full-time
-38,Jane Smith,555-0100,148434,111-22-3333,Female,"456 Maple Ave, Anytown, OH",full-time
-52,Chris Martin,555-0104,52507,333-44-5555,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
-24,John Doe,555-0101,139158,111-22-3333,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
-28,Alex Johnson,555-0101,101258,222-33-4444,Female,"789 Oak St, Smallville, KS",full-time
-57,Maria Garcia,555-0101,134510,333-44-5555,Male,"202 Birch St, Centerville, CA",full-time
-20,Alex Johnson,555-0101,47222,333-44-5555,Female,"101 Pine Rd, Metropolis, NY",part-time
-9,Chris Martin,555-0103,134765,333-44-5555,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
-79,Maria Garcia,555-0100,145456,987-65-4321,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
-31,John Doe,555-0103,140905,123-45-6789,Male,"404 Spruce Ln, Gotham, NJ",part-time
-96,Jane Smith,555-0102,121619,222-33-4444,Male,"123 Elm St, Springfield, IL",part-time
-69,Jane Smith,555-0102,143661,987-65-4321,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
-35,Alex Johnson,555-0100,110383,123-45-6789,Non-Binary,"101 Pine Rd, Metropolis, NY",full-time
-26,Maria Garcia,555-0104,117499,333-44-5555,Female,"123 Elm St, Springfield, IL",full-time
-85,Alex Johnson,555-0100,67463,987-65-4321,Non-Binary,"123 Elm St, Springfield, IL",part-time
-97,Chris Martin,555-0102,109918,222-33-4444,Male,"202 Birch St, Centerville, CA",full-time
-14,Jane Smith,555-0101,68762,987-65-4321,Non-Binary,"101 Pine Rd, Metropolis, NY",full-time
-56,Alex Johnson,555-0100,143499,222-33-4444,Male,"123 Elm St, Springfield, IL",full-time
-18,Alex Johnson,555-0101,144378,111-22-3333,Female,"456 Maple Ave, Anytown, OH",part-time
-98,Alex Johnson,555-0102,53111,333-44-5555,Non-Binary,"707 Ash Rd, Twin Peaks, WA",part-time
-29,John Doe,555-0104,105757,222-33-4444,Female,"707 Ash Rd, Twin Peaks, WA",full-time
-10,John Doe,555-0100,145880,333-44-5555,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
-93,Alex Johnson,555-0100,81914,123-45-6789,Male,"404 Spruce Ln, Gotham, NJ",full-time
-53,Maria Garcia,555-0103,48039,123-45-6789,Male,"606 Chestnut Way, Sunnydale, FL",full-time
-42,Chris Martin,555-0104,43529,123-45-6789,Non-Binary,"789 Oak St, Smallville, KS",part-time
-45,Alex Johnson,555-0103,62791,222-33-4444,Non-Binary,"707 Ash Rd, Twin Peaks, WA",part-time
-58,Alex Johnson,555-0104,80569,987-65-4321,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
-87,John Doe,555-0102,61576,222-33-4444,Male,"303 Cedar Blvd, Hill Valley, NV",full-time
-45,Jane Smith,555-0104,97395,222-33-4444,Female,"789 Oak St, Smallville, KS",full-time
-31,Alex Johnson,555-0100,75635,987-65-4321,Male,"606 Chestnut Way, Sunnydale, FL",full-time
-37,Alex Johnson,555-0100,113084,222-33-4444,Non-Binary,"505 Walnut St, Star City, TX",full-time
-26,Alex Johnson,555-0103,49901,222-33-4444,Non-Binary,"789 Oak St, Smallville, KS",part-time
-51,John Doe,555-0103,128149,111-22-3333,Female,"707 Ash Rd, Twin Peaks, WA",part-time
-7,Jane Smith,555-0101,47861,333-44-5555,Male,"789 Oak St, Smallville, KS",full-time
-41,Jane Smith,555-0100,55446,123-45-6789,Male,"606 Chestnut Way, Sunnydale, FL",part-time
-85,Chris Martin,555-0100,140431,222-33-4444,Female,"202 Birch St, Centerville, CA",part-time
-92,Chris Martin,555-0102,142848,333-44-5555,Male,"101 Pine Rd, Metropolis, NY",part-time
-89,John Doe,555-0104,67958,111-22-3333,Female,"303 Cedar Blvd, Hill Valley, NV",full-time
-35,Maria Garcia,555-0102,133610,222-33-4444,Male,"123 Elm St, Springfield, IL",full-time
-24,Alex Johnson,555-0100,115263,222-33-4444,Female,"202 Birch St, Centerville, CA",part-time
-26,Alex Johnson,555-0104,123403,987-65-4321,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
-31,Alex Johnson,555-0101,149121,333-44-5555,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",part-time
-6,Maria Garcia,555-0103,67257,111-22-3333,Female,"123 Elm St, Springfield, IL",full-time
-37,Chris Martin,555-0104,90768,222-33-4444,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
-100,Jane Smith,555-0104,56016,123-45-6789,Non-Binary,"789 Oak St, Smallville, KS",full-time
-47,Maria Garcia,555-0100,75169,123-45-6789,Female,"606 Chestnut Way, Sunnydale, FL",full-time
-43,Chris Martin,555-0100,141650,987-65-4321,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
-90,Maria Garcia,555-0101,41882,111-22-3333,Female,"456 Maple Ave, Anytown, OH",full-time
-97,Alex Johnson,555-0104,45083,111-22-3333,Male,"707 Ash Rd, Twin Peaks, WA",full-time
-26,Jane Smith,555-0102,132356,111-22-3333,Non-Binary,"456 Maple Ave, Anytown, OH",part-time
-86,Alex Johnson,555-0102,128689,987-65-4321,Female,"123 Elm St, Springfield, IL",full-time
-12,Alex Johnson,555-0100,111924,987-65-4321,Non-Binary,"505 Walnut St, Star City, TX",full-time
-28,Alex Johnson,555-0100,123208,222-33-4444,Non-Binary,"707 Ash Rd, Twin Peaks, WA",full-time
-55,Alex Johnson,555-0102,71121,123-45-6789,Non-Binary,"707 Ash Rd, Twin Peaks, WA",part-time
-91,John Doe,555-0104,73454,111-22-3333,Male,"707 Ash Rd, Twin Peaks, WA",full-time
-97,Jane Smith,555-0103,91518,333-44-5555,Male,"505 Walnut St, Star City, TX",part-time
-68,Alex Johnson,555-0100,74542,111-22-3333,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
-96,Chris Martin,555-0104,107761,333-44-5555,Male,"404 Spruce Ln, Gotham, NJ",full-time
-51,Alex Johnson,555-0101,84219,987-65-4321,Male,"123 Elm St, Springfield, IL",full-time
-44,Jane Smith,555-0103,96016,123-45-6789,Male,"707 Ash Rd, Twin Peaks, WA",part-time
-63,Jane Smith,555-0101,54199,333-44-5555,Male,"707 Ash Rd, Twin Peaks, WA",full-time
-19,Jane Smith,555-0104,132282,222-33-4444,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
-77,Maria Garcia,555-0100,113392,123-45-6789,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
-6,Jane Smith,555-0102,120372,123-45-6789,Non-Binary,"101 Pine Rd, Metropolis, NY",full-time
-57,Chris Martin,555-0100,58506,222-33-4444,Female,"505 Walnut St, Star City, TX",full-time
-22,Maria Garcia,555-0100,46785,123-45-6789,Non-Binary,"101 Pine Rd, Metropolis, NY",part-time
-81,John Doe,555-0104,82784,123-45-6789,Male,"404 Spruce Ln, Gotham, NJ",part-time
-39,Alex Johnson,555-0103,72541,987-65-4321,Non-Binary,"456 Maple Ave, Anytown, OH",part-time
-6,John Doe,555-0104,95667,123-45-6789,Female,"123 Elm St, Springfield, IL",part-time
-71,Maria Garcia,555-0103,84743,987-65-4321,Female,"606 Chestnut Way, Sunnydale, FL",part-time
-100,Chris Martin,555-0102,112918,987-65-4321,Female,"456 Maple Ave, Anytown, OH",full-time
-90,Jane Smith,555-0101,116991,111-22-3333,Male,"707 Ash Rd, Twin Peaks, WA",part-time
-50,Chris Martin,555-0100,140148,987-65-4321,Female,"456 Maple Ave, Anytown, OH",part-time
-59,John Doe,555-0101,135023,111-22-3333,Female,"505 Walnut St, Star City, TX",full-time
-62,John Doe,555-0102,85806,222-33-4444,Female,"101 Pine Rd, Metropolis, NY",part-time
-95,Chris Martin,555-0102,86647,222-33-4444,Non-Binary,"123 Elm St, Springfield, IL",part-time
-93,Alex Johnson,555-0102,59348,123-45-6789,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
-44,Jane Smith,555-0101,93119,987-65-4321,Male,"456 Maple Ave, Anytown, OH",full-time
-69,Maria Garcia,555-0103,51486,123-45-6789,Male,"505 Walnut St, Star City, TX",full-time
-77,Alex Johnson,555-0104,40838,222-33-4444,Male,"707 Ash Rd, Twin Peaks, WA",part-time
-1,Maria Garcia,555-0103,119530,987-65-4321,Non-Binary,"789 Oak St, Smallville, KS",full-time
-47,Jane Smith,555-0102,54333,222-33-4444,Male,"606 Chestnut Way, Sunnydale, FL",part-time
-61,Chris Martin,555-0101,64087,222-33-4444,Male,"202 Birch St, Centerville, CA",part-time
-25,Alex Johnson,555-0101,146527,123-45-6789,Male,"707 Ash Rd, Twin Peaks, WA",full-time
-36,John Doe,555-0103,61437,987-65-4321,Non-Binary,"789 Oak St, Smallville, KS",full-time
-19,Maria Garcia,555-0103,138795,333-44-5555,Male,"606 Chestnut Way, Sunnydale, FL",full-time
-71,John Doe,555-0102,48767,111-22-3333,Male,"303 Cedar Blvd, Hill Valley, NV",full-time
-72,John Doe,555-0104,70144,333-44-5555,Female,"456 Maple Ave, Anytown, OH",full-time
-36,Alex Johnson,555-0102,147104,333-44-5555,Non-Binary,"101 Pine Rd, Metropolis, NY",part-time
-30,Jane Smith,555-0101,72233,333-44-5555,Non-Binary,"707 Ash Rd, Twin Peaks, WA",full-time
-56,John Doe,555-0103,124793,123-45-6789,Female,"456 Maple Ave, Anytown, OH",part-time
-31,John Doe,555-0103,133684,987-65-4321,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+1,Sara Doe,732-555-0101,144159,001-00-1001,Non-Binary,"606 Chestnut Way, Sunnydale, FL",part-time
+2,David Martin,732-555-0101,148761,002-00-1002,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+3,David Miller,732-555-0102,142125,003-00-1003,Female,"101 Pine Rd, Metropolis, NY",full-time
+4,Maria Smith,732-555-0104,69753,004-00-1004,Male,"202 Birch St, Centerville, CA",full-time
+5,Maria Smith,908-555-0100,145624,005-00-1005,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+6,Emily Wilson,908-555-0100,146125,006-00-1006,Male,"505 Walnut St, Star City, TX",part-time
+7,John Johnson,732-555-0102,79822,007-00-1007,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+8,Sara Garcia,732-555-0101,58997,008-00-1008,Male,"505 Walnut St, Star City, TX",full-time
+9,Maria Doe,908-555-0103,148045,009-00-1009,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+10,David Smith,732-555-0102,120089,010-00-1010,Male,"606 Chestnut Way, Sunnydale, FL",full-time
+11,Sara Doe,732-555-0104,117602,011-00-1011,Non-Binary,"707 Ash Rd, Twin Peaks, WA",part-time
+12,John Wilson,908-555-0100,147053,012-00-1012,Female,"505 Walnut St, Star City, TX",part-time
+13,Chris Garcia,732-555-0101,71633,013-00-1013,Male,"505 Walnut St, Star City, TX",part-time
+14,Sara Martin,732-555-0101,69279,014-00-1014,Male,"202 Birch St, Centerville, CA",full-time
+15,Jane Brown,908-555-0100,46698,015-00-1015,Male,"505 Walnut St, Star City, TX",part-time
+16,Sara Smith,908-555-0100,104708,016-00-1016,Non-Binary,"789 Oak St, Smallville, KS",full-time
+17,Chris Davis,732-555-0104,69540,017-00-1017,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
+18,Chris Johnson,732-555-0104,134805,018-00-1018,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+19,Emily Doe,732-555-0104,77809,019-00-1019,Male,"123 Elm St, Springfield, IL",part-time
+20,Maria Wilson,732-555-0102,147049,020-00-1020,Female,"505 Walnut St, Star City, TX",full-time
+21,Alex Brown,908-555-0103,119099,021-00-1021,Female,"606 Chestnut Way, Sunnydale, FL",part-time
+22,Chris Martin,732-555-0101,84680,022-00-1022,Female,"123 Elm St, Springfield, IL",full-time
+23,Laura Miller,732-555-0104,81666,023-00-1023,Female,"456 Maple Ave, Anytown, OH",full-time
+24,Jane Brown,732-555-0101,110527,024-00-1024,Female,"123 Elm St, Springfield, IL",part-time
+25,Maria Garcia,732-555-0101,147209,025-00-1025,Non-Binary,"101 Pine Rd, Metropolis, NY",part-time
+26,Maria Smith,732-555-0102,48609,026-00-1026,Non-Binary,"123 Elm St, Springfield, IL",full-time
+27,Jane Miller,732-555-0104,138274,027-00-1027,Male,"707 Ash Rd, Twin Peaks, WA",part-time
+28,David Davis,908-555-0103,108333,028-00-1028,Female,"606 Chestnut Way, Sunnydale, FL",part-time
+29,Laura Doe,908-555-0103,68809,029-00-1029,Male,"606 Chestnut Way, Sunnydale, FL",part-time
+30,John Garcia,908-555-0103,71615,030-00-1030,Female,"456 Maple Ave, Anytown, OH",full-time
+31,Chris Johnson,908-555-0103,126074,031-00-1031,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+32,Laura Garcia,908-555-0100,80686,032-00-1032,Female,"505 Walnut St, Star City, TX",full-time
+33,Chris Davis,732-555-0101,113843,033-00-1033,Male,"202 Birch St, Centerville, CA",part-time
+34,Laura Doe,732-555-0104,137033,034-00-1034,Female,"505 Walnut St, Star City, TX",full-time
+35,Alex Miller,732-555-0101,112283,035-00-1035,Non-Binary,"404 Spruce Ln, Gotham, NJ",full-time
+36,Chris Garcia,908-555-0103,112450,036-00-1036,Female,"707 Ash Rd, Twin Peaks, WA",part-time
+37,Jane Doe,908-555-0103,119541,037-00-1037,Female,"303 Cedar Blvd, Hill Valley, NV",full-time
+38,Chris Davis,908-555-0103,66753,038-00-1038,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+39,Alex Johnson,908-555-0103,117900,039-00-1039,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+40,Emily Johnson,908-555-0103,66570,040-00-1040,Male,"101 Pine Rd, Metropolis, NY",full-time
+41,Alex Doe,732-555-0101,74460,041-00-1041,Male,"101 Pine Rd, Metropolis, NY",part-time
+42,Jane Wilson,908-555-0100,104629,042-00-1042,Female,"606 Chestnut Way, Sunnydale, FL",part-time
+43,David Doe,908-555-0100,84543,043-00-1043,Male,"404 Spruce Ln, Gotham, NJ",part-time
+44,David Brown,732-555-0102,147545,044-00-1044,Female,"101 Pine Rd, Metropolis, NY",part-time
+45,Alex Taylor,732-555-0101,146913,045-00-1045,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+46,David Martin,908-555-0100,147694,046-00-1046,Female,"123 Elm St, Springfield, IL",part-time
+47,Sara Davis,908-555-0100,140799,047-00-1047,Non-Binary,"789 Oak St, Smallville, KS",part-time
+48,Daniel Wilson,908-555-0100,126846,048-00-1048,Male,"202 Birch St, Centerville, CA",full-time
+49,David Brown,732-555-0104,55827,049-00-1049,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+50,Laura Brown,732-555-0101,85897,050-00-1050,Non-Binary,"202 Birch St, Centerville, CA",part-time
+51,David Martin,732-555-0104,145644,051-00-1051,Female,"707 Ash Rd, Twin Peaks, WA",part-time
+52,David Johnson,732-555-0104,140977,052-00-1052,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+53,Laura Davis,732-555-0104,137836,053-00-1053,Male,"456 Maple Ave, Anytown, OH",part-time
+54,David Garcia,908-555-0103,107229,054-00-1054,Non-Binary,"202 Birch St, Centerville, CA",part-time
+55,David Martin,732-555-0104,118353,055-00-1055,Male,"456 Maple Ave, Anytown, OH",full-time
+56,Maria Garcia,732-555-0101,140505,056-00-1056,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+57,Chris Brown,908-555-0103,83273,057-00-1057,Female,"606 Chestnut Way, Sunnydale, FL",part-time
+58,Alex Martin,732-555-0104,62483,058-00-1058,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+59,Emily Taylor,732-555-0101,77379,059-00-1059,Female,"303 Cedar Blvd, Hill Valley, NV",full-time
+60,Alex Davis,732-555-0104,123317,060-00-1060,Male,"303 Cedar Blvd, Hill Valley, NV",part-time
+61,Jane Martin,732-555-0104,116949,061-00-1061,Non-Binary,"789 Oak St, Smallville, KS",part-time
+62,David Davis,908-555-0103,97491,062-00-1062,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+63,Alex Johnson,732-555-0102,111741,063-00-1063,Non-Binary,"404 Spruce Ln, Gotham, NJ",full-time
+64,Jane Johnson,908-555-0100,127522,064-00-1064,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+65,Chris Miller,732-555-0101,106660,065-00-1065,Female,"303 Cedar Blvd, Hill Valley, NV",full-time
+66,Chris Johnson,732-555-0101,89975,066-00-1066,Non-Binary,"123 Elm St, Springfield, IL",part-time
+67,Alex Martin,732-555-0101,79279,067-00-1067,Non-Binary,"505 Walnut St, Star City, TX",part-time
+68,John Wilson,732-555-0102,145682,068-00-1068,Female,"123 Elm St, Springfield, IL",full-time
+69,Sara Wilson,908-555-0103,79000,069-00-1069,Female,"123 Elm St, Springfield, IL",full-time
+70,Daniel Garcia,908-555-0103,73608,070-00-1070,Male,"123 Elm St, Springfield, IL",part-time
+71,Jane Garcia,908-555-0103,103594,071-00-1071,Male,"789 Oak St, Smallville, KS",full-time
+72,Laura Wilson,732-555-0101,76994,072-00-1072,Male,"101 Pine Rd, Metropolis, NY",part-time
+73,Emily Davis,732-555-0101,132060,073-00-1073,Non-Binary,"707 Ash Rd, Twin Peaks, WA",part-time
+74,Maria Johnson,908-555-0103,46851,074-00-1074,Male,"404 Spruce Ln, Gotham, NJ",full-time
+75,Maria Wilson,732-555-0102,132300,075-00-1075,Female,"707 Ash Rd, Twin Peaks, WA",full-time
+76,Maria Smith,908-555-0103,75156,076-00-1076,Male,"606 Chestnut Way, Sunnydale, FL",part-time
+77,Alex Davis,732-555-0101,58306,077-00-1077,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",part-time
+78,John Smith,732-555-0104,77190,078-00-1078,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+79,Laura Doe,732-555-0101,112296,079-00-1079,Female,"789 Oak St, Smallville, KS",full-time
+80,Chris Miller,732-555-0101,103991,080-00-1080,Female,"707 Ash Rd, Twin Peaks, WA",part-time
+81,John Garcia,732-555-0102,70645,081-00-1081,Non-Binary,"456 Maple Ave, Anytown, OH",part-time
+82,Emily Miller,732-555-0102,75735,082-00-1082,Female,"789 Oak St, Smallville, KS",full-time
+83,Chris Brown,908-555-0103,74408,083-00-1083,Female,"456 Maple Ave, Anytown, OH",full-time
+84,Daniel Wilson,732-555-0102,111106,084-00-1084,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",part-time
+85,David Doe,732-555-0102,60091,085-00-1085,Male,"606 Chestnut Way, Sunnydale, FL",full-time
+86,John Doe,732-555-0102,117094,086-00-1086,Non-Binary,"456 Maple Ave, Anytown, OH",part-time
+87,John Garcia,732-555-0101,131747,087-00-1087,Male,"123 Elm St, Springfield, IL",full-time
+88,Sara Smith,732-555-0104,41975,088-00-1088,Male,"404 Spruce Ln, Gotham, NJ",part-time
+89,Maria Wilson,908-555-0103,42174,089-00-1089,Non-Binary,"606 Chestnut Way, Sunnydale, FL",full-time
+90,David Miller,908-555-0103,42800,090-00-1090,Non-Binary,"303 Cedar Blvd, Hill Valley, NV",full-time
+91,David Wilson,732-555-0102,52968,091-00-1091,Male,"101 Pine Rd, Metropolis, NY",part-time
+92,John Doe,908-555-0100,116877,092-00-1092,Female,"789 Oak St, Smallville, KS",part-time
+93,Jane Wilson,908-555-0103,94149,093-00-1093,Non-Binary,"456 Maple Ave, Anytown, OH",part-time
+94,Maria Martin,908-555-0103,120061,094-00-1094,Female,"303 Cedar Blvd, Hill Valley, NV",part-time
+95,Laura Martin,732-555-0104,79798,095-00-1095,Non-Binary,"456 Maple Ave, Anytown, OH",full-time
+96,Chris Johnson,732-555-0101,130950,096-00-1096,Non-Binary,"404 Spruce Ln, Gotham, NJ",part-time
+97,Chris Garcia,732-555-0102,138084,097-00-1097,Non-Binary,"789 Oak St, Smallville, KS",full-time
+98,Chris Taylor,732-555-0102,56540,098-00-1098,Male,"123 Elm St, Springfield, IL",full-time
+99,Emily Miller,908-555-0100,98896,099-00-1099,Male,"606 Chestnut Way, Sunnydale, FL",full-time
+100,Sara Wilson,732-555-0101,128901,100-00-1100,Female,"707 Ash Rd, Twin Peaks, WA",full-time
