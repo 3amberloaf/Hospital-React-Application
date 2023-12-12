@@ -1,101 +1,101 @@
 physician_id,emp_id,name,specialty,type
-12,30,Tara Harris,Orthopedics,Surgeon
-22,80,Shelby Stanley,Cardiology,Surgeon
-6,43,Lindsay Levine,Cardiology,Surgeon
-1,3,Kevin Lopez,Cardiology,Physician
-77,59,Michelle Floyd,Neurology,Surgeon
-91,78,Victoria Wells,General Surgery,Physician
-44,64,Jose White,Orthopedics,Surgeon
-45,91,Michael Campbell,Cardiology,Surgeon
-93,57,Jenny Reed MD,General Surgery,Physician
-100,23,Dana Hill,Cardiology,Surgeon
-9,18,Bethany Cummings,Cardiology,Physician
-75,15,Isaiah Ford,Cardiology,Physician
-2,5,Alicia Johnson,General Surgery,Surgeon
-57,17,Cameron Taylor,Cardiology,Physician
-58,79,Jonathan Lee,Cardiology,Physician
-41,93,Frank Webster,Cardiology,Physician
-11,58,Andrew Hughes,Neurology,Physician
-96,1,Ronald Hardin,Cardiology,Surgeon
-4,4,Alexis Torres,General Surgery,Surgeon
-98,97,Chad Cruz,Orthopedics,Surgeon
-86,36,Robert Carter,Orthopedics,Surgeon
-67,34,Maria Carter,Orthopedics,Surgeon
-72,19,Katie Lopez,Cardiology,Surgeon
-7,89,Timothy Smith,Cardiology,Surgeon
-33,7,Bruce Newman,Orthopedics,Physician
-59,46,Dawn Stokes,Orthopedics,Physician
-32,70,Lauren Mccarthy,General Surgery,Surgeon
-20,49,Michael Robbins,General Surgery,Surgeon
-35,90,Bobby Walker,Cardiology,Physician
-31,22,Robert Novak,Cardiology,Surgeon
-29,31,Anthony Martin,Neurology,Surgeon
-97,83,David Jones,Orthopedics,Surgeon
-80,76,Shelly Allen,Cardiology,Surgeon
-69,72,Amanda Fisher,General Surgery,Physician
-65,33,Kelsey Johnson,Orthopedics,Surgeon
-43,10,Henry Wong,Cardiology,Physician
-36,75,Dr. Michael Weaver Jr.,Neurology,Physician
-81,41,Walter Lopez,Orthopedics,Physician
-50,8,Edward James,Neurology,Physician
-54,62,Jacqueline Quinn,Cardiology,Surgeon
-17,73,Jessica Guzman,Neurology,Surgeon
-3,47,Michael Daniels,Cardiology,Surgeon
-73,38,Casey Nelson MD,Neurology,Surgeon
-70,98,Mrs. Sarah Chandler MD,General Surgery,Physician
-18,29,Frank Thomas,Cardiology,Surgeon
-94,44,Michael Huerta,Neurology,Surgeon
-83,24,Ashley Reynolds,Cardiology,Surgeon
-64,6,Priscilla Lyons,Cardiology,Physician
-53,55,Amanda Duarte,Orthopedics,Physician
-28,9,Ryan Evans,Cardiology,Physician
-10,39,Maria King,Cardiology,Surgeon
-49,54,Tyrone Miller,Neurology,Physician
-38,40,Sabrina Martin,General Surgery,Surgeon
-51,61,Edward Campbell,Cardiology,Physician
-60,95,Christina Owens,Neurology,Surgeon
-56,42,Arthur Mcdowell,Neurology,Surgeon
-16,84,Jessica Patrick,Neurology,Physician
-90,45,Adam Morrison,General Surgery,Physician
-99,2,Patricia Thomas,Neurology,Physician
-24,63,Emma Ellison,Neurology,Surgeon
-63,60,Christina Buchanan,Orthopedics,Physician
-55,96,Tracy Lopez,Orthopedics,Surgeon
-23,69,Scott Miranda,Neurology,Physician
-71,35,Kara Pierce,General Surgery,Surgeon
-92,37,Kelly Jackson,Orthopedics,Physician
-84,99,Deborah Scott,General Surgery,Physician
-46,87,Christopher Hernandez,General Surgery,Physician
-66,68,Tyler Powell,Neurology,Physician
-48,52,Melissa Mcmillan,Orthopedics,Physician
-87,92,Shawn Jones,Neurology,Surgeon
-42,11,Anthony Lawrence,Orthopedics,Physician
-79,48,Laura Romero,General Surgery,Physician
-74,27,Jill Carrillo,Orthopedics,Surgeon
-34,21,Zachary Wilkinson,Neurology,Physician
-40,50,Julie Sosa,Orthopedics,Physician
-37,85,Melissa Stewart,Cardiology,Physician
-78,28,Daniel Jackson,General Surgery,Physician
-47,71,Meredith Sanchez,Cardiology,Physician
-61,14,Christina Moreno,Orthopedics,Surgeon
-52,32,Melanie Collins,Orthopedics,Physician
-85,100,Emily Love,Neurology,Physician
-27,94,Mary Gonzales,General Surgery,Surgeon
-25,86,Nicholas Rivera,Neurology,Surgeon
-26,12,Katelyn Campbell,General Surgery,Physician
-62,81,Joshua Stewart,Cardiology,Physician
-21,13,Donna Wiley,Orthopedics,Physician
-8,82,Harry Guerrero,Orthopedics,Physician
-68,67,Jennifer Perez,Cardiology,Surgeon
-19,16,Kelly Jackson,Cardiology,Surgeon
-15,56,Ryan Hoffman,Cardiology,Physician
-89,66,Samantha Silva,Orthopedics,Surgeon
-5,26,Cynthia Robinson,General Surgery,Surgeon
-76,20,Jason Barnes,Cardiology,Physician
-13,25,Phillip Chang,Cardiology,Physician
-39,74,Samantha Porter,Orthopedics,Physician
-82,51,Amy Clark,Cardiology,Physician
-88,77,Brenda Reyes,Orthopedics,Surgeon
-14,53,Stephen Patterson,Neurology,Surgeon
-30,88,Timothy Parrish,Orthopedics,Physician
-95,65,Ashley Phillips,Neurology,Surgeon
+1,50,Louis Salazar,Cardiology,Surgeon
+2,36,Jason Rodriguez,Neurology,Physician
+3,19,Ashley Montgomery,Cardiology,Surgeon
+4,74,Alex Walker,General Surgery,Surgeon
+5,21,James Harris,General Surgery,Physician
+6,99,Nancy Pugh,Cardiology,Physician
+7,73,Mary Kim,Orthopedics,Physician
+8,67,Brittany Vaughn MD,Cardiology,Surgeon
+9,63,Charles Adkins,Orthopedics,Surgeon
+10,29,Jennifer Bennett,Orthopedics,Surgeon
+11,88,John Stuart,General Surgery,Physician
+12,41,Seth Lane,Orthopedics,Physician
+13,31,Taylor Reeves,General Surgery,Surgeon
+14,12,Patricia Ortiz,Orthopedics,Physician
+15,92,Tyler Deleon,Neurology,Physician
+16,45,Erica Oliver,General Surgery,Physician
+17,98,Shannon Wilkins,Neurology,Physician
+18,26,Joanna Curtis,General Surgery,Surgeon
+19,4,Rodney Castro,Neurology,Physician
+20,55,Jeremy Sandoval,Cardiology,Surgeon
+21,15,Jason Robinson,Neurology,Surgeon
+22,24,Amanda James,Orthopedics,Surgeon
+23,7,Rebecca Thompson,Orthopedics,Surgeon
+24,37,Tamara Jordan,Cardiology,Physician
+25,97,Beth Ross,Neurology,Surgeon
+26,60,Tina Fleming,Cardiology,Physician
+27,10,Catherine Solis,Neurology,Surgeon
+28,35,Jennifer Steele,Neurology,Surgeon
+29,53,Leonard Meyer,General Surgery,Physician
+30,6,Richard Murphy,Cardiology,Surgeon
+31,32,Paula Olson,Orthopedics,Physician
+32,34,Travis Hall,Orthopedics,Physician
+33,9,Christie Cunningham,Orthopedics,Surgeon
+34,13,Katherine Miller,General Surgery,Surgeon
+35,11,Carrie Butler,Neurology,Physician
+36,17,Michael Cervantes DDS,Neurology,Surgeon
+37,62,Matthew Murphy,Orthopedics,Surgeon
+38,72,Donald Davidson,General Surgery,Surgeon
+39,57,Alfred Graves,Orthopedics,Physician
+40,76,Edward Brown,Neurology,Physician
+41,30,John Sullivan,Cardiology,Physician
+42,16,Amanda Ramirez,General Surgery,Physician
+43,46,Steven Rodriguez,Orthopedics,Physician
+44,22,Brittany Walker,General Surgery,Surgeon
+45,40,James Pratt,Orthopedics,Physician
+46,54,Olivia Martin,Cardiology,Physician
+47,25,Emily Walters,Neurology,Physician
+48,87,Brent Smith,Cardiology,Physician
+49,91,Dawn West,General Surgery,Surgeon
+50,84,Dr. Brett Flowers,Neurology,Physician
+51,44,Cody Johnson,Neurology,Physician
+52,75,Hannah Johnson,General Surgery,Surgeon
+53,66,Bryan Smith,Orthopedics,Physician
+54,78,Matthew Gomez,Orthopedics,Physician
+55,43,Michael Bradford,Cardiology,Physician
+56,83,Melissa Douglas,Neurology,Surgeon
+57,65,Steven Turner,Neurology,Physician
+58,52,Anthony Harris,Neurology,Physician
+59,3,Tyler Wells,General Surgery,Physician
+60,33,Rachel Anthony,General Surgery,Surgeon
+61,61,Christian Anderson,Orthopedics,Surgeon
+62,89,Vanessa Smith,General Surgery,Physician
+63,18,Richard Martin,Cardiology,Surgeon
+64,90,Abigail Taylor,Orthopedics,Surgeon
+65,27,Christine Fields,General Surgery,Surgeon
+66,94,Meredith Phillips,Neurology,Surgeon
+67,71,James Garcia,General Surgery,Physician
+68,38,Eric Walker,Cardiology,Physician
+69,68,Sara Weber,Cardiology,Surgeon
+70,28,Julie Andrews,Cardiology,Surgeon
+71,51,Karen Miller,General Surgery,Surgeon
+72,47,Gregory Simpson,Orthopedics,Surgeon
+73,23,Matthew Hodges,Neurology,Physician
+74,64,Stacy Ramsey,Cardiology,Surgeon
+75,85,Robert Ward,Neurology,Physician
+76,2,Steven Anderson,Neurology,Physician
+77,82,Kevin Mcpherson,Orthopedics,Physician
+78,48,Carl Norris,Cardiology,Physician
+79,77,Laura Lewis,Neurology,Physician
+80,81,Rebecca Wilson,Orthopedics,Physician
+81,14,Joshua Jones,Neurology,Surgeon
+82,96,Robin Wilkerson,Orthopedics,Surgeon
+83,39,Marcus Collins,Neurology,Surgeon
+84,100,Alyssa Kennedy,Cardiology,Surgeon
+85,95,Nicole Hill,Neurology,Physician
+86,93,Kevin Howard,General Surgery,Surgeon
+87,8,Reginald Key,Orthopedics,Surgeon
+88,49,Don Hayden,General Surgery,Surgeon
+89,42,Michelle Tucker,General Surgery,Surgeon
+90,70,Donna Hernandez,General Surgery,Surgeon
+91,20,James Green,Orthopedics,Surgeon
+92,58,Troy Young,Neurology,Surgeon
+93,5,Michelle Chang,Cardiology,Surgeon
+94,86,Paula Bailey,Cardiology,Physician
+95,80,Ryan Paul,Neurology,Physician
+96,79,Elizabeth George,Cardiology,Surgeon
+97,59,Tammy Malone,Orthopedics,Physician
+98,56,Andrew Morgan,General Surgery,Surgeon
+99,1,John Stewart,Orthopedics,Surgeon
+100,69,Jennifer Glover,Orthopedics,Physician

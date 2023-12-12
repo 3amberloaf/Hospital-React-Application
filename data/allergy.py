@@ -2,7 +2,7 @@ import csv
 import random
 from uniqueID import generate_unique_id
 
-columns = ['allergyID', 'allergy_description']
+columns = ['allergyId', 'allergyDescription', 'patient_id']
 
 # Define the allergy symptoms as provided in the initial list
 allergy_symptoms = [
@@ -30,13 +30,15 @@ allergy_symptoms = [
 data = []
 
 allergy_id_set = set()
+patient_id_set = set()
 
 for idx in range(100):
-    allergy_id = generate_unique_id(allergy_id_set, 100)  # Generate a unique allergyID
+    allergy_id = generate_unique_id(allergy_id_set, 100) 
+    patient_id = generate_unique_id(patient_id_set, 100)
     allergy_description = random.choice(allergy_symptoms)
-    data.append([allergy_id, allergy_description])
+    data.append([allergy_id, allergy_description, patient_id])
 
-with open('csv/Allergy.csv', mode='w', newline='') as file:
+with open('csv/allergy.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(columns)
     writer.writerows(data)

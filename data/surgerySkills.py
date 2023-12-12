@@ -18,16 +18,11 @@ surgery_skills = [
 
 data = []
 
-surgery_skill_ids = set()  # To store unique surgerySkillID values
+surgery_skill_counter = 1
 
-for idx in range(100):
-    surgery_skill_id = None
-    while surgery_skill_id is None or surgery_skill_id in surgery_skill_ids:
-        surgery_skill_id = random.randint(1, 100)  # Adjust the range as needed
-    surgery_skill_ids.add(surgery_skill_id)
-    
-    skill = random.choice(surgery_skills)
-    data.append([surgery_skill_id, skill])
+for skill in surgery_skills:
+    data.append([surgery_skill_counter, skill])
+    surgery_skill_counter += 1
 
 with open('csv/SurgerySkill.csv', mode='w', newline='') as file:
     writer = csv.writer(file)

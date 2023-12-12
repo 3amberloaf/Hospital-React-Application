@@ -1,101 +1,101 @@
-allergyID,allergy_description
-68,Throat closing
-20,Chest tightness and losing your breath
-74,"Feeling faint, light-headed or blacking out"
-64,Swelling
-7,Runny nose
-16,Redness
-51,Swelling
-81,Cough
-22,Sneezing
-92,Diarrhea
-43,Tongue swelling
-69,Runny nose
-12,Tongue swelling
-31,Hives
-26,Diarrhea
-83,Itchy nose
-87,Vomiting
-55,Tongue swelling
-93,"Feeling faint, light-headed or blacking out"
-79,Bloating
-73,Hives
-27,Pain
-41,Stomach cramps
-29,Diarrhea
-56,"Itchy, watery eyes"
-52,Stomach cramps
-4,Tongue swelling
-65,Rashes
-75,Tongue swelling
-28,Stomach cramps
-96,Stomach cramps
-25,Tongue swelling
-36,"Itchy, watery eyes"
-85,Hives
-77,Cough
-49,Rashes
-8,Itchy nose
-33,Pain
-84,Throat closing
-37,Stomach cramps
-44,Itchy nose
-1,Tongue swelling
-11,"Feeling faint, light-headed or blacking out"
-47,Itchy nose
-99,Swelling
-54,Bloating
-35,Runny nose
-61,Itchy nose
-66,Swelling
-57,Swelling
-3,Tongue swelling
-95,Tongue swelling
-6,Sneezing
-50,Throat closing
-9,Hives
-76,Rashes
-32,Rashes
-14,Hives
-21,Vomiting
-46,Redness
-48,Rashes
-23,"Itchy, watery eyes"
-5,Vomiting
-88,Chest tightness and losing your breath
-24,Chest tightness and losing your breath
-34,Wheezing
-45,"Itchy, watery eyes"
-71,Chest tightness and losing your breath
-90,Diarrhea
-70,Swelling
-17,Runny nose
-100,Redness
-40,Pain
-58,Sneezing
-10,Diarrhea
-98,Wheezing
-15,Hives
-91,Bloating
-94,Wheezing
-67,Chest tightness and losing your breath
-42,Tongue swelling
-38,Swelling
-60,Sneezing
-18,Rashes
-13,Pain
-86,Diarrhea
-62,Cough
-39,Throat closing
-59,Hives
-53,Runny nose
-97,Bloating
-78,"Itchy, watery eyes"
-72,Sneezing
-80,"Itchy, watery eyes"
-63,Throat closing
-30,Redness
-89,Swelling
-2,Wheezing
-19,"Itchy, watery eyes"
-82,Throat closing
+allergyId,allergyDescription,patient_id
+56,Pain,17
+43,"Feeling faint, light-headed or blacking out",79
+55,Throat closing,26
+52,Hives,71
+42,Redness,61
+72,Diarrhea,15
+11,Bloating,76
+64,Vomiting,18
+31,Diarrhea,3
+95,"Itchy, watery eyes",43
+34,Itchy nose,53
+70,Itchy nose,13
+74,Sneezing,81
+33,Tongue swelling,21
+4,Cough,66
+24,Vomiting,41
+38,Tongue swelling,47
+60,Swelling,52
+50,Stomach cramps,86
+17,Vomiting,25
+62,"Feeling faint, light-headed or blacking out",91
+66,Stomach cramps,46
+78,Swelling,30
+100,Itchy nose,34
+69,Diarrhea,57
+9,Runny nose,29
+76,Wheezing,64
+36,Swelling,7
+58,Vomiting,36
+80,"Itchy, watery eyes",92
+40,Bloating,33
+90,"Itchy, watery eyes",62
+87,Redness,27
+39,Swelling,1
+5,Sneezing,83
+44,Itchy nose,37
+45,Bloating,31
+92,Cough,32
+28,Runny nose,87
+6,Vomiting,70
+75,Wheezing,97
+19,Wheezing,28
+14,Tongue swelling,40
+35,Throat closing,38
+77,Wheezing,9
+83,Pain,90
+41,Wheezing,4
+86,Rashes,80
+37,"Feeling faint, light-headed or blacking out",99
+97,Hives,5
+2,Cough,88
+13,"Feeling faint, light-headed or blacking out",100
+68,Swelling,50
+25,Chest tightness and losing your breath,67
+30,Pain,72
+73,Throat closing,19
+94,Stomach cramps,8
+47,"Feeling faint, light-headed or blacking out",6
+15,Wheezing,45
+99,Runny nose,93
+1,Itchy nose,96
+16,Throat closing,55
+67,Throat closing,84
+32,Pain,69
+27,Throat closing,89
+65,Diarrhea,59
+61,Pain,54
+20,Pain,24
+22,Diarrhea,35
+79,Vomiting,95
+93,Swelling,77
+23,Bloating,14
+7,Wheezing,39
+26,Vomiting,23
+46,Pain,2
+71,Runny nose,48
+53,Itchy nose,12
+63,Throat closing,11
+48,"Itchy, watery eyes",94
+29,Stomach cramps,68
+88,Redness,73
+91,Itchy nose,65
+84,"Itchy, watery eyes",42
+18,Stomach cramps,44
+8,Sneezing,22
+82,Stomach cramps,56
+51,Vomiting,20
+59,Cough,74
+3,Rashes,10
+89,Runny nose,49
+85,Runny nose,78
+98,Sneezing,51
+57,Redness,58
+12,Vomiting,75
+21,Rashes,63
+49,Throat closing,60
+10,Wheezing,85
+81,"Itchy, watery eyes",16
+96,Diarrhea,82
+54,Rashes,98
