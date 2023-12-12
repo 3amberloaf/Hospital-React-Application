@@ -1,0 +1,101 @@
+type_id,location,specialNeeds,surgerySkillID,type
+82,Carolynfurt,Requires blood thinners,100,Orthopedic Surgery
+41,North Susan,Asthma,43,Neurological Surgery
+31,Jadeville,Requires blood thinners,73,General Surgery
+39,Reedton,Requires oxygen support,21,Cardiac Surgery
+87,Durhamfurt,Diabetic patient,68,Cardiac Surgery
+22,South Lindaburgh,High blood pressure,75,Cardiac Surgery
+47,Wardstad,Asthma,17,Cardiac Surgery
+9,Christineview,Allergic to anesthesia,79,Orthopedic Surgery
+61,Lorettastad,Recent infections,6,Neurological Surgery
+62,West Jessetown,Requires blood thinners,14,Cardiac Surgery
+55,New Tracy,Asthma,88,Cardiac Surgery
+54,Theresatown,Diabetic patient,87,Neurological Surgery
+19,West Scott,Requires blood thinners,41,Cardiac Surgery
+6,Robinsonburgh,Previous surgery complications,12,Neurological Surgery
+48,South Thomas,Requires blood thinners,66,Cardiac Surgery
+46,Lake Heathershire,Asthma,9,Cardiac Surgery
+58,Port Gregory,History of clotting disorders,50,General Surgery
+81,West Mindyland,Requires blood thinners,65,General Surgery
+74,Judystad,Requires blood thinners,71,Neurological Surgery
+14,South Jessicabury,Heart condition,82,Cardiac Surgery
+71,Virginiaside,Diabetic patient,84,Orthopedic Surgery
+12,Jasonhaven,History of clotting disorders,25,Orthopedic Surgery
+4,Port Markburgh,Heart condition,15,Cardiac Surgery
+52,New Brianna,Severe allergies,92,Orthopedic Surgery
+42,Mendozahaven,Requires oxygen support,28,Orthopedic Surgery
+67,Davenportmouth,Previous surgery complications,59,Neurological Surgery
+49,East Lisa,Diabetic patient,3,Orthopedic Surgery
+69,Melanieshire,Asthma,61,Neurological Surgery
+16,North Jamesport,Severe allergies,89,Cardiac Surgery
+24,South David,Heart condition,20,Cardiac Surgery
+70,Glendatown,Diabetic patient,1,Orthopedic Surgery
+27,Krystalton,Requires oxygen support,4,General Surgery
+94,Marystad,Allergic to anesthesia,91,Orthopedic Surgery
+36,North Ericamouth,Recent infections,57,Cardiac Surgery
+85,New Kevinport,Diabetic patient,27,General Surgery
+15,South Maryfurt,Heart condition,38,Neurological Surgery
+86,Knighthaven,Allergic to anesthesia,40,Cardiac Surgery
+32,East Jesseborough,Requires oxygen support,23,Neurological Surgery
+90,Port Stephanie,High blood pressure,30,Orthopedic Surgery
+99,North Steven,Previous surgery complications,85,Cardiac Surgery
+45,Kellyport,Requires oxygen support,44,Orthopedic Surgery
+79,Mcdonaldport,Diabetic patient,62,Orthopedic Surgery
+77,Steventown,Diabetic patient,77,Orthopedic Surgery
+29,Dukeport,Requires blood thinners,34,General Surgery
+75,East Paul,Recent infections,83,Neurological Surgery
+50,Sandraport,Severe allergies,55,Cardiac Surgery
+43,West Victoria,Allergic to anesthesia,60,Orthopedic Surgery
+11,South Amytown,Allergic to anesthesia,48,Cardiac Surgery
+83,Hawkinsfort,Previous surgery complications,97,Cardiac Surgery
+59,Marcusbury,Asthma,80,Orthopedic Surgery
+38,South Rebeccahaven,Allergic to anesthesia,46,Orthopedic Surgery
+56,Jeremiahberg,High blood pressure,24,Cardiac Surgery
+28,West Geoffrey,Severe allergies,37,General Surgery
+96,Robertberg,Recent infections,69,Cardiac Surgery
+78,South David,Asthma,96,Cardiac Surgery
+18,Lake Sarah,Diabetic patient,16,Orthopedic Surgery
+95,South Lorifort,Diabetic patient,54,Orthopedic Surgery
+72,Richardside,Severe allergies,7,Neurological Surgery
+40,Timothyside,Requires oxygen support,35,Neurological Surgery
+1,Malikchester,Requires blood thinners,74,Orthopedic Surgery
+7,East Carolynport,Allergic to anesthesia,76,Neurological Surgery
+76,West Krystal,Heart condition,49,Neurological Surgery
+98,Port Laurentown,Requires blood thinners,42,General Surgery
+93,Hammondmouth,Heart condition,64,General Surgery
+17,West Toddview,Allergic to anesthesia,13,Cardiac Surgery
+44,Kaylaborough,Allergic to anesthesia,31,Cardiac Surgery
+33,Mcleanland,Previous surgery complications,94,General Surgery
+92,Chambersburgh,Requires blood thinners,45,Orthopedic Surgery
+88,West Krystal,Diabetic patient,36,Cardiac Surgery
+73,Ayersberg,Requires oxygen support,33,General Surgery
+21,Port Brandonhaven,Requires oxygen support,98,Orthopedic Surgery
+34,North Ethanland,Diabetic patient,99,Cardiac Surgery
+97,East Matthewton,History of clotting disorders,63,Cardiac Surgery
+63,South Joanmouth,Requires blood thinners,29,Cardiac Surgery
+37,Simmonsview,Allergic to anesthesia,52,General Surgery
+10,Dorothychester,Requires oxygen support,22,General Surgery
+51,Dorseyton,High blood pressure,5,Neurological Surgery
+84,Smithberg,Previous surgery complications,70,Cardiac Surgery
+5,Daniellestad,Diabetic patient,53,Cardiac Surgery
+20,Gonzalezside,High blood pressure,72,Cardiac Surgery
+68,North Jamesborough,History of clotting disorders,67,Orthopedic Surgery
+64,Port Lauren,Requires blood thinners,32,Cardiac Surgery
+53,Lloydmouth,Requires oxygen support,18,General Surgery
+100,East Tammieland,Severe allergies,56,Orthopedic Surgery
+25,Robertsonton,History of clotting disorders,51,Orthopedic Surgery
+89,Brianburgh,Asthma,19,Neurological Surgery
+80,East Scotthaven,Asthma,8,Neurological Surgery
+35,Mariamouth,Recent infections,81,Cardiac Surgery
+3,Brandonhaven,Recent infections,58,Cardiac Surgery
+65,Port Stevenville,Diabetic patient,95,General Surgery
+2,Lake Jessica,Diabetic patient,86,Cardiac Surgery
+60,Lake Lori,Requires blood thinners,78,Cardiac Surgery
+91,Carlsontown,Diabetic patient,10,Cardiac Surgery
+23,Troyside,High blood pressure,93,General Surgery
+26,South Sherryberg,High blood pressure,39,Cardiac Surgery
+30,Port Molly,Allergic to anesthesia,47,General Surgery
+57,Whitneyberg,Requires blood thinners,90,Neurological Surgery
+8,East Randy,History of clotting disorders,2,Neurological Surgery
+13,Laurafort,Allergic to anesthesia,26,Neurological Surgery
+66,Hillburgh,History of clotting disorders,11,Cardiac Surgery

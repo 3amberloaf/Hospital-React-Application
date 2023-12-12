@@ -29,13 +29,26 @@ special_needs_phrases = [
 
 data = []
 
-for idx in range(0, 100): 
+type_id_set = set()
+surgery_skill_id_set = set()
+
+for idx in range(100):
+    type_id = None
+    while type_id is None or type_id in type_id_set:
+        type_id = random.randint(1, 100)  # Adjust the range as needed
+    type_id_set.add(type_id)
+
     location = fake.city()
     special_needs = random.choice(special_needs_phrases)
+    
+    surgery_skill_id = None
+    while surgery_skill_id is None or surgery_skill_id in surgery_skill_id_set:
+        surgery_skill_id = random.randint(1, 100)  # Match with SurgerySkill ID range
+    surgery_skill_id_set.add(surgery_skill_id)
+    
     surgery_skill = random.choice(surgery_skills)
-    surgery_skill_id = random.randint(0, 100)  # Match with SurgerySkill ID range
 
-    data.append([idx, location, special_needs, surgery_skill_id, surgery_skill])
+    data.append([type_id, location, special_needs, surgery_skill_id, surgery_skill])
 
 with open('csv/SurgeryType.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
