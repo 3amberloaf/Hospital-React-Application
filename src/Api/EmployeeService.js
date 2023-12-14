@@ -38,17 +38,19 @@ export const fetchEmployees = async () => {
   }
 };
 
-// fetch patient
+// fetchPatient.js
 export const fetchPatient = async (searchParams) => {
   try {
     const query = new URLSearchParams(searchParams).toString();
-    const response = await axios.get(`http://localhost:8080/nwaHospital/patients?${query}`);
-    return response.data;
+    const response = await axios.get(`${BASE_URL}/patients?${query}`);
+    // Assuming backend returns an object for a single patient or null if not found
+    return response.data; 
   } catch (error) {
-    console.error('Error fetching patient:', error);
+    console.error('Error fetching patients:', error);
     throw error;
   }
 };
+
 
 
 
