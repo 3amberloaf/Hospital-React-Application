@@ -25,10 +25,12 @@ function AddRemoveStaffMember() {
   const handleAddMember = async () => {
     if (newMember) {
       try {
-        await addStaffMember({ name: newMember }); // emp_id is not included here
-        fetchStaffMembers(); // Fetch updated data including new entries with their emp_id
+        // Attempt to add a new staff member
+        await addStaffMember({ name: newMember });
+        fetchStaffMembers(); // Fetch updated list with new members
         setNewMember(''); // Reset the input field
       } catch (error) {
+        // Log error if adding a staff member fails
         console.error('Error adding staff member:', error);
       }
     }
@@ -37,12 +39,17 @@ function AddRemoveStaffMember() {
   const handleRemoveMember = async (index) => {
     const memberToRemove = staffMembers[index];
     try {
+      // Attempt to remove the selected staff member
       await removeStaffMember(memberToRemove.emp_id);
-      fetchStaffMembers(); // Refresh the list
+      fetchStaffMembers(); // Refresh the staff members list
     } catch (error) {
+      // Log error if removing a staff member fails
       console.error('Error removing staff member:', error.response ? error.response.data : error);
     }
   };
+  
+
+  
 
   return (
     <div className="add-remove-staff-container">

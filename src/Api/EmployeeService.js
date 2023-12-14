@@ -64,9 +64,9 @@ export const addStaffMember = async (memberData) => {
 };
 
 
-export const removeStaffMember = async (employeeId) => {
+export const removeStaffMember = async (emp_id) => {
   try {
-    const response = await axios.delete(`${BASE_URL}/employees/${employeeId}`);
+    const response = await axios.delete(`${BASE_URL}/employees/${emp_id}`);
     return response.data;
   } catch (error) {
     console.error('Error removing employee:', error);
