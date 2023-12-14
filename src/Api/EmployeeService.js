@@ -1,17 +1,31 @@
 //This will call the employee controller/endpoints 
 
-// apiCaller.js
 import axios from 'axios';
 
 const BASE_URL = 'http://localhost:8080/nwaHospital'; // Replace with your actual API base URL
 
-// const apiCaller = axios.create({
-//   baseURL: BASE_URL,
-//   headers: {
-//     'Content-Type': 'application/json',
-//     // Add any additional headers if needed
-//   },
-// });
+
+// Function to fetch surgeons
+export const fetchSurgeons = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/surgeons`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching surgeons:", error);
+    throw error;
+  }
+};
+
+// Function to fetch nurses
+export const fetchNurses = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/nurses`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching nurses:", error);
+    throw error;
+  }
+};
 
 // Example function to fetch all employees
 export const fetchEmployees = async () => {
@@ -23,6 +37,7 @@ export const fetchEmployees = async () => {
     throw error;
   }
 };
+
 
 // Example function to create an employee
 export const createEmployee = async (employeeData) => {
@@ -48,10 +63,13 @@ export const updateEmployee = async (employeeId, updatedEmployeeData) => {
 
 
 // remove member
-export const addMember = (staffMembers, newMember, setStaffMembers, setNewMember) => {
-  if (newMember) {
-    setStaffMembers([...staffMembers, newMember]);
-    setNewMember(''); // Reset input after adding
+export const addPatient = async (patientData) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/patients`, patientData);
+    return response.data;
+  } catch (error) {
+    console.error('Error adding patient:', error);
+    throw error;
   }
 };
 

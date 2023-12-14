@@ -1,68 +1,122 @@
 import React, { useState, useEffect } from "react";
-import { FaStethoscope, FaUserNurse, FaClipboardList } from "react-icons/fa"; // Icons for different job types
+import { FaStethoscope, FaUserNurse } from "react-icons/fa"; // Icons for different job types
 import "../staff.css";
-import { fetchEmployees } from "../Api/EmployeeService";
+import { fetchSurgeons, fetchNurses, fetchEmployees } from "../Api/EmployeeService";
 
 function ViewStaffByJobType() {
-  const [staff, setStaff] = useState([
-    { jobType: "Doctors", members: ["Dr. Smith", "Dr. Johnson"] },
-    { jobType: "Nurses", members: ["Nurse Kate", "Nurse Bob"] },
-    { jobType: "Administrative", members: ["Admin Steve", "Admin Linda"] },
-  ]);
+  // Define state variables for surgeons and nurses
+  const [surgeons, setSurgeons] = useState([]);
+  const [nurses, setNurses] = useState([]);
+  const [employees, setEmployees] = useState([]);  
+  const [searchQuery, setSearchQuery] = useState(""); // State for the search query
 
-  const [employees, setEmployees] = useState([]);
 
-  const getEmployees = async () => {
+  // ...
+
+  const getSurgeons = async () => {
     try {
-      const employees = await fetchEmployees();
-      console.log("Employees:", employees);
-      setEmployees(employees);
+      const surgeonsData = await fetchSurgeons();
+      console.log("Surgeons:", surgeonsData);
+      setSurgeons(surgeonsData);
+    } catch (error) {
+      console.error("Error fetching surgeons:", error);
+    }
+  };
+
+  const getNurses = async () => {
+    try {
+      const nursesData = await fetchNurses();
+      console.log("Nurses:", nursesData);
+      setNurses(nursesData);
+    } catch (error) {
+      console.error("Error fetching nurses:", error);
+    }
+  };
+
+  const fetchAllEmployees = async () => {
+    try {
+      const employeesData = await fetchEmployees();
+      setEmployees(employeesData);
     } catch (error) {
       console.error("Error fetching employees:", error);
     }
   };
 
   useEffect(() => {
-    getEmployees();
+    getSurgeons();
+    getNurses();
+    fetchAllEmployees(); // Fetch employee data when the component mounts
   }, []);
 
-  // Icon selector based on job type
-  const getIcon = (jobType) => {
-    switch (jobType) {
-      case "Doctors":
-        return <FaStethoscope />;
-      case "Nurses":
-        return <FaUserNurse />;
-      case "Administrative":
-        return <FaClipboardList />;
-      default:
-        return <FaClipboardList />;
-    }
+  const getNurseNameByEmployeeNumber = (employeeNumber) => {
+    console.log("Looking for nurse with employee number:", employeeNumber);
+    const employee = employees.find((emp) => emp.emp_id === employeeNumber);
+    console.log("Found employee:", employee);
+    return employee ? employee.name : "Name Not Found";
   };
+  
+  const getSurgeonNameByEmployeeNumber = (employeeNumber) => {
+    console.log("Looking for surgeon with employee number:", employeeNumber);
+    const employee = employees.find((emp) => emp.emp_id === employeeNumber);
+    console.log("Found employee:", employee);
+    return employee ? employee.name : "Name Not Found";
+
+  };
+  
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  
 
   return (
     <div className="view-staff-container">
       <h2>View Staff Members by Job Type</h2>
-      {staff.map((item, index) => (
-        <div key={index} className="staff-type">
+
+      {/* Search Input */}
+      <input
+        type="text"
+        placeholder="Search by name..."
+        value={searchQuery}
+        onChange={handleSearch}
+      />
+
+      {/* Render surgeons */}
+      {surgeons && (
+        <div className="staff-type">
           <h3>
-            {getIcon(item.jobType)} {item.jobType}
+            <FaStethoscope /> Surgeons
           </h3>
           <ul>
-            {item.members.map((member, idx) => (
-              <li key={idx}>{member}</li>
+            {surgeons.map((surgeon, id) => (
+              <li key={id}>
+                {getSurgeonNameByEmployeeNumber(surgeon.id)} ---- {surgeon.id}
+              </li>
             ))}
           </ul>
         </div>
-      ))}
-      <div>
-        <span> IM mapping my employees from the db right here!!!</span>
-        <ul>
-          {employees.map( emp => <li key={emp.emp_id} > {emp.name} ---- {emp.ssn} </li> )}
-        </ul>
-      </div>
+      )}
+
+      {/* Render nurses */}
+      {nurses && (
+        <div className="staff-type">
+          <h3>
+            <FaUserNurse /> Nurses
+          </h3>
+          <ul>
+            {nurses.map((nurse, id) => (
+              <li key={id}>
+                {getNurseNameByEmployeeNumber(nurse.id)} ---- {nurse.id}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* ... Other rendering code as needed */}
     </div>
   );
 }
 
 export default ViewStaffByJobType;
+
