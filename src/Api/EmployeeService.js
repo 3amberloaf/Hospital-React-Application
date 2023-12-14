@@ -46,14 +46,18 @@ export const updateEmployee = async (employeeId, updatedEmployeeData) => {
   }
 };
 
-// Example function to delete an employee
-export const deleteEmployee = async (employeeId) => {
-  try {
-    const response = await axios.delete(`/${BASE_URL}/employees/${employeeId}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error deleting employee:', error);
-    throw error;
+
+// remove member
+export const addMember = (staffMembers, newMember, setStaffMembers, setNewMember) => {
+  if (newMember) {
+    setStaffMembers([...staffMembers, newMember]);
+    setNewMember(''); // Reset input after adding
   }
 };
 
+//add member
+export const removeMember = (staffMembers, index, setStaffMembers) => {
+  const updatedMembers = [...staffMembers];
+  updatedMembers.splice(index, 1);
+  setStaffMembers(updatedMembers);
+};

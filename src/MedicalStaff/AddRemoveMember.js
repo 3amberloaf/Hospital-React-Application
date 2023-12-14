@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import { FaPlusCircle, FaTrashAlt } from 'react-icons/fa'; 
 import '../staff.css'; 
+import { addMember, removeMember } from '../Api/EmployeeService';
 
 function AddRemoveStaffMember() {
   const [staffMembers, setStaffMembers] = useState(['Dr. Smith', 'Nurse Kate']); 
   const [newMember, setNewMember] = useState('');
 
   const handleAddMember = () => {
-    if (newMember) {
-      setStaffMembers([...staffMembers, newMember]);
-      setNewMember(''); // Reset input after adding
-    }
+    addMember(staffMembers, newMember, setStaffMembers, setNewMember);
   };
 
   const handleRemoveMember = (index) => {
-    setStaffMembers(staffMembers.filter((_, idx) => idx !== index));
+    removeMember(staffMembers, index, setStaffMembers);
   };
 
   return (
