@@ -8,10 +8,6 @@ function ViewStaffByJobType() {
   const [surgeons, setSurgeons] = useState([]);
   const [nurses, setNurses] = useState([]);
   const [employees, setEmployees] = useState([]);  
-  const [searchQuery, setSearchQuery] = useState(""); // State for the search query
-
-
-  // ...
 
   const getSurgeons = async () => {
     try {
@@ -63,9 +59,7 @@ function ViewStaffByJobType() {
 
   };
   
-  const handleSearch = (event) => {
-    setSearchQuery(event.target.value);
-  };
+
 
   
 
@@ -73,13 +67,7 @@ function ViewStaffByJobType() {
     <div className="view-staff-container">
       <h2>View Staff Members by Job Type</h2>
 
-      {/* Search Input */}
-      <input
-        type="text"
-        placeholder="Search by name..."
-        value={searchQuery}
-        onChange={handleSearch}
-      />
+
 
       {/* Render surgeons */}
       {surgeons && (
