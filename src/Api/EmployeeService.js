@@ -38,17 +38,43 @@ export const fetchEmployees = async () => {
   }
 };
 
-
-// Example function to create an employee
-export const createEmployee = async (employeeData) => {
+// fetch patient
+export const fetchPatient = async (searchParams) => {
   try {
-    const response = await axios.post(`/${BASE_URL}/employees`, employeeData);
+    const query = new URLSearchParams(searchParams).toString();
+    const response = await axios.get(`http://localhost:8080/nwaHospital/patients?${query}`);
     return response.data;
   } catch (error) {
-    console.error('Error creating employee:', error);
+    console.error('Error fetching patient:', error);
     throw error;
   }
 };
+
+
+
+// Example function to create an employee
+export const addStaffMember = async (memberData) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/employees`, memberData);
+    return response.data;
+  } catch (error) {
+    console.error('Error adding staff member:', error);
+    throw error;
+  }
+};
+
+
+export const removeStaffMember = async (employeeId) => {
+  try {
+    const response = await axios.delete(`${BASE_URL}/employees/${employeeId}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error removing employee:', error);
+    throw error;
+  }
+};
+
+
 
 // Example function to update an employee
 export const updateEmployee = async (employeeId, updatedEmployeeData) => {
@@ -62,7 +88,7 @@ export const updateEmployee = async (employeeId, updatedEmployeeData) => {
 };
 
 
-// remove member
+// remove staff
 export const addPatient = async (patientData) => {
   try {
     const response = await axios.post(`${BASE_URL}/patients`, patientData);
