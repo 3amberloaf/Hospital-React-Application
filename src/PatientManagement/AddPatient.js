@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../patient.css';
-import { addPatient } from '../Api/EmployeeService'; // Assuming this function is correctly implemented
+import { addPatient } from '../Api/EmployeeService'; 
 
 const AddPatientForm = () => {
   const [patientData, setPatientData] = useState({

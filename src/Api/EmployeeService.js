@@ -94,11 +94,3 @@ export const addPatient = async (patientData) => {
     throw error;
   }
 };
-
-
-//add member
-export const removeMember = (staffMembers, index, setStaffMembers) => {
-  const updatedMembers = [...staffMembers];
-  updatedMembers.splice(index, 1);
-  setStaffMembers(updatedMembers);
-};
