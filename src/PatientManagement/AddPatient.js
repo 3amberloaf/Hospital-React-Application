@@ -58,16 +58,6 @@ const AddPatientForm = ({ addPatient }) => {
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="birthday">Birthday:</label>
-          <input 
-            id="birthday" 
-            type="date" 
-            name="birthday" 
-            value={patientData.birthday} 
-            onChange={handleChange} 
-          />
-        </div>
 
         <div className="form-group sex-selection">
   <span>Sex:</span>
