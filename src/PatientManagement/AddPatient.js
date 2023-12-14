@@ -1,33 +1,31 @@
 import React, { useState } from 'react';
-import '../patient.css'; 
-import DiseaseList from '../PatientManagement/DiseaseList';
+import '../patient.css';
+import { addPatient } from '../Api/EmployeeService'; // Assuming this function is correctly implemented
 
-const AddPatientForm = ({ addPatient }) => { 
+const AddPatientForm = () => {
   const [patientData, setPatientData] = useState({
-    firstName: '',
-    lastName: '',
-    birthday: '',
-    sex: '',
+    name: '',
+    gender: '',
+    ssn: '',
+    bloodType: '',
+    primaryPhysician: '',
+    admittedDate: '',
+    address: '',
   });
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setPatientData(prevData => ({
-      ...prevData,
-      [name]: value
-    }));
+    setPatientData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addPatient(patientData.firstName + ' ' + patientData.lastName);
-    setPatientData({
-      firstName: '',
-      lastName: '',
-      birthday: '',
-      sex: '',
-    });
+    try {
+      const response = await addPatient(patientData);
+      console.log('Patient added:', response);
+    } catch (error) {
+      console.error('Error adding patient:', error);
+    }
   };
 
   return (
@@ -35,64 +33,110 @@ const AddPatientForm = ({ addPatient }) => {
       <h2>Add Patient</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="firstName">First Name:</label>
-          <input 
-            id="firstName" 
-            type="text" 
-            name="firstName" 
-            placeholder="Enter First Name" 
-            value={patientData.firstName} 
-            onChange={handleChange} 
+          <label htmlFor="name">Full Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter Full Name"
+            value={patientData.name}
+            onChange={handleChange}
+            autoComplete="name"
+          />
+        </div>
+
+        <div className="form-group sex-selection">
+          <span>Gender:</span>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            checked={patientData.gender === 'female'}
+            onChange={handleChange}
+          />
+          <label className="button-label" htmlFor="female">
+            Female
+          </label>
+
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked={patientData.gender === 'male'}
+            onChange={handleChange}
+          />
+          <label className="button-label" htmlFor="male">
+            Male
+          </label>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="ssn">Social Security Number:</label>
+          <input
+            id="ssn"
+            type="text"
+            name="ssn"
+            placeholder="Enter SSN"
+            value={patientData.ssn}
+            onChange={handleChange}
+            autoComplete="ssn"
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="lastName">Last Name:</label>
-          <input 
-            id="lastName" 
-            type="text" 
-            name="lastName" 
-            placeholder="Enter Last Name" 
-            value={patientData.lastName} 
-            onChange={handleChange} 
+          <label htmlFor="primaryPhysician">Primary Care Physician:</label>
+          <input
+            id="primaryPhysician"
+            type="text"
+            name="primaryPhysician"
+            placeholder="Enter Primary Care Physician"
+            value={patientData.primaryPhysician}
+            onChange={handleChange}
+            autoComplete="primaryPhysician"
           />
         </div>
 
-
-        <div className="form-group sex-selection">
-  <span>Sex:</span>
-  <input 
-    type="radio" 
-    id="female" 
-    name="sex" 
-    value="female" 
-    checked={patientData.sex === 'female'} 
-    onChange={handleChange} 
-  />
-  <label className='button-label' htmlFor="female">
-    <span className="button">Female</span>
-  </label>
-
-  <input 
-    type="radio" 
-    id="male" 
-    name="sex" 
-    value="male" 
-    checked={patientData.sex === 'male'} 
-    onChange={handleChange} 
-  />
-  <label className='button-label' htmlFor="male">
-    <span className="button">Male</span>
-  </label>
-</div>
-
-
-
-
-        {/* Disease checklist */}
-        <div className="disease-checklist">
-          <DiseaseList />
+        <div className="form-group">
+          <label htmlFor="bloodType">Blood Type:</label>
+          <input
+            id="bloodType"
+            type="text"
+            name="bloodType"
+            placeholder="Enter Blood Type"
+            value={patientData.bloodType}
+            onChange={handleChange}
+            autoComplete="bloodType"
+          />
         </div>
+
+        <div className="form-group">
+          <label htmlFor="admittedDate">Admitted Date:</label>
+          <input
+            id="admittedDate"
+            type="text"
+            name="admittedDate"
+            placeholder="Enter Admitted Date"
+            value={patientData.admittedDate}
+            onChange={handleChange}
+            autoComplete="admittedDate"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="address">Address:</label>
+          <input
+            id="address"
+            type="text"
+            name="address"
+            placeholder="Enter Address"
+            value={patientData.address}
+            onChange={handleChange}
+            autoComplete="address"
+          />
+        </div>
+
         <button type="submit">Add Patient</button>
       </form>
     </div>

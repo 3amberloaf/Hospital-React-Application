@@ -52,8 +52,6 @@ export const fetchPatient = async (searchParams) => {
 };
 
 
-
-
 // Example function to create an employee
 export const addStaffMember = async (memberData) => {
   try {
@@ -65,7 +63,6 @@ export const addStaffMember = async (memberData) => {
   }
 };
 
-
 export const removeStaffMember = async (emp_id) => {
   try {
     const response = await axios.delete(`${BASE_URL}/employees/${emp_id}`);
@@ -75,8 +72,6 @@ export const removeStaffMember = async (emp_id) => {
     throw error;
   }
 };
-
-
 
 // Example function to update an employee
 export const updateEmployee = async (employeeId, updatedEmployeeData) => {
@@ -89,7 +84,6 @@ export const updateEmployee = async (employeeId, updatedEmployeeData) => {
   }
 };
 
-
 // remove staff
 export const addPatient = async (patientData) => {
   try {
@@ -100,6 +94,7 @@ export const addPatient = async (patientData) => {
     throw error;
   }
 };
+
 
 //add member
 export const removeMember = (staffMembers, index, setStaffMembers) => {
