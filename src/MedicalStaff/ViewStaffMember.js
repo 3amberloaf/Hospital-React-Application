@@ -60,9 +60,6 @@ function ViewStaffByJobType() {
   };
   
 
-
-  
-
   return (
     <div className="view-staff-container">
       <h2>View Staff Members by Job Type</h2>
