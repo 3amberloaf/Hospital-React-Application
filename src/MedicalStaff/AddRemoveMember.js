@@ -6,6 +6,7 @@ import { addStaffMember, fetchEmployees, removeStaffMember } from '../Api/Employ
 function AddRemoveStaffMember() {
   const [staffMembers, setStaffMembers] = useState([]); 
   const [newMember, setNewMember] = useState('');
+  const [memberToRemove, setOldMember] = useState('');
 
   // Function to fetch staff members from the database
   const fetchStaffMembers = async () => {
@@ -36,14 +37,11 @@ function AddRemoveStaffMember() {
     }
   };
   
-  const handleRemoveMember = async (index) => {
-    const memberToRemove = staffMembers[index];
+  const handleRemoveMember = async (emp_id) => {
     try {
-      // Attempt to remove the selected staff member
-      await removeStaffMember(memberToRemove.emp_id);
+      await removeStaffMember(emp_id);
       fetchStaffMembers(); // Refresh the staff members list
     } catch (error) {
-      // Log error if removing a staff member fails
       console.error('Error removing staff member:', error.response ? error.response.data : error);
     }
   };
@@ -66,12 +64,12 @@ function AddRemoveStaffMember() {
         <button onClick={handleAddMember}><FaPlusCircle /> Add</button>
       </div>
       <div className="staff-list">
-        {staffMembers.map((member, index) => (
-          <div key={member.emp_id} className="staff-member"> {/* Assuming each member has an 'id' */}
-            <span>{member.name}</span>
-            <button onClick={() => handleRemoveMember(index)}><FaTrashAlt /></button>
-          </div>
-        ))}
+      {staffMembers.map((member) => (
+  <div key={member.emp_id} className="staff-member">
+    <span>{member.name}</span>
+    <button onClick={() => handleRemoveMember(member.emp_id)}><FaTrashAlt /></button>
+  </div>
+))}
       </div>
     </div>
   );
