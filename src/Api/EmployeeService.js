@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/nwaHospital'; // Replace with your actual API base URL
+const BASE_URL = 'http://localhost:8080/nwaHospital';
 
 
 // Function to fetch surgeons

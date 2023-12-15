@@ -1,43 +1,83 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import '../inpatient.css';
+import { fetchClinicBeds, updateClinicBed , deleteClinicBed } from "../Api/ClinicBedService";
+import { fetchPatients } from "../Api/PatientService";
 
-// Delcare function
 function AssignRemovePatientRoom() {
-  // useState for managing the state of things
-  
-  const [patients, setPatients] = useState([{ id: 1, name: 'John Doe' }]);
-  const [rooms, setRooms] = useState([{ id: 1, name: 'Room 101' }]);
-  const [selectedPatient, setSelectedPatient] = useState('');
-  const [selectedRoom, setSelectedRoom] = useState('');
+  const [patients, setPatients] = useState([]);
+  const [rooms, setRooms] = useState([]);
+  const [selectedPatient, setSelectedPatient] = useState();
+  const [selectedRoom, setSelectedRoom] = useState();
+  const [message, setMessage] = useState(null);
 
-  // Handler function for when the patient selection changes
   const handlePatientChange = (event) => {
     setSelectedPatient(event.target.value);
   };
 
-  // Handler function for when the room selection changes
   const handleRoomChange = (event) => {
     setSelectedRoom(event.target.value);
   };
 
-  // Function to assign a room to a patient
+  const handleUpdateBed = async (bedId , patientId) => {
+    try {
+      await updateClinicBed(bedId, patientId);
+      console.log('Bed updated successfully:');
+    } catch (error) {
+      console.error('Error updating bed:', error);
+      setMessage('Error updating bed');
+    }
+  };
+
   const handleAssignRoom = () => {
-    // Placeholder logic to assign the selected room to the selected patient
-    console.log(`Assigned Patient ${selectedPatient} to ${selectedRoom}`);
+    if (!selectedPatient || !selectedRoom) {
+      setMessage('Please select both a patient and a room.');
+      return;
+    }
+
+    handleUpdateBed(selectedRoom , selectedPatient);
+    setMessage('Bed assigned successfully')
+
   };
 
-  // Function to remove patient from a room
   const handleRemoveRoom = () => {
-    // Placeholder logic to remove the patient from the selected room
-    console.log(`Removed Patient ${selectedPatient} from ${selectedRoom}`);
+
+
+    handleUpdateBed(selectedRoom , null);
+    // deleteClinicBed(selectedRoom);
+    setMessage('Bed removed successfully')
   };
 
-  // create the components
+  const fetchAllRooms = async () => {
+    try {
+      const fetchedRooms = await fetchClinicBeds();
+      setRooms(fetchedRooms);
+    } catch (error) {
+      console.error("Error fetching employees:", error);
+    }
+  };
+
+  const fetchAllPatients = async () => {
+    try {
+      const fetchedPatients = await fetchPatients();
+      setPatients(fetchedPatients);
+    } catch (error) {
+      console.error("Error fetching patients:", error);
+    }
+  };
+
+  useEffect( ()  => {
+    fetchAllPatients();
+    setSelectedPatient(patients[0])
+  }, []);
+  useEffect( ()  => {
+     fetchAllRooms();
+     setSelectedRoom(rooms[0])
+   }, []);
+
   return (
     <div className="common-container">
       <h2>Assign/Remove Patient to Room</h2>
       <div>
-        {/* Patient selection dropdown */}
         <label htmlFor="patient-select">Select Patient:</label>
         <select id="patient-select" value={selectedPatient} onChange={handlePatientChange}>
           {patients.map(patient => (
@@ -46,17 +86,16 @@ function AssignRemovePatientRoom() {
         </select>
       </div>
       <div>
-        {/* Room selection dropdown */}
-        <label htmlFor="room-select">Select Room:</label>
+        <label htmlFor="room-select">Select Bed by bed id:</label>
         <select id="room-select" value={selectedRoom} onChange={handleRoomChange}>
           {rooms.map(room => (
-            <option key={room.id} value={room.id}>{room.name}</option>
+            <option key={room.bedId} value={room.bedId}>{room.bedId}</option>
           ))}
         </select>
       </div>
-      {/* Buttons to assign or remove a patient from a room */}
       <button onClick={handleAssignRoom}>Assign</button>
       <button onClick={handleRemoveRoom}>Remove</button>
+      <span>{ message } </span>
     </div>
   );
 }
