@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../inpatient.css'; 
-import { fetchPatients ,getPatientById , updatePatientPCP } from "../Api/PatientService";
+import { fetchPatients ,getPatientById , updatePatientPCP  } from "../Api/PatientService";
 import { fetchAllPhysicians } from "../Api/PhysicianService";
 
 
@@ -23,8 +23,8 @@ function AssignRemoveDoctor() {
       console.error("Error fetching patients:", error);
     }
   };
-  const getPatientInfo = async (id) =>{
 
+  const getPatientInfo = async (id) =>{
     try {
       let patient  = await getPatientById(id);
     setSelectedPatientInfo(patient);
@@ -68,8 +68,9 @@ function AssignRemoveDoctor() {
   // Handler for assigning doctor to a patient
   const handleAssignDoctor = () => {
     // Logic to assign the selected doctor to the selected patient
-    updatePatientsDoctor(selectedPatientInfo.id , selectedDoctor)
-    console.log(`Assigned Doctor ${selectedDoctor} to Patient ${selectedPatient}`);
+    
+    updatePatientsDoctor(selectedPatientInfo.id , selectedDoctor )
+    console.log(`Assigned Doctor ${parseInt(selectedDoctor)} to Patient ${selectedPatient} in handle asssign button`);
   };
 
   // Handler for removing a doctor from a patient
