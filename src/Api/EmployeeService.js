@@ -27,6 +27,8 @@ export const fetchNurses = async () => {
   }
 };
 
+
+
 // Example function to fetch all employees
 export const fetchEmployees = async () => {
   try {
@@ -37,6 +39,8 @@ export const fetchEmployees = async () => {
     throw error;
   }
 };
+
+
 
 // fetchPatient.js
 export const fetchPatient = async (searchParams) => {
@@ -73,9 +77,24 @@ export const fetchConsultations = async () => {
   }
 };
 
+export const scheduleNurseShifts = async (id) => {
+  try {
+    const response = await axios.put(
+      `${BASE_URL}/nurses/${id}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(`Error updating shift with ID ${id}:`, error);
+    throw error;
+  }
+};
+
+
+  
+
 export const scheduleConsultation = async (consultationData) => {
   try {
-    const response = await axios.post(`${BASE_URL}/consultations`, consultationData);
+    const response = await axios.post(`${BASE_URL}/consultation`, consultationData);
     return response.data;
   } catch (error) {
     console.error('Error scheduling consults:', error);

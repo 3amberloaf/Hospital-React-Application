@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import '../patient.css'; // Assuming this path is correct
+import '../patient.css'; 
+import { scheduleConsultation } from '../Api/EmployeeService'; 
 
-function ScheduleAppointment({ addAppointment }) {
+const ScheduleAppointment = () => {
   const [appointmentDetails, setAppointmentDetails] = useState({
     patientName: '',
     doctorName: '',
-    date: ''
+    date: '',
+    notes: '',
+    type: '', 
+    phoneNumber: '',
   });
 
   const handleChange = (e) => {
@@ -15,10 +19,14 @@ function ScheduleAppointment({ addAppointment }) {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addAppointment(appointmentDetails);
-    setAppointmentDetails({ patientName: '', doctorName: '', date: '' });
+    try {
+      const response = await scheduleConsultation(appointmentDetails);
+      console.log('Appointment scheduled:', response);
+    } catch (error) {
+      console.error('Error scheduling appointment:', error);
+    }
   };
 
   return (
@@ -68,6 +76,7 @@ function ScheduleAppointment({ addAppointment }) {
             type="digits" 
             value={appointmentDetails.phone} 
             onChange={handleChange}
+            placeholder="Enter Phone Number"
           />
         </div>
 
@@ -83,7 +92,7 @@ function ScheduleAppointment({ addAppointment }) {
           />
         </div>
 
-        <button type="submit">Check Availability</button>
+        <button type="submit">Schedule</button>
       </form>
     </div>
   );

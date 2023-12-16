@@ -1,80 +1,60 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { scheduleConsultation } from '../Api/EmployeeService';
+import { scheduleNurseShifts } from '../Api/EmployeeService';
 
 function ScheduleJobShifts() {
-  const [date, setDate] = useState(new Date());
-  const [physicianId, setPhysicianId] = useState('');
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [shiftData, setShiftData] = useState({
+    shift_date: new Date(), // Initialize with current date
+    employee_id: '',
+  });
 
   const handleDateChange = (newDate) => {
-    setDate(newDate);
+    setShiftData(prevData => ({ ...prevData, shift_date: newDate }));
+  };
+
+  const handleChange = (e) => {
+    setShiftData(prevData => ({ ...prevData, [e.target.name]: e.target.value }));
   };
 
   const handleScheduleClick = async (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-  
-    if (isNaN(physicianId) || physicianId === '') {
-      setError('Physician ID must be a number and cannot be empty.');
-      return;
-    }
-  
-    const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-  
-    const newConsultation = {
-      date: formattedDate,
-      physicianId: Number(physicianId), // Changed from physician_id to physicianId
-      type: null,  // Optional
-      notes: null, // Optional
-      patient_id: null, // Optional
-    };
-  
-
-    setLoading(true);
-
+    e.preventDefault();
     try {
-      const response = await scheduleConsultation(newConsultation);
-      if (response.success) {
-        setError('');
-        setPhysicianId('');
-      } else {
-        setError('Scheduling failed: ' + response.message);
+      const formattedDate = shiftData.shift_date.toISOString().split('T')[0]; // Formatting date to YYYY-MM-DD
+      const employeeIdAsNumber = Number(shiftData.employee_id); // Convert employee_id to number
+  
+      // Check if employeeIdAsNumber is a valid number
+      if (isNaN(employeeIdAsNumber)) {
+        console.error('Invalid employee ID');
+        return;
       }
-    } catch (err) {
-      console.error('Error in scheduling consultation:', err);
-      setError('Failed to schedule the consultation.');
-    } finally {
-      setLoading(false);
+  
+      // Updated function call with separate arguments
+      const response = await scheduleNurseShifts(employeeIdAsNumber, formattedDate);
+      console.log('Shift added:', response);
+    } catch (error) {
+      console.error('Error scheduling shift:', error);
     }
   };
 
   return (
     <form className="calendar-container" onSubmit={handleScheduleClick}>
       <h2>Schedule Job Shifts</h2>
-      <Calendar onChange={handleDateChange} value={date} />
-      <div className="input-textarea-container">
-        <label htmlFor="physician_id">Physician ID:</label>
+      <Calendar onChange={handleDateChange} value={shiftData.shift_date} />
+      
+      <div className="form-group">
+        <label htmlFor="employee_id">Nurse ID:</label>
         <input
           type="text"
-          id="physician_id"
-          value={physicianId}
-          onChange={(e) => setPhysicianId(e.target.value)}
-          placeholder="Enter Physician ID"
-          required
+          id="employee_id"
+          name="employee_id"
+          value={shiftData.employee_id}
+          onChange={handleChange}
+          placeholder="Enter Nurse ID"
         />
       </div>
-      {error && <p className="error-message">{error}</p>}
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div className="schedule-button-container">
-          <button type="submit" className="schedule-button">
-            Schedule
-          </button>
-        </div>
-      )}
+
+      <button type="submit" className="submit-button">Schedule</button>
     </form>
   );
 }
