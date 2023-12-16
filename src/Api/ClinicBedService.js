@@ -28,10 +28,10 @@ export const updateClinicBed = async (bedId, patientId) => {
 
 export const deleteClinicBed = async (bedId) => {
     try {
-        const response = await axios.put(`${BASE_URL}/beds/remove/${bedId}`);
+        const response = await axios.put(`${BASE_URL}/beds/${bedId}/remove`);
         return response.data;
     } catch (error) {
-        console.error(`Error deleting clinic bed with bedId ${bedId}:`, error);
+        console.error(`Error deleting clinic beds patient with bedId ${bedId}:`, error);
         throw error;
     }
 };

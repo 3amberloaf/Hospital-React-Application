@@ -42,9 +42,20 @@ export const updatePatientNurse = async (id, nurseId) => {
   
   export const removePatientNurse = async (id) => {
     try {
-        console.log("nurseID in remove !!!!api call: ")
       const response = await axios.put(
         `${BASE_URL}/patients/${id}/removeNurse`
+      );
+      return response.data;
+    } catch (error) {
+      console.error(`Error updating patient with ID ${id}:`, error);
+      throw error;
+    }
+  };
+
+  export const removePatientDoctor = async (id) => {
+    try {
+      const response = await axios.put(
+        `${BASE_URL}/patients/${id}/removeDoctor`
       );
       return response.data;
     } catch (error) {

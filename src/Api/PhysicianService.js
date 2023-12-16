@@ -8,7 +8,7 @@ export const fetchAllPhysicians = async () =>{
         const response = await axios.get(`${BASE_URL}/physicians`);
         return response.data;
     } catch (error) {
-        console.error('Error fetching clinic beds:', error);
+        console.error('Error fetching physicians:', error);
         throw error;
     }
 
