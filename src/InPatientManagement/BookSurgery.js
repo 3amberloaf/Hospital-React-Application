@@ -105,7 +105,7 @@ function BookSurgery() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("selectedSurgeryType!!VVV   " ,selectedSurgeryType.id)
+
     const surgeryData = {
       date: surgeryDate,
       theatre: selectedTheatre,
