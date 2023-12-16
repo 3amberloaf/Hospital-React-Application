@@ -17,8 +17,6 @@ import AssignRemoveDoctor from './InPatientManagement/AssignDoctor';
 import AssignRemoveNurse from './InPatientManagement/AssignNurse';
 import BookSurgery from './InPatientManagement/BookSurgery';
 import ViewSurgerySchedulePatient from './InPatientManagement/ViewSurgerySchedulePatient';
-import ViewSurgeryScheduleRoom from './InPatientManagement/ScheduleSurgeryRoom'; 
-import ViewSurgeriesBySurgeon from './InPatientManagement/ScheduleSurgeon';
 import InPatientDashboard from './InPatientManagement/InPatientDashboard';
 import AssignRemovePatientRoom from './InPatientManagement/AssignRoom';
 // import all Medical Staff Routes
@@ -52,10 +50,8 @@ function App() {
             <Route path="/assignnurse" element={<AssignRemoveNurse />} />
             <Route path="/booksurgery" element={<BookSurgery />} />
             <Route path="/assigndoctor" element={<AssignRemoveDoctor />} />
-            <Route path="/viewsurgeryscheduleroom" element={<ViewSurgeryScheduleRoom />} />
             <Route path="/viewsurgerybypatient" element={<ViewSurgerySchedulePatient />} />
             <Route path="/addpatient" element={<AddPatientForm addPatient={addPatient} />} />
-            <Route path="/viewsurgeriesbysurgeon" element={<ViewSurgeriesBySurgeon />} />
             <Route path="/medicalstaffdashboard" element={<MedicalStaffDashboard />} />
             <Route path="/schedulejobshift" element={<ScheduleJobShifts />} />
             <Route path="/viewstaff" element={<ViewStaffByJobType />} />

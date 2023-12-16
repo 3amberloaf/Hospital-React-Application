@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../inpatient.css'; 
-import { fetchPatients ,getPatientById , updatePatientPCP  } from "../Api/PatientService";
+import { fetchPatients ,getPatientById , removePatientDoctor, updatePatientPCP  } from "../Api/PatientService";
 import { fetchAllPhysicians } from "../Api/PhysicianService";
 
 
@@ -76,7 +76,8 @@ function AssignRemoveDoctor() {
   // Handler for removing a doctor from a patient
   const handleRemoveDoctor = () => {
     // Logic to remove the doctor from the selected patient
-    updatePatientsDoctor(selectedPatientInfo.id , null)
+
+    removePatientDoctor(selectedPatientInfo.id)
     console.log(`Removed Doctor from Patient ${selectedPatient}`);
   };
 
