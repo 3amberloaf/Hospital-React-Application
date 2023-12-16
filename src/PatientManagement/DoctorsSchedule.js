@@ -1,22 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; 
-
-// Mock data for doctors' schedules
-const doctorsSchedule = {
-  '2023-12-05': ['Dr. Smith', 'Dr. Johnson'],
-  '2023-12-06': ['Dr. Williams', 'Dr. Brown'],
-};
+import { fetchSurgerySchedule } from "../Api/SurgeryService";
 
 function DoctorsSchedule() {
+  const [schedule, setSchedule] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [doctors, setDoctors] = useState([]);
+
+  const fetchTheSchedule = async () => {
+    try {
+      const fetchedSchedule = await fetchSurgerySchedule();
+      setSchedule(fetchedSchedule);
+    } catch (error) {
+      console.error("ERROR FETCHING SCHEDULE", error);
+    }
+  };
 
   useEffect(() => {
-    // Update the doctors list based on the selected date
-    const selectedDate = date.toISOString().split('T')[0];
-    setDoctors(doctorsSchedule[selectedDate] || []);
-  }, [date]);
+    fetchTheSchedule();
+  }, []);
+
+  // Filter the schedule for doctors working on the selected date
+  const doctorsOnSelectedDate = schedule.filter(item => {
+    const scheduleDate = new Date(item.date);
+    return scheduleDate.getDate() === date.getDate() &&
+           scheduleDate.getMonth() === date.getMonth() &&
+           scheduleDate.getFullYear() === date.getFullYear();
+  });
 
   return (
     <div className="calendar-container">
@@ -27,14 +37,15 @@ function DoctorsSchedule() {
       />
       <h3>Doctors working on {date.toDateString()}:</h3>
       <ul>
-        {doctors.length > 0 ? (
-          doctors.map((doctor, index) => <li key={index}>{doctor}</li>)
+        {doctorsOnSelectedDate.length > 0 ? (
+          doctorsOnSelectedDate.map((item, index) => (
+            item.surgeonId ? <li key={index}>Surgeon ID: {item.surgeonId}</li> : <li key={index}>Surgeon ID not available</li>
+          ))
         ) : (
           <li>No doctors available on this day.</li>
         )}
       </ul>
     </div>
   );
-}
-
+        }
 export default DoctorsSchedule;
