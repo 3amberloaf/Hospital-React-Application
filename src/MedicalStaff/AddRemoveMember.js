@@ -1,80 +1,75 @@
 import React, { useState, useEffect } from 'react';
 import { FaPlusCircle, FaTrashAlt } from 'react-icons/fa'; 
 import '../staff.css'; 
-import { addStaffMember, fetchEmployees, removeStaffMember } from '../Api/EmployeeService'; // Assuming these functions exist
+import { addStaffMember, fetchEmployees, removeStaffMember } from '../Api/EmployeeService';
 
 function AddRemoveStaffMember() {
   const [staffMembers, setStaffMembers] = useState([]); 
-  const [newMember, setNewMember] = useState('');
+  const [newMemberName, setNewMemberName] = useState('');
 
-  // Function to fetch staff members from the database
-  const fetchStaffMembers = async () => {
+  useEffect(() => {
+    fetchAllStaffMembers();
+  }, []);
+
+  const fetchAllStaffMembers = async () => {
     try {
-      // Assuming you have a function to fetch staff members
-      const fetchedStaffMembers = await fetchEmployees();
-      setStaffMembers(fetchedStaffMembers);
+      const employees = await fetchEmployees();
+      setStaffMembers(employees);
     } catch (error) {
       console.error('Error fetching staff members:', error);
     }
   };
 
-  useEffect(() => {
-    fetchStaffMembers(); // Fetch staff members when component mounts
-  }, []);
-
-  const handleAddMember = async () => {
-    if (newMember) {
-      try {
-        // Attempt to add a new staff member
-        await addStaffMember({ name: newMember });
-        fetchStaffMembers(); // Fetch updated list with new members
-        setNewMember(''); // Reset the input field
-      } catch (error) {
-        // Log error if adding a staff member fails
-        console.error('Error adding staff member:', error);
-      }
-    }
-  };
-  
-  const handleRemoveMember = async (index) => {
-    const memberToRemove = staffMembers[index];
+  const handleAddMemberSubmit = async (event) => {
+    event.preventDefault();
+    if (!newMemberName) return;
+    
     try {
-      // Attempt to remove the selected staff member
-      await removeStaffMember(memberToRemove.emp_id);
-      fetchStaffMembers(); // Refresh the staff members list
+      await addStaffMember({ name: newMemberName });
+      setNewMemberName('');
+      fetchAllStaffMembers();
     } catch (error) {
-      // Log error if removing a staff member fails
-      console.error('Error removing staff member:', error.response ? error.response.data : error);
+      console.error('Error adding staff member:', error);
     }
   };
   
-
-  
+  const handleRemoveMember = async (emp_id) => {
+    try {
+      await removeStaffMember(emp_id);
+      fetchAllStaffMembers();
+    } catch (error) {
+      console.error('Error removing staff member:', error);
+    }
+  };
 
   return (
     <div className="add-remove-staff-container">
       <h2>Add/Remove Staff Member</h2>
-      <div className="add-staff-form">
+      <form className="add-staff-form" onSubmit={handleAddMemberSubmit}>
         <input 
           type="text"
-          id="newMember" // Add an id attribute
-          name="newMember" // Add a name attribute
-          value={newMember}
-          onChange={(e) => setNewMember(e.target.value)}
+          id="newMember" 
+          name="newMember" 
+          value={newMemberName}
+          onChange={(e) => setNewMemberName(e.target.value)}
           placeholder="Enter Name"
         />
-        <button onClick={handleAddMember}><FaPlusCircle /> Add</button>
-      </div>
-      <div className="staff-list">
-        {staffMembers.map((member, index) => (
-          <div key={member.emp_id} className="staff-member"> {/* Assuming each member has an 'id' */}
-            <span>{member.name}</span>
-            <button onClick={() => handleRemoveMember(index)}><FaTrashAlt /></button>
-          </div>
-        ))}
-      </div>
+        <button type="submit"><FaPlusCircle /> Add</button>
+      </form>
+      <StaffList staffMembers={staffMembers} onRemoveMember={handleRemoveMember} />
     </div>
   );
 }
+
+const StaffList = ({ staffMembers, onRemoveMember }) => (
+  <div className="staff-list">
+    {staffMembers.map((member) => (
+      <div key={member.emp_id} className="staff-member">
+        <span>{member.name}</span>
+        <button onClick={() => onRemoveMember(member.emp_id)}><FaTrashAlt /></button>
+      </div>
+    ))}
+  </div>
+);
 
 export default AddRemoveStaffMember;

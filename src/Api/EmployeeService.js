@@ -73,6 +73,7 @@ export const removeStaffMember = async (emp_id) => {
   }
 };
 
+
 // Example function to update an employee
 export const updateEmployee = async (employeeId, updatedEmployeeData) => {
   try {
