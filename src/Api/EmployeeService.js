@@ -77,17 +77,21 @@ export const fetchConsultations = async () => {
   }
 };
 
-export const scheduleNurseShifts = async (id) => {
+export const scheduleNurseShifts = async (nurse) => {
   try {
     const response = await axios.put(
-      `${BASE_URL}/nurses/${id}`
+      `${BASE_URL}/nurses/${nurse.id}`, // Use nurse.id for the URL
+      { shift_date: nurse.shift_date } // Send shift_date in the request body
     );
+    
     return response.data;
   } catch (error) {
-    console.error(`Error updating shift with ID ${id}:`, error);
+    console.error(`Error updating shift for nurse ID ${nurse.id}:`, error);
     throw error;
   }
 };
+
+
 
 
   

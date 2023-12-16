@@ -2,38 +2,48 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { scheduleNurseShifts } from '../Api/EmployeeService';
+import '../staff.css'; 
 
 function ScheduleJobShifts() {
   const [shiftData, setShiftData] = useState({
     shift_date: new Date(), // Initialize with current date
     employee_id: '',
   });
+  const [isSuccess, setIsSuccess] = useState(false); // New state for success message
 
   const handleDateChange = (newDate) => {
     setShiftData(prevData => ({ ...prevData, shift_date: newDate }));
+    setIsSuccess(false); // Reset success message when date changes
   };
 
   const handleChange = (e) => {
     setShiftData(prevData => ({ ...prevData, [e.target.name]: e.target.value }));
+    setIsSuccess(false); // Reset success message when input changes
   };
 
   const handleScheduleClick = async (e) => {
     e.preventDefault();
+    setIsSuccess(false); // Reset success message before new submission
     try {
-      const formattedDate = shiftData.shift_date.toISOString().split('T')[0]; // Formatting date to YYYY-MM-DD
-      const employeeIdAsNumber = Number(shiftData.employee_id); // Convert employee_id to number
-  
-      // Check if employeeIdAsNumber is a valid number
+      const formattedDate = shiftData.shift_date.toISOString().split('T')[0];
+      const employeeIdAsNumber = Number(shiftData.employee_id);
+
       if (isNaN(employeeIdAsNumber)) {
-        console.error('Invalid employee ID');
+        console.error('Invalid Nurse ID');
         return;
       }
-  
-      // Updated function call with separate arguments
-      const response = await scheduleNurseShifts(employeeIdAsNumber, formattedDate);
+
+      const nurseToUpdate = {
+        id: employeeIdAsNumber,
+        shift_date: formattedDate,
+      };
+
+      const response = await scheduleNurseShifts(nurseToUpdate);
       console.log('Shift added:', response);
+      setIsSuccess(true); // Set success message to true on successful update
     } catch (error) {
       console.error('Error scheduling shift:', error);
+      console.error(error.stack);
     }
   };
 
@@ -55,6 +65,7 @@ function ScheduleJobShifts() {
       </div>
 
       <button type="submit" className="submit-button">Schedule</button>
+      {isSuccess && <div className="success-message">Shift successfully scheduled!</div>}
     </form>
   );
 }
