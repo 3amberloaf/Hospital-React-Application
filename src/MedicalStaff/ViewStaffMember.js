@@ -97,8 +97,6 @@ function ViewStaffByJobType() {
           </ul>
         </div>
       )}
-
-      {/* ... Other rendering code as needed */}
     </div>
   );
 }

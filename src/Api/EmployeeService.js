@@ -63,6 +63,27 @@ export const addStaffMember = async (memberData) => {
   }
 };
 
+export const fetchConsultations = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/consultations`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching consultations:', error);
+    throw error;
+  }
+};
+
+export const scheduleConsultation = async (consultationData) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/consultations`, consultationData);
+    return response.data;
+  } catch (error) {
+    console.error('Error scheduling consults:', error);
+    throw error;
+  }
+};
+
+
 export const removeStaffMember = async (emp_id) => {
   try {
     const response = await axios.delete(`${BASE_URL}/employees/${emp_id}`);
