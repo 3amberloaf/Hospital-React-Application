@@ -71,6 +71,7 @@ function AssignRemoveDoctor() {
     
     updatePatientsDoctor(selectedPatientInfo.id , selectedDoctor )
     console.log(`Assigned Doctor ${parseInt(selectedDoctor)} to Patient ${selectedPatient} in handle asssign button`);
+    getPatientInfo(selectedPatientInfo.id)
   };
 
   // Handler for removing a doctor from a patient
@@ -79,6 +80,8 @@ function AssignRemoveDoctor() {
 
     removePatientDoctor(selectedPatientInfo.id)
     console.log(`Removed Doctor from Patient ${selectedPatient}`);
+    getPatientInfo(selectedPatientInfo.id)
+
   };
 
   useEffect(()=>{
