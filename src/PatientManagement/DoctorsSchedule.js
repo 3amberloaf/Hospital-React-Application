@@ -48,4 +48,5 @@ function DoctorsSchedule() {
     </div>
   );
         }
+
 export default DoctorsSchedule;
