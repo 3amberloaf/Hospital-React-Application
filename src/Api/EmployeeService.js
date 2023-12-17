@@ -98,7 +98,7 @@ export const scheduleNurseShifts = async (nurse) => {
 
 export const scheduleConsultation = async (consultationData) => {
   try {
-    const response = await axios.post(`${BASE_URL}/consultation`, consultationData);
+    const response = await axios.post(`${BASE_URL}/consultations`, consultationData);
     return response.data;
   } catch (error) {
     console.error('Error scheduling consults:', error);
