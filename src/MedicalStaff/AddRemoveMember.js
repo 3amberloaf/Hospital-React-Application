@@ -53,7 +53,7 @@ function AddRemoveStaffMember() {
   return (
     <div className="add-remove-staff-container">
       <h2>Add/Remove Staff Member</h2>
-      {showSuccessMessage && <div className="success-message">Successfully Scheduled</div>} {/* Unique class for success message */}
+      {showSuccessMessage && <div className="success-message">Successfully Added</div>} {/* Unique class for success message */}
       <form className="add-staff-form" onSubmit={handleAddMemberSubmit}>
         <input 
           type="text"
