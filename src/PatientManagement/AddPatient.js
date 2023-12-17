@@ -13,15 +13,20 @@ const AddPatientForm = () => {
     address: '',
   });
 
+  const [isSuccess, setIsSuccess] = useState(false); // New state for success message
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setPatientData((prevData) => ({ ...prevData, [name]: value }));
+    setIsSuccess(false);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSuccess(false);
     try {
       const response = await addPatient(patientData);
+      setIsSuccess(true);
       console.log('Patient added:', response);
     } catch (error) {
       console.error('Error adding patient:', error);
@@ -138,6 +143,7 @@ const AddPatientForm = () => {
         </div>
 
         <button type="submit">Add Patient</button>
+        {isSuccess && <div className="success-message">Patient successfully added!</div>}
       </form>
     </div>
   );
