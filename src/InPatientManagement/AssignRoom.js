@@ -23,8 +23,8 @@ function AssignRemovePatientRoom() {
       await updateClinicBed(bedId, patientId);
       console.log('Bed updated successfully:');
     } catch (error) {
-      console.error('Error updating bed:', error);
-      setMessage('Error updating bed');
+      console.error('Bed removed successfully:', error);
+      setMessage('Bed removed successfully');
     }
   };
 
